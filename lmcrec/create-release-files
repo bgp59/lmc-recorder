@@ -1,0 +1,73 @@
+#!/bin/bash --noprofile
+
+# All paths next are relative to the location of this script:
+bin_subdir=bin
+go_os_arch_file=go-os-arch-targets.txt
+scripts_subdir=scripts
+staging_dir=staging
+
+# Infer script name and location from invocation:
+this_script=${0##*/}
+case "$0" in
+    /*|*/*) this_dir=$(dirname $(realpath $0));;
+    *) this_dir=$(dirname $(realpath $(which $0)));;
+esac
+
+set -e
+cd $this_dir
+
+# Source definitions:
+. ../release-definitions.sh
+
+# Go build:
+(
+    set -ex
+    ./go-build-all -t $go_os_arch_file
+)
+
+# The package (sub-)dir; all release files will be installed under PKG/:
+pkg_dir=$(basename $this_dir)
+
+(
+    set -ex
+    mkdir -p $release_dir
+)
+while read os arch; do
+    [[ "$os" = '#'* || -z "$os" || -z "$arch" ]] && continue
+
+    os_arch="$os-$arch"
+    pkg_os_arch="$pkg_dir-$os_arch"
+    pkg_os_arch_ver="$pkg_os_arch-$semver"
+    (
+        set -ex
+        rm -rf $staging_dir/$pkg_os_arch $staging_dir/$pkg_os_arch_ver
+
+        mkdir -p $staging_dir/$pkg_os_arch_ver
+        ln -fs $pkg_os_arch_ver $staging_dir/$pkg_os_arch
+
+        cp -p $relnotes_file $staging_dir/$pkg_os_arch_ver
+
+        mkdir -p $staging_dir/$pkg_os_arch_ver/bin
+        cp -p $bin_subdir/$os_arch/lmcrec* $staging_dir/$pkg_os_arch_ver/bin
+    )
+    for src_dir in $reference_dir $scripts_subdir; do
+        dst_dir=$staging_dir/$pkg_os_arch_ver/$(basename $src_dir)
+        (
+            set -ex
+            rsync -plrtHS \
+                ${rsync_exclude_file:+--exclude-from=}$rsync_exclude_file \
+                $src_dir/ $dst_dir
+        )
+    done
+    archive=$release_dir/$pkg_os_arch_ver.tgz
+    (
+        set -x
+        rm -rf $staging_dir/$pkg_os_arch
+        ln -fs $pkg_os_arch_ver $staging_dir/$pkg_os_arch
+        tar czf $archive -C $staging_dir --no-xattrs $pkg_os_arch_ver $pkg_os_arch 
+        rm -rf $staging_dir/$pkg_os_arch_ver $staging_dir/$pkg_os_arch
+    )
+    echo "$this_script: $(realpath $archive) created"
+done < $go_os_arch_file
+
+

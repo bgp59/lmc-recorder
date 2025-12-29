@@ -1,0 +1,11 @@
+LmcRecord(record_type=<LmcrecType.SET_INST_ID: 4>, inst_id=185)
+LmcRecord(record_type=<LmcrecType.VAR_VALUE: 17>, var_id=19, value=64, file_record_type=<LmcrecType.VAR_UINT_VAL: 7>)
+LmcRecord(record_type=<LmcrecType.VAR_VALUE: 17>, var_id=0, value=64, file_record_type=<LmcrecType.VAR_UINT_VAL: 7>)
+LmcRecord(record_type=<LmcrecType.VAR_VALUE: 17>, var_id=16, value=438, file_record_type=<LmcrecType.VAR_UINT_VAL: 7>)
+LmcRecord(record_type=<LmcrecType.VAR_VALUE: 17>, var_id=1, value=246, file_record_type=<LmcrecType.VAR_UINT_VAL: 7>)
+LmcRecord(record_type=<LmcrecType.VAR_VALUE: 17>, var_id=17, value=9, file_record_type=<LmcrecType.VAR_UINT_VAL: 7>)
+LmcRecord(record_type=<LmcrecType.VAR_VALUE: 17>, var_id=20, value=64, file_record_type=<LmcrecType.VAR_UINT_VAL: 7>)
+LmcRecord(record_type=<LmcrecType.SCAN_TALLY: 13>, scan_in_byte_count=42876, scan_in_inst_count=246, scan_in_var_count=5012, scan_out_var_count=304)
+LmcRecord(record_type=<LmcrecType.DURATION_USEC: 15>, value=0.035785s)
+
+LmcRecord(record_type=<LmcrecType.EOR: 16>)

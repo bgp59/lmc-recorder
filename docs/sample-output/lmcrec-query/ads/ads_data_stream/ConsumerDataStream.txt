@@ -1,0 +1,1149 @@
+[2025-12-11T13:13:01.360265-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             20800         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1200         200      200            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:13:06.357386-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             20800         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1200         200      200            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:13:11.357382-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             20800         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1200         200      200            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:13:23.973406-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    20800      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1200      200            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:13:28.973187-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    20800      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1200      200            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:13:33.975030-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    20800      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1200      200            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:13:38.976015-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    20800      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1200      200            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:13:43.974114-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    20800      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount224.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1200      200            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:13:48.978015-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    20800      100
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1200      100            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:13:53.976176-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    20800      100
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1200      100            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:13:58.974034-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    normalOpens:d    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200              100    20900      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100                0      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100                       100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33                0        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200              100     1300      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33                0        0       33              0
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+
+[2025-12-11T13:14:03.975089-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    20900      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1300      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:08.974145-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    20900      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount223.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1300      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:13.985787-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    20900      100
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1300      100            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:18.973108-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    20900      100
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1300      100            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:23.974097-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    normalOpens:d    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200              100    21000      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100                0      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100                       100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200              100     1400      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33                0        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33                0        0       33              0
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+
+[2025-12-11T13:14:28.978064-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21000      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1400      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:33.973099-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21000      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1400      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:38.974093-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21000      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1400      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:43.975752-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21000      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1400      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:14:48.974597-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recoverableCloses:d    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ---------------------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21000                    200         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          0                     35          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams      100                    100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams      100                    100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          0                     32          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          0                     33          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          0                     35          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          0                     32          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          0                     33          33       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           0                     35          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1400                    200         200      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           0                     32          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           0                     33          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           0                     35          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           0                     32          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           0                     33          33       33              0
+-------------------------------------------------------  -------  ---------------------  ----------  -------  -------------
+
+[2025-12-11T13:14:53.973774-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21000         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1400         200      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           0          33       33              0
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:14:58.975177-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21000         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1400         200      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           0          33       33              0
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:15:03.975843-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21000         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1400         200      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           0          33       33              0
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:15:08.975823-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21000         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1400         200      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           0          33       33              0
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:15:13.972923-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21000         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1400         200      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           0          33       33              0
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:15:18.972695-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21000      200
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount225.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1400      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:15:23.975688-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    21000      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1400      100            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:15:28.972818-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    21000      100
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1400      100            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:15:33.974610-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    normalOpens:d    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200              100    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100                0      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100              100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33                0        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200              100     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33                0        0       33              0
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+
+[2025-12-11T13:15:38.972079-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:15:43.973284-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:15:48.976317-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:15:53.975144-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:15:58.973347-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:03.976268-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:08.974198-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:13.974326-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:18.972295-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:23.972459-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21100      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount6.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount7.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount8.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1500      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user6.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user7.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user8.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:28.974143-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    21100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount226.dataStreams         0         0      100        0
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1500      100            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:33.974298-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                100       100    21100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         100       100     1500      100            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:38.974243-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    normalOpens:d    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200              100    21200      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100                0      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100                       100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33                0        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33                0        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200              100     1600      200            100
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+
+[2025-12-11T13:16:43.975930-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21200      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1600      200            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:48.973040-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21200      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1600      200            100
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:16:53.973029-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recoverableCloses:d    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ---------------------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21200                    200         400      200
+lseg2.bgp59.com.1.ads.userDatabase.mount10.dataStreams         0                     35          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount11.dataStreams         0                     32          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount12.dataStreams         0                     33          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0                     35          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0                     32          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0                     33          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount227.dataStreams      100                    100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams      100                    100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user10.dataStreams          0                     35          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user11.dataStreams          0                     32          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user12.dataStreams          0                     33          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0                     35          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0                     32          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0                     33          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1600                    200         200      200            100
+-------------------------------------------------------  -------  ---------------------  ----------  -------  -------------
+
+[2025-12-11T13:16:58.977261-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21200         200      100
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1600         100      100            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:17:03.973158-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21200         200      100
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1600         100      100            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:17:08.975015-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21200         200      100
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1600         100      100            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:17:13.964467-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21200         200      100
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1600         100      100            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:17:18.965456-08:00] Class: ConsumerDataStream
+Instance                                                   opens    recovery    total    uniqueItems
+-------------------------------------------------------  -------  ----------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams             21200         200      100
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         0          35       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         0          32       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         0          33       33
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams      100         100      100
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          0          35       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          0          32       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          0          33       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams       1600         100      100            100
+-------------------------------------------------------  -------  ----------  -------  -------------
+
+[2025-12-11T13:17:23.963467-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    normalOpens:d    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200              100    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35                0        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100                0      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100              100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32                0        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33                0        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33                0        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35                0        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200              100     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32                0        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33                0        0       33              0
+-------------------------------------------------------  --------  --------  ---------------  -------  -------  -------------
+
+[2025-12-11T13:17:28.965448-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:17:33.963455-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:17:38.964420-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:17:43.976499-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:17:48.975487-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:17:53.972488-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+
+[2025-12-11T13:17:58.972458-08:00] Class: ConsumerDataStream
+Instance                                                   active    cached    opens    total    uniqueItems
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+lseg2.bgp59.com.1.ads.userDatabase.dataStreams                200       200    21300      200
+lseg2.bgp59.com.1.ads.userDatabase.mount14.dataStreams         35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount15.dataStreams         32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount16.dataStreams         33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.mount2.dataStreams          35        35        0       35
+lseg2.bgp59.com.1.ads.userDatabase.mount228.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount229.dataStreams       100       100      100      100
+lseg2.bgp59.com.1.ads.userDatabase.mount3.dataStreams          32        32        0       32
+lseg2.bgp59.com.1.ads.userDatabase.mount4.dataStreams          33        33        0       33
+lseg2.bgp59.com.1.ads.userDatabase.user14.dataStreams          35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user15.dataStreams          32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user16.dataStreams          33        33        0       33              0
+lseg2.bgp59.com.1.ads.userDatabase.user2.dataStreams           35        35        0       35              0
+lseg2.bgp59.com.1.ads.userDatabase.user28.dataStreams         200       200     1700      200            100
+lseg2.bgp59.com.1.ads.userDatabase.user3.dataStreams           32        32        0       32              0
+lseg2.bgp59.com.1.ads.userDatabase.user4.dataStreams           33        33        0       33              0
+-------------------------------------------------------  --------  --------  -------  -------  -------------
+

@@ -1,0 +1,5 @@
+2025/12/29  v0.0.1
+
+Initial release
+
+See https://github.com/bgp59/lmc-recorder/blob/main/README.md for details.

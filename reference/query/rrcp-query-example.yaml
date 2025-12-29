@@ -1,0 +1,5 @@
+# This query works for both ads and adh
+
+n: rrcp_transmission_bus
+c: rrcpTransmissionBus
+t: [NUMERIC:d, COUNTER:d, GAUGE]

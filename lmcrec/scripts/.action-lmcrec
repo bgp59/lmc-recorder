@@ -1,0 +1,136 @@
+#! /bin/bash --noprofile
+
+# Start/run/stop/flush/rollover a specific instance of lmcrec. To be symlinked
+# with start-lmcrec, run-lmcrec, etc.
+
+this_script=${0##*/}
+
+usage="
+Usage: $this_script INST [ARG...]
+"
+if [[ "$this_script" = .action* ]]; then
+    echo >&2 "$this_script should not be invoked directly, rater symlinks to it"
+    exit 1
+fi
+
+case "$1" in
+    ""|-h*|--h*) echo >&2 "$usage"; exit 1;;
+    *) inst="$1"; shift;;
+esac
+
+case "$0" in
+    /*|*/*) 
+        this_dir=$(dirname $(realpath $0))
+    ;;
+    *) 
+        this_dir=$(dirname $(realpath $(which $0)))
+    ;;
+esac
+
+pgrep_re="(^|.*/)lmcrec([[:space:]]|[[:space:]].+[[:space:]])-inst ${inst//./\\.}(\$|[[:space:]])"
+
+pid_list() {
+    pgrep -f "$pgrep_re"
+}
+
+proc_list() {
+    if [[ $# -gt 0 ]]; then
+        ps -o pid,command -p $* | awk '(NR > 1)'
+    fi
+}
+
+sig=
+shutdown_max_wait=
+pids=$(pid_list)
+case "$this_script" in
+    start-lmcrec*|run-lmcrec*)
+        if [[ -n "$pids" ]]; then
+            echo >&2 "$this_script: lmcrec $inst already running"
+            proc_list $pids >&2
+            exit 1
+        fi
+        if [[ -z "$LMCREC_BIN" ]]; then
+            go_os=$(uname -s | tr '[:upper:]' '[:lower:]')
+            go_arch=$(uname -m)
+            case "$go_arch" in
+                x86_64) go_arch=amd64 ;;
+                aarch64|arm64*) go_arch=arm64 ;;
+                arm*) go_arch=arm ;;
+            esac
+            LMCREC_BIN=$(dirname $this_dir)/bin/
+        fi
+        if [[ -z "$LMCREC_RUNTIME" ]]; then
+            export LMCREC_RUNTIME="$HOME/runtime/lmcrec"
+        fi
+        echo >&2 "$this_script:"
+        echo >&2 " LMCREC_BIN     : '$LMCREC_BIN'"
+        echo >&2 " LMCREC_CONFIG  : '$LMCREC_CONFIG'"
+        echo >&2 " LMCREC_RUNTIME : '$LMCREC_RUNTIME'"
+
+        export PATH="$LMCREC_BIN/$go_os-$go_arch:$LMCREC_BIN:$PATH"
+
+        if [[ "$this_script" = start* ]]; then
+            (
+                inst_out_dir=$LMCREC_RUNTIME/out/$inst
+                set -ex
+                mkdir -p $inst_out_dir
+                lmcrec -inst $inst "$@" >$inst_out_dir/lmcrec.out 2>$inst_out_dir/lmcrec.err </dev/null &
+            )
+            exit $?
+        else
+            set -ex
+            exec lmcrec -inst $inst "$@"
+        fi
+    ;;
+
+    stop-lmcrec*) 
+        sig=TERM
+        shutdown_max_wait=3
+    ;;
+
+    flush-lmcrec*) 
+        sig=USR1
+    ;;
+
+    rollover-lmcrec*) 
+        sig=USR2
+    ;;
+
+    *)
+        echo "$this_script: unsupported invocation"
+        exit 1
+    ;;
+esac
+
+if [[ -z "$pids" ]]; then
+    echo >&2 "$this_script: lmcrec $inst not running"
+    exit 1
+else
+    echo >&2 "$this_script: sending $sig to:"
+    proc_list $pids >&2
+    set -e
+    (set -x; kill -$sig $pids)
+    if [[ -n "$shutdown_max_wait" ]]; then
+        echo >&2 "$this_script: waiting at most $shutdown_max_wait sec for the process(es) to exit"
+        k=0
+        while ps -o -p $pids >/dev/null 2>&1; do
+            sleep 1
+            k=$(($k+1))
+            if [[ $k -gt $shutdown_max_wait ]]; then
+                break
+            fi
+        done
+        running_info=$(pgrep -fl "$pgrep_re")
+        pids=$(pid_list)
+        if [[ -n "$pids" ]]; then
+            sig=KILL
+            echo >&2 "$this_script: sending $sig to:"
+            proc_list $pids >&2
+            (set -x; kill -KILL $pids)
+        fi
+    fi
+fi
+
+
+
+

@@ -1,0 +1,29 @@
+#!/bin/bash --noprofile
+
+# Infer script name and location from invocation:
+this_script=${0##*/}
+case "$0" in
+    /*|*/*) this_dir=$(dirname $(realpath $0));;
+    *) this_dir=$(dirname $(realpath $(which $0)));;
+esac
+
+set -e
+cd $this_dir
+
+# Source definitions:
+. ../release-definitions.sh
+
+
+# Build the wheel straight under release dir:
+(
+    set -ex
+
+    ./pre-build
+
+    rm -rf dist
+    ln -fs $release_dir dist
+    python3 -m build --wheel
+    rm -rf dist
+)
+
+

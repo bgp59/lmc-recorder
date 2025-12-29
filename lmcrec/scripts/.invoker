@@ -1,0 +1,43 @@
+#! /bin/bash --noprofile
+
+# Symlink w/ a file named like the actual binary, e.g.:
+#  .invoker -> lmcrec
+
+
+this_script=${0##*/}
+if [[ "$this_script" = .invoker* ]]; then
+    echo >&2 "$this_script should not be invoked directly, rater symlinks to it"
+    exit 1
+fi
+
+executable=${this_script%%.*}
+
+
+case "$0" in
+    /*|*/*) 
+        this_dir=$(dirname $(realpath $0))
+    ;;
+    *) 
+        this_dir=$(dirname $(realpath $(which $0)))
+    ;;
+esac
+
+bin_dir=$(dirname $this_dir)/bin
+
+go_os=$(uname -s | tr '[:upper:]' '[:lower:]')
+go_arch=$(uname -m)
+case "$go_arch" in
+    x86_64) go_arch=amd64 ;;
+    aarch64|arm64*) go_arch=arm64 ;;
+    arm*) go_arch=arm ;;
+esac
+
+for b in $bin_dir/$go_os-$go_arch $bin_dir; do
+    binary=$b/$executable
+    if [[ -x "$binary" ]]; then
+        exec $binary "$@"
+        exit 1
+    fi
+done
+echo >&2 "executable $executable not found"
+exit 1

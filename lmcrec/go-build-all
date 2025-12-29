@@ -1,0 +1,38 @@
+#! /bin/bash --noprofile
+
+# Build all GO based binaries:
+
+this_script=${0##*/}
+
+usage="
+Usage: $this_script ARG...
+
+ARG..., if any, will be passed to individual go-build commands. Typical use: -t OS_ARCH_TARGET_FILE
+
+"
+
+case "$1" in
+    -h|--help)
+        echo >&2 "$usage"
+        exit 
+    ;;
+esac
+
+case "$0" in
+    /*|*/*) 
+        this_dir=$(cd $(dirname $0) && pwd)
+    ;;
+    *) 
+        this_dir=$(cd $(dirname $(which $0)) && pwd)
+    ;;
+esac
+
+if [[ -z "$this_dir" ]]; then
+    echo >&2 "$this_script: cannot infer location from invocation"
+    exit 1
+fi
+
+set -ex
+cd $this_dir
+./go-build "$@"
+./lmcrec-from-samples/go-build "$@"

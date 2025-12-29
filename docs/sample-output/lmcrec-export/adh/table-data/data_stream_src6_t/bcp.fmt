@@ -1,0 +1,28 @@
+10.0
+26
+1	SYBCHAR 0	1024	","	1	lmc_ts_col
+2	SYBCHAR 0	1024	","	2	lmc_inst_col
+3	SYBCHAR 0	1024	","	3	broadcast_col
+4	SYBCHAR 0	1024	","	4	cache_drop_col
+5	SYBCHAR 0	1024	","	5	cbr_info_col
+6	SYBCHAR 0	1024	","	6	cbr_status_col
+7	SYBCHAR 0	1024	","	7	change_request_id_col
+8	SYBCHAR 0	1024	","	8	drop_sink_col
+9	SYBCHAR 0	1024	","	9	generic_col
+10	SYBCHAR 0	1024	","	10	group_merge_col
+11	SYBCHAR 0	1024	","	11	group_status_col
+12	SYBCHAR 0	1024	","	12	insert_ack_col
+13	SYBCHAR 0	1024	","	13	insert_nak_col
+14	SYBCHAR 0	1024	","	14	node_id_change_col
+15	SYBCHAR 0	1024	","	15	permission_info_col
+16	SYBCHAR 0	1024	","	16	refresh_data_col
+17	SYBCHAR 0	1024	","	17	refresh_hdr_col
+18	SYBCHAR 0	1024	","	18	refresh_latency_col
+19	SYBCHAR 0	1024	","	19	refresh_rate_col
+20	SYBCHAR 0	1024	","	20	rename_col
+21	SYBCHAR 0	1024	","	21	set_group_col
+22	SYBCHAR 0	1024	","	22	status_col
+23	SYBCHAR 0	1024	","	23	total_col
+24	SYBCHAR 0	1024	","	24	update_col
+25	SYBCHAR 0	1024	","	25	update_latency_col
+26	SYBCHAR 0	1024	"\n"	26	update_rate_col

@@ -1,0 +1,122 @@
+# Reference configuration for LMC recorder
+
+# The logger section applies to all recorders.
+logger:
+  # Whether to structure the logged record in JSON. Typically this should be
+  # true if log_file is in effect and false otherwise (logging to stderr, that
+  # is).
+  use_json: false
+
+  # Log level name: info, warn, ...:
+  level: info
+
+  # Whether to disable the reporting of the source file:line# info:
+  disable_src_file: false
+
+  # The path for the log file; it may contain env vars, which will be expanded
+  # and the <INST> placeholder which will be replaced with the actual instance.
+  # Use verbatim stderr or stdout to log to the eponymous file descriptor.
+  # Note: if LMCREC_RUNTIME env var is not set, it will default to $HOME/runtime/lmcrec.
+  log_file: $LMCREC_RUNTIME/log/<INST>/lmcrec.log
+
+  # Log file max size, in MB, before rotation, use 0 to disable:
+  log_file_max_size_mb: 10
+
+  # How many older log files to keep upon rotation:
+  log_file_max_backup_num: 1
+
+# The default section provides values applicable to all recorders, unless
+# specified in the the specific section:
+default:
+  # Scan interval. The value must be compatible with
+  # https://pkg.go.dev/time#ParseDuration:
+  scan_interval: 5s
+
+  # Flush interval:
+  #    < 0: disable flush 
+  #   == 0: always flush at the end of the scan
+  #    > 0: flush at/after interval since last flush
+  # The value must be compatible with https://pkg.go.dev/time#ParseDuration:
+  flush_interval: 5m
+
+  # Checkpoint interval.
+  #  <= 0: disabled
+  #   > 0: checkpoint at/after interval since last checkpoint
+  # The value must be compatible with https://pkg.go.dev/time#ParseDuration:
+  checkpoint_interval: 15m
+
+  # Rollover interval:
+  #  <= 0: disabled
+  #   > 0: rollover to a new files at/after interval since last rollover
+  # The value must be compatible with https://pkg.go.dev/time#ParseDuration:
+  rollover_interval: 2h
+
+  # Parse error threshold. There is a rest parser error gauge incremented every
+  # time an error occurs and decremented, 0 floored, otherwise. The normal
+  # behavior after an error is to rollover the recording to a new file. If the
+  # error conditions persist then there is a risk of filling the file system
+  # with stub files that have partial data at best and the threshold protects
+  # against such as scenario by stopping the scanner. Use 0 to disable.
+  parse_error_threshold: 5
+
+  # REST URL:
+  url: http://localhost:8080/sharedmem
+
+  # SecurityKey for authentication. It may take one the following forms:
+  #
+  #   "file:FILE_PATH": it will be read from FILE_PATH. The path may contain <ID> 
+  #                     placeholder, which will be replaced with the actual ID
+  #                     and $ENV_VAR's which will be expanded
+  #                     e.g. file:$HOME/.lmcrec/security-key
+  #
+  #      "env:ENV_VAR": it will be read from environment ENV_VAR
+  #
+  #     "SECURITY_KEY": verbatim, not recommended since the config
+  #                     is most likely publicly readable
+  #security-key: "file:$HOME/.lmcrec/security-key"
+
+  # Whether to request compressed response data or not. The valid values are
+  # true, false and remote_only. For the last one compressed requests are
+  # enabled if the host part of the URL is not "localhost" or "127.x.x.x".
+  compressed_requests: remote_only
+
+  # Request timeout. The value must be compatible with
+  # https://pkg.go.dev/time#ParseDuration:
+  request_timeout: 2s
+
+  # Whether to allow self-signed certificates or not:
+  ignore_tls_verify: false
+
+  # TCP connection parameters. The values must be compatible with
+  # https://pkg.go.dev/time#ParseDuration:
+  tcp_conn_timeout: 1s
+  #tcp_keep_alive: 
+
+  # The record files directory; it may contain env vars, which will be expanded
+  # and the <INST> placeholder which will be replaced with the actual instance.
+  # Note: if LMCREC_RUNTIME env var is not set, it will default to $HOME/runtime/lmcrec.
+  record_files_dir: $LMCREC_RUNTIME/rec/<INST>
+
+  # The buffer size for buffered, non-compressed writes. Use -1 for default
+  # value (recommended) or 0 to disable buffering.
+  buf_size: -1
+
+  # The compression level. Use -1 for default compression (recommended) or 0 to
+  # disable.
+  compression_level: -1
+
+  # Retention period, in days. At cleanup time, only the most recent N days
+  # recording will be kept. Set to 0 to disable.
+  keep_n_days: 14
+
+  # Organization. Generally an acronym used to identify the source of reports.
+  organization: org_r_us
+
+# The next section describes parameters for specific recorders. All the
+# parameters from the default section may also appear here in order to override
+# their values on a per recorder basis. The INST is matched against the command
+# line argument passed via -inst INST option. Typically only `inst' and `url'
+# should be specified in the next section.
+recorders:
+  # - inst: INST
+  #   url: URL

@@ -1,0 +1,3 @@
+# GOOS      GOARCH
+# --------- -------
+linux       amd64

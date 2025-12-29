@@ -1,0 +1,11 @@
+autoflake
+black
+build
+isort
+pytest
+pyyaml
+requests
+tabulate
+tzlocal
+
+

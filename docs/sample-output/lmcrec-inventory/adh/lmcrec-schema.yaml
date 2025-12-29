@@ -1,0 +1,2565 @@
+classes:
+  AggregateStatsThread: {}
+  CacheListMgr:
+    classSize:
+      type: NUMERIC
+    countSize:
+      type: NUMERIC
+  ClassicSSLSessionHandler:
+    32PingInterval:
+      type: NUMERIC
+  ConsumerDataStream.SrcDist:
+    auditFailureBadPriority:
+      type: COUNTER
+    auditFailureNoItem:
+      type: COUNTER
+    auditFailureNoSSI:
+      type: COUNTER
+    auditFailures:
+      type: COUNTER
+    auditReqs:
+      type: COUNTER
+    closes:
+      type: COUNTER
+    encodingFailure:
+      type: COUNTER
+    insufficientMemory:
+      type: COUNTER
+    items:
+      type: NUMERIC
+    nonRecoverableCloses:
+      type: COUNTER
+    nonRecoverableOpens:
+      type: COUNTER
+    pending:
+      type: NUMERIC
+    permissionDenial:
+      type: COUNTER
+    preemptionCloses:
+      type: COUNTER
+    priorities:
+      type: COUNTER
+    recoverableCloses:
+      type: COUNTER
+    recoverableOpens:
+      type: COUNTER
+    requests:
+      type: COUNTER
+    sendingItemKey:
+      type: BOOLEAN
+    ssis:
+      type: NUMERIC
+    watched:
+      type: NUMERIC
+    watchedDomain6:
+      type: GAUGE
+    watchedDomain7:
+      type: GAUGE
+    watchedDomain8:
+      type: GAUGE
+    watchedDomain9:
+      type: GAUGE
+    watchedOk:
+      type: NUMERIC
+    watchedStale:
+      type: NUMERIC
+  DNSapi: {}
+  DacsConnectionMgr:
+    enableMetering:
+      type: BOOLEAN
+    sendCloseRecovOnTimeout:
+      type: BOOLEAN
+    softwareUsageFileDirectory:
+      max_size: 2
+      type: STRING
+    softwareUsageFileSize:
+      type: NUMERIC
+    softwareUsageWithoutInit:
+      type: BOOLEAN
+  DacsConnectionMgrClient:
+    dacsRole:
+      max_size: 9
+      type: STRING
+    disconnectDacsDown:
+      type: BOOLEAN
+    doMultiConnect:
+      type: BOOLEAN
+    domainList:
+      type: STRING
+    dumpPublisherContinueWatch:
+      type: BOOLEAN
+    enabled:
+      type: BOOLEAN_CONFIG
+    iauth2Enabled:
+      type: BOOLEAN_CONFIG
+    publisherContinueWatchExecs:
+      type: COUNTER
+    publisherContinueWatchTime:
+      type: STRING
+    refuseConnectionsDacsDown:
+      type: BOOLEAN
+  DataStreamSink6:
+    cbrAck:
+      type: COUNTER
+    cbrClose:
+      type: COUNTER
+    cbrOpen:
+      type: COUNTER
+    close:
+      type: COUNTER
+    generic:
+      type: COUNTER
+    insert:
+      type: COUNTER
+    insertLatency:
+      type: NUMERIC
+    insertRate:
+      type: NUMERIC
+    priority:
+      type: COUNTER
+    request:
+      type: COUNTER
+    symbolListClose:
+      type: COUNTER
+    symbolListOpen:
+      type: COUNTER
+    total:
+      type: COUNTER
+  DataStreamSrc6:
+    broadcast:
+      type: COUNTER
+    cacheDrop:
+      type: COUNTER
+    cbrInfo:
+      type: COUNTER
+    cbrStatus:
+      type: COUNTER
+    changeRequestID:
+      type: COUNTER
+    dropSink:
+      type: COUNTER
+    generic:
+      type: COUNTER
+    groupMerge:
+      type: COUNTER
+    groupStatus:
+      type: COUNTER
+    insertAck:
+      type: COUNTER
+    insertNak:
+      type: COUNTER
+    nodeIDChange:
+      type: COUNTER
+    permissionInfo:
+      type: COUNTER
+    refreshData:
+      type: COUNTER
+    refreshHdr:
+      type: COUNTER
+    refreshLatency:
+      type: NUMERIC
+    refreshRate:
+      type: NUMERIC
+    rename:
+      type: COUNTER
+    setGroup:
+      type: COUNTER
+    status:
+      type: COUNTER
+    total:
+      type: COUNTER
+    update:
+      type: COUNTER
+    updateLatency:
+      type: NUMERIC
+    updateRate:
+      type: NUMERIC
+  DataStreamSrcDL:
+    DLAdd:
+      type: COUNTER
+    DLDrop:
+      type: COUNTER
+    DLDropSink:
+      type: COUNTER
+    DLReject:
+      type: COUNTER
+    DLUpdate:
+      type: COUNTER
+    groupMerge:
+      type: COUNTER
+    groupStatus:
+      type: COUNTER
+    total:
+      type: COUNTER
+  DebugLog:
+    appendToFile:
+      type: BOOLEAN_CONFIG
+    fileSize:
+      type: NUMERIC_CONFIG
+    filename:
+      max_size: 7
+      type: STRING_CONFIG
+    flushAfterWrite:
+      type: BOOLEAN_CONFIG
+    flushBuffer:
+      type: BOOLEAN
+    numFiles:
+      type: NUMERIC_CONFIG
+  FailbackTransportSessionMgr: {}
+  KeepAlive:
+    keepAliveInterval:
+      type: NUMERIC_CONFIG
+    networkDelay:
+      type: NUMERIC_CONFIG
+  LatencyMonitor:
+    latencyCalcEnabled:
+      type: BOOLEAN
+    latencyCalcMountBased:
+      type: BOOLEAN
+    latencyCalcServerBased:
+      type: BOOLEAN
+    mountRatesEnabled:
+      type: BOOLEAN
+    numLatencySamples:
+      type: NUMERIC_CONFIG
+    serverRatesEnabled:
+      type: BOOLEAN
+  ManagedAggregateService:
+    autoGenerateIds:
+      type: BOOLEAN
+    pending:
+      type: GAUGE
+    pendingOut:
+      type: GAUGE
+  ManagedProcess.SrcDist:
+    RTSDKVersion:
+      max_size: 23
+      type: STRING
+    Use send transport:
+      type: BOOLEAN_CONFIG
+    clearStats:
+      type: BOOLEAN
+    configFile:
+      max_size: 44
+      type: STRING
+    configTrace:
+      type: BOOLEAN
+    dumpConsumerDatabase:
+      type: BOOLEAN
+    dumpDatabase:
+      type: BOOLEAN
+    dumpHashTableStats:
+      type: BOOLEAN
+    dumpProducerDatabase:
+      type: BOOLEAN
+    groupID:
+      type: NUMERIC
+    hotStandby:
+      type: BOOLEAN_CONFIG
+    instance:
+      max_size: 52
+      type: STRING
+    libcurlVersion:
+      max_size: 13
+      type: STRING
+    loggerLevel:
+      max_size: 6
+      type: STRING
+    path:
+      max_size: 41
+      type: STRING
+    processID:
+      type: NUMERIC
+    releaseVersion:
+      max_size: 28
+      type: STRING
+    reloadConfig:
+      type: BOOLEAN
+    reloadDictionary:
+      type: BOOLEAN
+    reportSoftwareStats:
+      type: BOOLEAN
+    shutdown:
+      type: BOOLEAN
+    softwareStatsReportTime:
+      max_size: 5
+      type: STRING
+    state:
+      type: GAUGE
+    systemRelease:
+      max_size: 45
+      type: STRING
+    systemUname:
+      max_size: 97
+      type: STRING
+    time:
+      max_size: 24
+      type: STRING
+    userID:
+      type: NUMERIC
+    version:
+      max_size: 62
+      type: STRING
+  ManagedSSLChannel:
+    IPAddress:
+      max_size: 9
+      type: STRING
+    active:
+      type: BOOLEAN
+    adpTraceRouteInfo:
+      type: BOOLEAN
+    applicationKey:
+      type: STRING
+    applicationName:
+      type: STRING
+    bufferPercentage:
+      type: GAUGE
+    bytesReceived:
+      type: COUNTER
+    bytesReceivedRate:
+      type: GAUGE
+    bytesSent:
+      type: COUNTER
+    bytesSentRate:
+      type: GAUGE
+    cascadingComponent:
+      type: BOOLEAN
+    channel:
+      neg_vals: true
+      type: NUMERIC
+    clientToServerPings:
+      type: BOOLEAN
+    compressPercentage:
+      type: GAUGE
+    compressionType:
+      neg_vals: true
+      type: NUMERIC
+    connectionType:
+      max_size: 6
+      type: STRING
+    curThrottleIntBytesRcvd:
+      type: NUMERIC
+    curThrottleIntMsgsRcvd:
+      type: NUMERIC
+    currentBufferUsage:
+      type: NUMERIC
+    dacsDomain:
+      type: STRING
+    dacsPermDenied:
+      type: COUNTER
+    decompressPercentage:
+      type: GAUGE
+    dictionaryMsgs:
+      type: COUNTER
+    disconnectChannel:
+      type: BOOLEAN
+    disconnectTime:
+      max_size: 24
+      type: STRING
+    dumpIncoming:
+      type: BOOLEAN
+    dumpOutgoing:
+      type: BOOLEAN
+    faults:
+      type: COUNTER
+    fdChanges:
+      type: COUNTER
+    genericDisconnect:
+      type: COUNTER
+    guaranteedOutputBuffers:
+      type: NUMERIC
+    highThresholdHits:
+      type: COUNTER
+    hostname:
+      max_size: 9
+      type: STRING
+    lastIntervalPeakImageRetrievalTime:
+      type: NUMERIC
+    lastOutageDuration:
+      max_size: 10
+      type: STRING
+    lastTimeThrottleEnabled:
+      type: STRING
+    loginInstance:
+      type: STRING
+    loginMsgs:
+      type: COUNTER
+    maxIncomingBytesPerSecond:
+      type: NUMERIC_CONFIG
+    maxIncomingMessagesPerSecond:
+      type: NUMERIC_CONFIG
+    maxOutputBuffers:
+      type: NUMERIC
+    minCompressionThreshold:
+      neg_vals: true
+      type: NUMERIC
+    mountsAttempted:
+      type: COUNTER
+    mountsFailed:
+      type: COUNTER
+    mountsSucceeded:
+      type: COUNTER
+    msgKeyMismatch:
+      type: COUNTER
+    msgsReceived:
+      type: COUNTER
+    msgsReceivedRate:
+      type: GAUGE
+    msgsSent:
+      type: COUNTER
+    msgsSentRate:
+      type: GAUGE
+    name:
+      type: STRING
+    numInputBuffers:
+      type: NUMERIC
+    numThrottledOnMsgRate:
+      type: COUNTER
+    numThrottledOnSizeRate:
+      type: COUNTER
+    outputThresholdBreach:
+      type: NUMERIC
+    outputThresholdOK:
+      type: NUMERIC
+    overflows:
+      type: COUNTER
+    peakBufferUsage:
+      type: NUMERIC
+    peakDisconnectTime:
+      max_size: 10
+      type: STRING
+    peakImageRetrievalTime:
+      type: NUMERIC
+    peakImageRetrievalTimeItem:
+      max_size: 33
+      type: STRING
+    pendingBytesIn:
+      type: NUMERIC
+    pendingBytesOut:
+      type: NUMERIC
+    pendout:
+      type: NUMERIC
+    pingTimeout:
+      neg_vals: true
+      type: NUMERIC
+    pingsReceived:
+      type: COUNTER
+    pingsSent:
+      type: COUNTER
+    portNumber:
+      type: NUMERIC
+    position:
+      type: STRING
+    protocol:
+      max_size: 4
+      type: STRING
+    readBias:
+      type: NUMERIC
+    recoveries:
+      type: COUNTER
+    recoveryInterval:
+      type: NUMERIC
+    resetPeakImageRetrieval:
+      type: BOOLEAN
+    roundTripLatency:
+      type: GAUGE
+    routeName:
+      max_size: 10
+      type: STRING
+    serverToClientPings:
+      type: BOOLEAN
+    sessionAccepted:
+      type: COUNTER
+    sessionDisconnect:
+      type: COUNTER
+    sessionDismount:
+      type: COUNTER
+    sessionNumber:
+      type: NUMERIC
+    sessionReconnect:
+      type: COUNTER
+    sessionRejected:
+      type: COUNTER
+    sourceItems:
+      type: NUMERIC
+    sourceMsgs:
+      type: COUNTER
+    streamIdMismatch:
+      type: COUNTER
+    tcpNoDelay:
+      type: BOOLEAN
+    tcpRecvBufSize:
+      neg_vals: true
+      type: NUMERIC
+    tcpRetransIn:
+      type: NUMERIC
+    tcpRetransOut:
+      type: NUMERIC
+    tcpSegsIn:
+      type: NUMERIC
+    tcpSegsInRate:
+      type: GAUGE
+    tcpSegsOut:
+      type: NUMERIC
+    tcpSegsOutRate:
+      type: GAUGE
+    tcpSendBufSize:
+      neg_vals: true
+      type: NUMERIC
+    time:
+      max_size: 24
+      type: STRING
+    totalConnectTime:
+      max_size: 10
+      type: STRING
+    totalDisconnectTime:
+      max_size: 10
+      type: STRING
+    uncompBytesReceived:
+      type: COUNTER
+    uncompBytesReceivedRate:
+      type: GAUGE
+    uncompBytesSent:
+      type: COUNTER
+    uncompBytesSentRate:
+      type: GAUGE
+    unknownStreamIds:
+      type: COUNTER
+    version:
+      max_size: 35
+      type: STRING
+  ManagedSSLDistribution:
+    301MountsAccepted:
+      type: COUNTER
+    301MountsRejected:
+      type: COUNTER
+    32MountsAccepted:
+      type: COUNTER
+    32MountsRejected:
+      type: COUNTER
+    40MountsAccepted:
+      type: COUNTER
+    40MountsRejected:
+      type: COUNTER
+    45MountsAccepted:
+      type: COUNTER
+    45MountsRejected:
+      type: COUNTER
+    appTrace:
+      type: BOOLEAN
+    badMount:
+      type: COUNTER
+    disconnect:
+      type: COUNTER
+    dumpIncoming:
+      type: BOOLEAN
+    dumpOutgoing:
+      type: BOOLEAN
+    eventTrace:
+      type: BOOLEAN
+    lostPing:
+      type: COUNTER
+    mountsAccepted:
+      type: COUNTER
+    mountsRejected:
+      type: COUNTER
+    rsslMountsAccepted:
+      type: COUNTER
+    rsslMountsRejected:
+      type: COUNTER
+    srcThrSyncEvents:
+      type: NUMERIC
+  NetRecSink:
+    changeState:
+      type: COUNTER
+    exists:
+      type: COUNTER
+    request:
+      type: COUNTER
+    response:
+      type: COUNTER
+    start:
+      type: COUNTER
+    state:
+      type: COUNTER
+    total:
+      type: COUNTER
+  NetRecSrc:
+    changeConfig:
+      type: COUNTER
+    changeState:
+      type: COUNTER
+    error:
+      type: COUNTER
+    exist:
+      type: COUNTER
+    info:
+      type: COUNTER
+    request:
+      type: COUNTER
+    response:
+      type: COUNTER
+    start:
+      type: COUNTER
+    state:
+      type: COUNTER
+    total:
+      type: COUNTER
+  NoDataCache:
+    dataTrace:
+      type: BOOLEAN
+    dataWarning:
+      type: BOOLEAN
+  ProxySSLSourceApplication:
+    appLoadLevel:
+      neg_vals: true
+      type: NUMERIC
+    appName:
+      max_size: 10
+      type: STRING
+    cacheType:
+      max_size: 11
+      type: STRING
+    caching:
+      type: BOOLEAN
+    criteriaName:
+      type: STRING
+    dacsAttributes:
+      type: STRING
+    dataType:
+      max_size: 9
+      type: STRING
+    forwardServerMode:
+      type: BOOLEAN
+    inserts:
+      type: BOOLEAN
+    instance:
+      max_size: 16
+      type: STRING
+    ipcHost:
+      max_size: 9
+      type: STRING
+    ipcPort:
+      max_size: 20
+      type: STRING
+    ipcRoute:
+      max_size: 10
+      type: STRING
+    ipcSession:
+      max_size: 13
+      type: STRING
+    openWindow:
+      type: NUMERIC_CONFIG
+    overflow:
+      type: BOOLEAN
+    permDataErrors:
+      type: NUMERIC
+    ping:
+      type: BOOLEAN
+    preemptionLocation:
+      max_size: 3
+      type: STRING
+    renamePermData:
+      type: BOOLEAN
+    serverQos:
+      max_size: 9
+      type: STRING
+    serviceName:
+      max_size: 10
+      type: STRING
+    sessionNumber:
+      type: NUMERIC
+    sslChannel:
+      neg_vals: true
+      type: NUMERIC
+    time:
+      max_size: 20
+      type: STRING
+    version:
+      max_size: 4
+      type: STRING
+  RESTServer:
+    acceptFailures:
+      type: COUNTER
+    bytesReceived:
+      type: COUNTER
+    bytesReceivedRate:
+      type: GAUGE
+    bytesSent:
+      type: COUNTER
+    bytesSentRate:
+      type: GAUGE
+    chainBufferUsage:
+      type: NUMERIC
+    clientDisconnects:
+      type: COUNTER
+    clientToServerPings:
+      type: BOOLEAN
+    compressPercentage:
+      type: GAUGE
+    compressionType:
+      type: NUMERIC
+    connectionType:
+      type: NUMERIC
+    connectionsAvailable:
+      type: GAUGE
+    connectionsEnabled:
+      type: BOOLEAN
+    connectionsUsed:
+      type: GAUGE
+    decompressPercentage:
+      type: GAUGE
+    dumpIncoming:
+      type: BOOLEAN
+    dumpOutgoing:
+      type: BOOLEAN
+    enableAuditLog:
+      type: BOOLEAN
+    enableManageabilityResources:
+      type: BOOLEAN
+    enablePort:
+      type: BOOLEAN
+    enableSnapshotServer:
+      type: BOOLEAN
+    errors:
+      type: COUNTER
+    fileDescriptor:
+      type: NUMERIC
+    flushInterval:
+      type: NUMERIC
+    forceCompression:
+      type: BOOLEAN
+    freeChainBuffers:
+      type: NUMERIC
+    guaranteedOutputBuffers:
+      type: NUMERIC
+    initTimeouts:
+      type: COUNTER
+    interfaceName:
+      max_size: 10
+      type: STRING
+    lastConnectTime:
+      max_size: 24
+      type: STRING
+    lastDisconnectTime:
+      max_size: 24
+      type: STRING
+    maxChainBuffers:
+      type: NUMERIC
+    maxFragmentSize:
+      type: NUMERIC
+    maxMounts:
+      type: NUMERIC_CONFIG
+    maxOutputBuffers:
+      type: NUMERIC_CONFIG
+    minPingTimeout:
+      type: NUMERIC
+    mountNaks:
+      type: COUNTER
+    numInputBuffers:
+      type: NUMERIC
+    outputThresholdBreach:
+      type: NUMERIC
+    outputThresholdOK:
+      type: NUMERIC
+    overflows:
+      type: COUNTER
+    packetsReceived:
+      type: COUNTER
+    packetsReceivedRate:
+      type: GAUGE
+    packetsSent:
+      type: COUNTER
+    packetsSentRate:
+      type: GAUGE
+    pingTimeout:
+      type: NUMERIC
+    poolSize:
+      type: NUMERIC
+    poolSizePeakUsed:
+      type: NUMERIC
+    poolSizeUsed:
+      type: NUMERIC
+    portName:
+      max_size: 24
+      type: STRING
+    portNumber:
+      type: NUMERIC
+    readBias:
+      type: NUMERIC
+    removeAllSessions:
+      type: BOOLEAN
+    requestTimeout:
+      type: NUMERIC
+    serverDisconnects:
+      type: COUNTER
+    serverToClientPings:
+      type: BOOLEAN
+    tcpNoDelay:
+      type: BOOLEAN
+    tcpRecvBufSize:
+      type: NUMERIC
+    tcpSendBufSize:
+      type: NUMERIC
+    timedWrites:
+      type: BOOLEAN
+    zlibCompressionLevel:
+      type: NUMERIC
+  RRMPParsingError:
+    logParsingErrors:
+      type: BOOLEAN_CONFIG
+    logUnknownOpcodes:
+      type: BOOLEAN_CONFIG
+    num6ParsingErrors:
+      type: COUNTER
+    num6UnknownOpcodes:
+      type: COUNTER
+  RRMPSourceConsumer:
+    congestion:
+      type: BOOLEAN
+    containers:
+      type: NUMERIC_CONFIG
+    enableLoopPrevention:
+      type: BOOLEAN
+    enableMFTCounter:
+      type: BOOLEAN
+    hashTableSize:
+      type: NUMERIC
+    hotStandbyFailoverPace:
+      type: NUMERIC_CONFIG
+    microsFlushCounter:
+      type: COUNTER
+    microsFlushInterval:
+      type: NUMERIC_CONFIG
+    sinkCleanupPace:
+      type: NUMERIC_CONFIG
+    sinkRequestsPerInvocation:
+      type: NUMERIC_CONFIG
+  RRMPTrafficMonitor:
+    clientCount:
+      type: NUMERIC
+    maxRRMPMsgRate:
+      type: NUMERIC_CONFIG
+    rrmpMsgRate:
+      type: NUMERIC
+    rrmpMsgsSent:
+      type: NUMERIC
+    xoff:
+      type: BOOLEAN
+  RTRManagedServer: {}
+  RTRManagedService:
+    cacheRepublish:
+      type: BOOLEAN
+    clearScreenOnComFault:
+      type: BOOLEAN
+    clearScreenOnPreemption:
+      type: BOOLEAN
+    dumpAccessLockFileName:
+      max_size: 24
+      type: STRING
+    dumpAuditUserInfoFileName:
+      max_size: 27
+      type: STRING
+    dumpCacheInputFile:
+      type: STRING
+    simulateOverflow:
+      type: BOOLEAN
+    suspend:
+      type: BOOLEAN
+  SSLDispatcher:
+    addRoute:
+      type: STRING
+    dumpIncoming:
+      type: BOOLEAN
+    dumpOutgoing:
+      type: BOOLEAN
+    enableAuthRestLog:
+      type: BOOLEAN
+    enableNIPServer:
+      type: BOOLEAN
+    reloadRouteList:
+      type: BOOLEAN
+    removeRoute:
+      type: STRING
+    sourceItemHashTableSize:
+      type: NUMERIC
+    sourceItems:
+      type: NUMERIC
+    tokenReissueRatio:
+      max_size: 4
+      type: STRING
+  SSLFidDatabase:
+    enumDictId:
+      type: NUMERIC
+    enumDictName:
+      max_size: 7
+      type: STRING
+    enumDictType:
+      type: NUMERIC
+    enumDictVersion:
+      max_size: 5
+      type: STRING_CONFIG
+    enumTypeFile:
+      max_size: 40
+      type: STRING_CONFIG
+    fieldDictFile:
+      max_size: 46
+      type: STRING_CONFIG
+    fieldDictId:
+      type: NUMERIC
+    fieldDictName:
+      max_size: 6
+      type: STRING
+    fieldDictType:
+      type: NUMERIC
+    fieldDictVersion:
+      max_size: 7
+      type: STRING_CONFIG
+    preloadTemplateFile:
+      type: STRING_CONFIG
+    reloadCount:
+      type: COUNTER
+  SSLMsgsAppToSrc:
+    broadcast:
+      type: COUNTER
+    close:
+      type: COUNTER
+    criteriaAck:
+      type: COUNTER
+    criteriaAdd:
+      type: COUNTER
+    criteriaClose:
+      type: COUNTER
+    criteriaDelete:
+      type: COUNTER
+    criteriaInfo:
+      type: COUNTER
+    criteriaNak:
+      type: COUNTER
+    generic:
+      type: COUNTER
+    genericDropped:
+      type: COUNTER
+    globalStatus:
+      type: COUNTER
+    groupChange:
+      type: COUNTER
+    groupMerge:
+      type: COUNTER
+    groupStatus:
+      type: COUNTER
+    image:
+      type: COUNTER
+    insertAck:
+      type: COUNTER
+    insertNak:
+      type: COUNTER
+    load:
+      type: COUNTER
+    lock:
+      type: COUNTER
+    obsolete:
+      type: COUNTER
+    openWindow:
+      type: COUNTER
+    pingAck:
+      type: COUNTER
+    ready:
+      type: COUNTER
+    refresh:
+      type: COUNTER
+    refreshRate:
+      type: NUMERIC
+    rename:
+      type: COUNTER
+    status:
+      type: COUNTER
+    totalImageLength:
+      type: COUNTER
+    totalInsertAckLength:
+      type: COUNTER
+    totalInsertNakLength:
+      type: COUNTER
+    totalUpdateLength:
+      type: COUNTER
+    unknown:
+      type: COUNTER
+    update:
+      type: COUNTER
+    updateRate:
+      type: NUMERIC
+  SSLMsgsSrcToApp:
+    active:
+      type: COUNTER
+    close:
+      type: COUNTER
+    closeNak:
+      type: COUNTER
+    criteriaClose:
+      type: COUNTER
+    criteriaOpen:
+      type: COUNTER
+    generic:
+      type: COUNTER
+    genericDropped:
+      type: COUNTER
+    haltUpdates:
+      type: COUNTER
+    imageNak:
+      type: COUNTER
+    insert:
+      type: COUNTER
+    insertByteRate:
+      type: NUMERIC
+    insertLatency:
+      type: NUMERIC
+    insertRate:
+      type: NUMERIC
+    open:
+      type: COUNTER
+    openNak:
+      type: COUNTER
+    overflows:
+      type: COUNTER
+    ping:
+      type: COUNTER
+    priority:
+      type: COUNTER
+    renameNak:
+      type: COUNTER
+    standby:
+      type: COUNTER
+    statusNak:
+      type: COUNTER
+    totalInsertLength:
+      type: COUNTER
+    updateNak:
+      type: COUNTER
+  SSLRoute:
+    activeSessions:
+      type: NUMERIC
+    backupServersActive:
+      type: NUMERIC
+    backupServersConfigured:
+      type: NUMERIC
+    dumpIncoming:
+      type: BOOLEAN
+    dumpOutgoing:
+      type: BOOLEAN
+    dynamicDismounts:
+      type: COUNTER
+    dynamicMounts:
+      type: COUNTER
+    gatewayServersActive:
+      type: NUMERIC
+    gatewayServersConfigured:
+      type: NUMERIC
+    name:
+      max_size: 10
+      type: STRING
+    routeEnabled:
+      type: BOOLEAN
+    sessionNeeded:
+      type: BOOLEAN
+  SSLRouteConfig:
+    acceptAllServices:
+      type: BOOLEAN
+    allowSuspectData:
+      type: BOOLEAN
+    authenticationMethod:
+      max_size: 4
+      type: STRING
+    blockedServiceList:
+      type: STRING
+    compressionType:
+      type: NUMERIC
+    connectionType:
+      max_size: 6
+      type: STRING
+    disableDataConversion:
+      type: BOOLEAN
+    dynamicMount:
+      type: BOOLEAN
+    enableOnInboundThreads:
+      type: BOOLEAN
+    enablePreferredHost:
+      type: BOOLEAN
+    hostList:
+      max_size: 9
+      type: STRING
+    location:
+      type: STRING
+    maxIncomingUnconfirmedMessages:
+      type: NUMERIC
+    maxOutgoingUnconfirmedMessages:
+      type: NUMERIC
+    minCompressionThreshold:
+      type: NUMERIC
+    numExtendedLines:
+      type: NUMERIC
+    numIpcInputBuffers:
+      type: NUMERIC
+    numIpcOutputBuffers:
+      type: NUMERIC
+    numSessions:
+      type: NUMERIC
+    persistentMount:
+      type: BOOLEAN
+    pingTimeout:
+      type: NUMERIC
+    port:
+      max_size: 20
+      type: STRING
+    portNumber:
+      type: NUMERIC
+    protocol:
+      max_size: 4
+      type: STRING
+    proxyHost:
+      type: STRING
+    proxyPort:
+      type: STRING
+    recoveryBySSLLib:
+      type: BOOLEAN
+    recoveryInterval:
+      type: NUMERIC
+    resetHostListOnReconnection:
+      type: BOOLEAN
+    roundTripLatency:
+      type: BOOLEAN
+    serviceDiscovery:
+      type: BOOLEAN
+    serviceList:
+      type: STRING
+    singleOpen:
+      type: BOOLEAN
+    synchronizeHostList:
+      type: BOOLEAN
+    tcpNoDelay:
+      type: BOOLEAN
+    tcpRecvBufSize:
+      type: NUMERIC
+    tcpSendBufSize:
+      type: NUMERIC
+    udpRecvBufSize:
+      type: NUMERIC
+    userName:
+      max_size: 12
+      type: STRING
+  SSLServerAttributes:
+    appServiceName:
+      max_size: 10
+      type: STRING
+    isBackup:
+      type: BOOLEAN
+    isEnabled:
+      type: BOOLEAN
+    isNeeded:
+      type: BOOLEAN
+    mdhServiceName:
+      max_size: 10
+      type: STRING
+    routeName:
+      max_size: 10
+      type: STRING
+  SSLServiceGenerator:
+    contribFileToReload:
+      type: STRING
+    errContribReloads:
+      type: COUNTER
+    globalCacheListFullCount:
+      type: COUNTER
+    globalItems:
+      type: NUMERIC
+    hashTableSize:
+      type: NUMERIC
+    masterFidList:
+      type: STRING_CONFIG
+    maxSecondLevelElementSize:
+      type: NUMERIC
+    okContribReloads:
+      type: COUNTER
+  Server.SrcDist:
+    cacheDownload:
+      max_size: 10
+      type: STRING
+    consumerSideRestartTimeSec:
+      type: NUMERIC_CONFIG
+    itemsDownloaded:
+      type: NUMERIC
+    maxNumDLMsg:
+      type: NUMERIC_CONFIG
+    numIntervalsForDLAck:
+      type: NUMERIC_CONFIG
+    numItemsInDLMsg:
+      type: NUMERIC_CONFIG
+    sourceDownload:
+      max_size: 10
+      type: STRING
+  ServerAttributes:
+    activeAppCriteria:
+      type: NUMERIC
+    ageUnwatchedItemTime:
+      type: NUMERIC
+    appCriteriaAgeTime:
+      type: NUMERIC_CONFIG
+    appCriteriaStreams:
+      type: NUMERIC
+    appProvidingLoad:
+      type: BOOLEAN
+    cacheCriteriaStreams:
+      type: NUMERIC
+    cacheType:
+      max_size: 11
+      type: STRING
+    consumerShutdownInProgress:
+      type: BOOLEAN
+    consumerStartupScheduled:
+      type: BOOLEAN
+    consumers:
+      type: NUMERIC
+    cost:
+      type: NUMERIC
+    dataType:
+      max_size: 9
+      type: STRING
+    discourageRequestsOnOutage:
+      type: BOOLEAN
+    dismountOnOutage:
+      type: BOOLEAN
+    dismountOnRoundTripLatency:
+      type: BOOLEAN
+    dismountedDueToRoundTripLatency:
+      type: BOOLEAN
+    imageRetrievalTimeThreshold:
+      type: NUMERIC_CONFIG
+    imageRetrievalTimeThresholdLog:
+      type: BOOLEAN
+    includeUnwatchedItemsInLoad:
+      type: BOOLEAN
+    load:
+      type: GAUGE
+    lockItemThreshold:
+      type: NUMERIC
+    lowPriThreadExecs:
+      type: COUNTER
+    maxCache:
+      type: NUMERIC
+    maxLoadLevel:
+      type: NUMERIC
+    multiLevelAggregation:
+      type: BOOLEAN
+    multipleQosEnabled:
+      type: BOOLEAN
+    name:
+      max_size: 10
+      type: STRING
+    openWindow:
+      type: NUMERIC
+    operatingMode:
+      type: STRING
+    outageHandlingActive:
+      type: BOOLEAN
+    overflow:
+      type: BOOLEAN
+    overflows:
+      type: NUMERIC
+    overrideFeatureQos:
+      type: BOOLEAN
+    overrideProviderQos:
+      type: BOOLEAN
+    rebalanceNumItems:
+      type: NUMERIC_CONFIG
+    rebalanceRate:
+      type: NUMERIC_CONFIG
+    removeBIRImages:
+      type: BOOLEAN
+    removeUnwatchedItems:
+      type: BOOLEAN
+    routeName:
+      max_size: 10
+      type: STRING
+    serverCapabilities:
+      max_size: 7
+      type: STRING
+    serverID:
+      type: NUMERIC
+    serverPartitions:
+      type: STRING
+    serverPartitionsNegation:
+      type: STRING
+    serverQos:
+      max_size: 23
+      type: STRING
+    serviceID:
+      type: NUMERIC
+    shutdownInProgress:
+      type: BOOLEAN
+    shutdownPending:
+      type: BOOLEAN
+    supportsPosting:
+      type: BOOLEAN
+  ServerDataStream:
+    activeOkay:
+      type: NUMERIC
+    activeStale:
+      type: NUMERIC
+    agedOut:
+      type: COUNTER
+    agedOutNakItems:
+      type: COUNTER
+    broadcast:
+      type: COUNTER
+    cacheDataErrors:
+      type: COUNTER
+    cacheDataWarnings:
+      type: COUNTER
+    cacheListFullCount:
+      type: COUNTER
+    cached:
+      type: NUMERIC
+    closeItem:
+      type: STRING
+    closeItemFile:
+      type: STRING
+    drops:
+      type: COUNTER
+    dump:
+      type: BOOLEAN
+    groupMerge:
+      type: COUNTER
+    highPriorityPendOut:
+      type: GAUGE
+    hostRequests:
+      type: COUNTER
+    images:
+      type: COUNTER
+    items:
+      type: NUMERIC
+    itemsDomain6:
+      type: GAUGE
+    itemsDomain7:
+      type: GAUGE
+    itemsDomain8:
+      type: GAUGE
+    itemsDomain9:
+      type: GAUGE
+    lastIntervalPeakImageRetrievalTime:
+      type: NUMERIC
+    locks:
+      type: COUNTER
+    lowPriorityPendOut:
+      type: GAUGE
+    mediumPriorityPendOut:
+      type: GAUGE
+    naked:
+      type: NUMERIC
+    normalRequests:
+      type: COUNTER
+    numGroupEvents:
+      type: GAUGE
+    opens:
+      type: COUNTER
+    peakCacheListSize:
+      type: NUMERIC
+    peakImageRetrievalTime:
+      type: NUMERIC
+    pending:
+      type: NUMERIC
+    pendingAgeOut:
+      type: NUMERIC
+    pendingCacheRetrieval:
+      type: NUMERIC
+    pendingClose:
+      type: NUMERIC
+    pendingImageComp:
+      type: NUMERIC
+    pendingOut:
+      type: GAUGE
+    pendingOutTimeouts:
+      type: COUNTER
+    pendingPriority:
+      type: NUMERIC
+    percentCacheListUsed:
+      type: NUMERIC
+    permissionDenial:
+      type: COUNTER
+    preemptionCloses:
+      type: COUNTER
+    privateOkay:
+      type: NUMERIC
+    privateStale:
+      type: NUMERIC
+    queryItemInFile:
+      type: STRING
+    queryItemOutFile:
+      max_size: 20
+      type: STRING
+    recoverableCloses:
+      type: COUNTER
+    refreshItem:
+      type: STRING
+    removeItem:
+      type: STRING
+    removeItemFile:
+      type: STRING
+    snapRequests:
+      type: COUNTER
+    status:
+      type: COUNTER
+    totalItemsClosed:
+      type: COUNTER
+    totalItemsClosedErrors:
+      type: COUNTER
+    totalItemsClosedNoAction:
+      type: COUNTER
+    totalItemsRefreshed:
+      type: COUNTER
+    totalItemsRefreshedErrors:
+      type: COUNTER
+    totalItemsRefreshedNoAction:
+      type: COUNTER
+    totalItemsRemoved:
+      type: COUNTER
+    totalItemsRemovedErrors:
+      type: COUNTER
+    totalItemsRemovedNoAction:
+      type: COUNTER
+    totalItemsSaved:
+      type: COUNTER
+    unsolicitedImages:
+      type: COUNTER
+    unsolicitedStatus:
+      type: COUNTER
+    updates:
+      type: COUNTER
+  ServerInsert:
+    acknowledged:
+      type: COUNTER
+    failed:
+      type: COUNTER
+    pending:
+      type: GAUGE
+    pendingOut:
+      type: GAUGE
+    total:
+      type: COUNTER
+  ServerNetRecog:
+    dupSinkIds:
+      type: COUNTER
+    sinks:
+      type: NUMERIC
+  ServerRecovStream.SrcDist:
+    OldUpdatesFiltered:
+      type: NUMERIC
+    eventDiscardedNoSeqNum:
+      type: NUMERIC
+    maxRecoveryBuffer:
+      type: NUMERIC_CONFIG
+    recovError:
+      type: NUMERIC
+    recovFailExceedRetryLimit:
+      type: NUMERIC
+    recovFailProviderTimeout:
+      type: NUMERIC
+    recovNotSupported:
+      type: NUMERIC
+    recovOutOfBuffer:
+      type: NUMERIC
+    recovPendOutCurrent:
+      type: NUMERIC
+    recovPendOutTotal:
+      type: NUMERIC
+    recovPendProviderCurrent:
+      type: NUMERIC
+    recovPendProviderTotal:
+      type: NUMERIC
+    recovPendingCurrent:
+      type: NUMERIC
+    recovPendingTotal:
+      type: NUMERIC
+    recovStagingAtPO:
+      type: NUMERIC
+    recovStagingCurrent:
+      type: NUMERIC
+    recovStagingNotPO:
+      type: NUMERIC
+    recovStagingTotal:
+      type: NUMERIC
+    recovTotal:
+      type: NUMERIC
+    recoveryDelayTime:
+      type: NUMERIC_CONFIG
+    recoveryDomains:
+      max_size: 1
+      type: STRING_CONFIG
+    recoveryEnabled:
+      type: BOOLEAN_CONFIG
+    recoveryProviderTimeout:
+      type: NUMERIC_CONFIG
+    recoveryRequestWindow:
+      type: NUMERIC_CONFIG
+    recoveryRetryLimit:
+      type: NUMERIC_CONFIG
+    reorderBufCount:
+      type: NUMERIC
+    reorderBufTotal:
+      type: NUMERIC
+    reorderShuffleTolerance:
+      type: NUMERIC_CONFIG
+    reorderTimeout:
+      type: NUMERIC_CONFIG
+    repeatRecovery:
+      type: NUMERIC
+    repeatStaging:
+      type: NUMERIC
+    totalNumberOfDuplicateMsgs:
+      type: NUMERIC
+    totalNumberOfGaps:
+      type: NUMERIC
+    totalNumberOfLostMsgs:
+      type: NUMERIC
+    unsolRespNoRecov:
+      type: NUMERIC
+  ServiceAttributes:
+    ageUnwatchedItemTime:
+      type: NUMERIC
+    aggregationInterval:
+      max_size: 1
+      type: STRING_CONFIG
+    aggregationStyle:
+      type: STRING
+    cacheLocation:
+      max_size: 6
+      type: STRING
+    cacheType:
+      max_size: 11
+      type: STRING
+    consumerService:
+      max_size: 4
+      type: STRING
+    consumers:
+      type: NUMERIC
+    dataType:
+      max_size: 9
+      type: STRING
+    datafeedInterruptionDetectionEnabled:
+      type: BOOLEAN
+    delayEnabled:
+      type: BOOLEAN
+    detectionDuration:
+      type: NUMERIC
+    detectionTrafficWindow:
+      type: NUMERIC
+    disableAggregationItemList:
+      type: STRING_CONFIG
+    disconnectServiceDown:
+      type: BOOLEAN
+    dump:
+      type: BOOLEAN
+    dumpAccessLock:
+      type: BOOLEAN
+    dumpAllItemsLockInfo:
+      type: BOOLEAN
+    dumpAuditUserInfo:
+      type: BOOLEAN
+    dumpTemplateDatabase:
+      type: BOOLEAN
+    dumpToPersistence:
+      type: BOOLEAN
+    enableSourceBlending:
+      type: BOOLEAN
+    fieldFiltering:
+      type: BOOLEAN
+    lockedItemThreshold:
+      type: NUMERIC
+    logGroupStatus:
+      type: BOOLEAN
+    maxCache:
+      type: NUMERIC
+    minimumUpdateRate:
+      type: NUMERIC
+    multiLevelAggregation:
+      type: BOOLEAN
+    multipleQosEnabled:
+      type: BOOLEAN
+    nakListAgeOutTime:
+      type: NUMERIC
+    nakListMaxItems:
+      type: NUMERIC
+    name:
+      max_size: 10
+      type: STRING
+    openWindow:
+      type: NUMERIC
+    originalServiceEnabled:
+      type: BOOLEAN
+    pendingToSrcAppTimeout:
+      type: NUMERIC
+    persistentCacheDir:
+      type: STRING
+    persistentCacheOn:
+      type: BOOLEAN
+    publisherAugmentation:
+      type: BOOLEAN
+    reloadContribData:
+      type: BOOLEAN
+    removeBIRImages:
+      type: BOOLEAN
+    removeUnwatchedItems:
+      type: BOOLEAN
+    resetPeakImageRetrieval:
+      type: BOOLEAN
+    servers:
+      type: NUMERIC
+    serviceID:
+      type: NUMERIC
+    snapshot:
+      type: BOOLEAN
+    supportPauseResume:
+      type: BOOLEAN
+    supportWarmStandby:
+      type: BOOLEAN
+    trafficManagement:
+      type: BOOLEAN
+    updateAggregation:
+      type: BOOLEAN
+    useServiceIdFromSrc:
+      type: BOOLEAN
+  ServiceAttributes.SrcDist:
+    auditTrace:
+      type: BOOLEAN_CONFIG
+    backlogTrace:
+      type: BOOLEAN_CONFIG
+    criteriaTrace:
+      type: BOOLEAN_CONFIG
+    downloadTrace:
+      type: BOOLEAN_CONFIG
+    errorTrace:
+      type: BOOLEAN_CONFIG
+    firstBroadcastBitmapImgHdr:
+      type: BOOLEAN_CONFIG
+    forwardPriority:
+      type: BOOLEAN_CONFIG
+    insertTimeout:
+      type: NUMERIC_CONFIG
+    insertTrace:
+      type: BOOLEAN_CONFIG
+    itemLevelTraceList:
+      type: STRING
+    itemTrace:
+      type: BOOLEAN_CONFIG
+    itemTraceAddFile:
+      type: STRING
+    itemTraceAddItem:
+      type: STRING
+    itemTraceCount:
+      type: NUMERIC
+    itemTraceRmvFile:
+      type: STRING
+    itemTraceRmvItem:
+      type: STRING
+    matchFailureTrace:
+      type: BOOLEAN_CONFIG
+    maxPendingOutInsert:
+      type: NUMERIC_CONFIG
+    networkFlushInterval:
+      type: NUMERIC_CONFIG
+    networkInsertRespFlushInterval:
+      type: NUMERIC_CONFIG
+    networkP2PFlushInterval:
+      type: NUMERIC_CONFIG
+    networkTrace:
+      type: BOOLEAN_CONFIG
+    nonRecoverablePolling:
+      type: BOOLEAN_CONFIG
+    poll:
+      type: BOOLEAN_CONFIG
+    preemptionThreshold:
+      type: NUMERIC_CONFIG
+    removeUnwatchedItems:
+      type: BOOLEAN_CONFIG
+    servers:
+      type: NUMERIC
+    serviceID:
+      type: NUMERIC
+    transportNum:
+      type: NUMERIC
+    updateTrace:
+      type: BOOLEAN_CONFIG
+    updateTraceAddFile:
+      type: STRING
+    updateTraceAddItem:
+      type: STRING
+    updateTraceCount:
+      type: NUMERIC
+    updateTraceRmvFile:
+      type: STRING
+    updateTraceRmvItem:
+      type: STRING
+    usePointToPointCont:
+      type: BOOLEAN_CONFIG
+    usePointToPointCriteria:
+      type: BOOLEAN_CONFIG
+    usePointToPointData:
+      type: BOOLEAN_CONFIG
+    usePointToPointResp:
+      type: BOOLEAN_CONFIG
+  ServiceDataStream:
+    activeOkay:
+      type: NUMERIC
+    activeStale:
+      type: NUMERIC
+    agedOutNakItems:
+      type: COUNTER
+    cached:
+      type: NUMERIC
+    conversionOverflows:
+      type: NUMERIC
+    items:
+      type: NUMERIC
+    lastIntervalPeakImageRetrievalTime:
+      type: NUMERIC
+    naked:
+      type: NUMERIC
+    numGroupEvents:
+      type: GAUGE
+    opens:
+      type: COUNTER
+    peakImageRetrievalTime:
+      type: NUMERIC
+    peakImageRetrievalTimeItem:
+      max_size: 22
+      type: STRING
+    pending:
+      type: NUMERIC
+    pendingOut:
+      type: GAUGE
+    permissionDenial:
+      type: COUNTER
+    preemptionCloses:
+      type: COUNTER
+    privateOkay:
+      type: NUMERIC
+    privateStale:
+      type: NUMERIC
+    recoverableCloses:
+      type: COUNTER
+    updateRate:
+      type: NUMERIC
+  ServiceInsert:
+    acknowledged:
+      type: COUNTER
+    failed:
+      type: COUNTER
+    pending:
+      type: GAUGE
+    pendingOut:
+      type: GAUGE
+    servers:
+      type: NUMERIC
+    total:
+      type: COUNTER
+  ShmemMOServerStats:
+    '# class descs':
+      type: NUMERIC
+    '# managed objs':
+      type: GAUGE
+    '# managed vars':
+      type: GAUGE
+    '# var descs':
+      type: NUMERIC
+    alc dynamic mem:
+      type: GAUGE
+    alc overhead mem:
+      type: NUMERIC
+    alc static mem:
+      type: NUMERIC
+    elements freed:
+      type: NUMERIC
+    elements in use:
+      type: NUMERIC
+    heartbeat:
+      type: NUMERIC
+    items activity:
+      type: GAUGE
+    items managed:
+      type: GAUGE
+    maxClients:
+      type: NUMERIC
+    numClients:
+      type: NUMERIC
+    outOfSharedMemory:
+      type: BOOLEAN
+    partitionAvail:
+      type: NUMERIC
+    partitionSize:
+      type: NUMERIC
+    partitionUsed:
+      type: NUMERIC
+    pid:
+      type: NUMERIC
+    semaphoreId:
+      type: NUMERIC
+    semaphoreKey:
+      max_size: 4
+      type: STRING
+    time:
+      type: NUMERIC
+  SideLoadAttributes:
+    avgBytesPerMsg:
+      type: NUMERIC
+    clearRespBufOverflow:
+      type: NUMERIC
+    freeRequestMsgQCount:
+      type: NUMERIC
+    freeRequestMsgQCountSsl:
+      type: NUMERIC
+    freeResponseMsgQCount:
+      type: NUMERIC
+    freeRvInboundMsgQCount:
+      type: NUMERIC
+    ibAddCacheAppRecv:
+      type: NUMERIC
+    ibAddCacheAppSent:
+      type: NUMERIC
+    ibAddRouteRecv:
+      type: NUMERIC
+    ibAddRouteSent:
+      type: NUMERIC
+    ibAppOverflowRecv:
+      type: NUMERIC
+    ibAppOverflowSent:
+      type: NUMERIC
+    ibBgsNewChanRecv:
+      type: NUMERIC
+    ibBgsNewChanSent:
+      type: NUMERIC
+    ibBgsStartAppRecv:
+      type: NUMERIC
+    ibBgsStartAppSent:
+      type: NUMERIC
+    ibBgsStopAppRecv:
+      type: NUMERIC
+    ibBgsStopAppSent:
+      type: NUMERIC
+    ibChanDisconnRecv:
+      type: NUMERIC
+    ibChanDisconnSent:
+      type: NUMERIC
+    ibChannelMsgRecv:
+      type: NUMERIC
+    ibChannelMsgSent:
+      type: NUMERIC
+    ibChannelResetMsgRecv:
+      type: NUMERIC
+    ibChannelResetMsgSent:
+      type: NUMERIC
+    ibClsc40AppRdyRecv:
+      type: NUMERIC
+    ibClsc40AppRdySent:
+      type: NUMERIC
+    ibClsc40DelAppRecv:
+      type: NUMERIC
+    ibClsc40DelAppSent:
+      type: NUMERIC
+    ibClsc40MsgRecv:
+      type: NUMERIC
+    ibClsc40MsgSent:
+      type: NUMERIC
+    ibClsc40NewAppRecv:
+      type: NUMERIC
+    ibClsc40NewAppSent:
+      type: NUMERIC
+    ibClscAppNotFound:
+      type: NUMERIC
+    ibDecodeError:
+      type: NUMERIC
+    ibDelChanRecv:
+      type: NUMERIC
+    ibDelChanSent:
+      type: NUMERIC
+    ibDynamicMountMsgRecv:
+      type: NUMERIC
+    ibDynamicMountMsgSent:
+      type: NUMERIC
+    ibFailbackHBRecv:
+      type: NUMERIC
+    ibFailbackHBSent:
+      type: NUMERIC
+    ibGlobalStatusRecv:
+      type: NUMERIC
+    ibGlobalStatusSent:
+      type: NUMERIC
+    ibMvSettingRecv:
+      type: NUMERIC
+    ibMvSettingSent:
+      type: NUMERIC
+    ibNCIListRecv:
+      type: NUMERIC
+    ibNCIListSent:
+      type: NUMERIC
+    ibNetRecogRecv:
+      type: NUMERIC
+    ibNetRecogSent:
+      type: NUMERIC
+    ibNewChanRecv:
+      type: NUMERIC
+    ibNewChanSent:
+      type: NUMERIC
+    ibRecvUnknownOpcode:
+      type: NUMERIC
+    ibRsslAppNotFound:
+      type: NUMERIC
+    ibRsslChnlNotFound:
+      type: NUMERIC
+    ibSendUnknownOpcode:
+      type: NUMERIC
+    ibShutdownServerRecv:
+      type: NUMERIC
+    ibShutdownServerSent:
+      type: NUMERIC
+    ibSrcDirRecv:
+      type: NUMERIC
+    ibSrcDirSent:
+      type: NUMERIC
+    ibSsl45AppNotFound:
+      type: NUMERIC
+    ibSsl45ChnlNotFound:
+      type: NUMERIC
+    ibSsl45MsgRecv:
+      type: NUMERIC
+    ibSsl45MsgSent:
+      type: NUMERIC
+    ibSsl45ServiceInfoRecv:
+      type: NUMERIC
+    ibSsl45ServiceInfoSent:
+      type: NUMERIC
+    ibStartConsRecv:
+      type: NUMERIC
+    ibStartConsSent:
+      type: NUMERIC
+    ibTotBytesRecv:
+      type: NUMERIC
+    ibTotBytesSent:
+      type: NUMERIC
+    ibTotMsgsRecv:
+      type: NUMERIC
+    ibTotMsgsSent:
+      type: NUMERIC
+    ibTrwfChnlNotFound:
+      type: NUMERIC
+    ibTrwfLoginRecv:
+      type: NUMERIC
+    ibTrwfLoginSent:
+      type: NUMERIC
+    ibTrwfMsgRecv:
+      type: NUMERIC
+    ibTrwfMsgSent:
+      type: NUMERIC
+    internalLinkListError:
+      type: NUMERIC
+    maxThreadBufferCeiling:
+      type: NUMERIC_CONFIG
+    maxThreadBufferCount:
+      type: NUMERIC_CONFIG
+    noFreeReqBuf:
+      type: NUMERIC
+    noFreeRespBuf:
+      type: NUMERIC
+    obChannelMsgRecv:
+      type: NUMERIC
+    obChannelMsgSent:
+      type: NUMERIC
+    obChannelResetMsgRecv:
+      type: NUMERIC
+    obChannelResetMsgSent:
+      type: NUMERIC
+    obClsc40CloseReqRecv:
+      type: NUMERIC
+    obClsc40CloseReqSent:
+      type: NUMERIC
+    obClsc40HaltUpdReqRecv:
+      type: NUMERIC
+    obClsc40HaltUpdReqSent:
+      type: NUMERIC
+    obClsc40ImgReqRecv:
+      type: NUMERIC
+    obClsc40ImgReqSent:
+      type: NUMERIC
+    obClsc40InsertReqRecv:
+      type: NUMERIC
+    obClsc40InsertReqSent:
+      type: NUMERIC
+    obClsc40PriReqRecv:
+      type: NUMERIC
+    obClsc40PriReqSent:
+      type: NUMERIC
+    obClscAppNotFound:
+      type: NUMERIC
+    obDictReloadRecv:
+      type: NUMERIC
+    obDictReloadSent:
+      type: NUMERIC
+    obDynamicMountRecv:
+      type: NUMERIC
+    obDynamicMountSent:
+      type: NUMERIC
+    obEncodeError:
+      type: NUMERIC
+    obLinkStatusMsgRecv:
+      type: NUMERIC
+    obLinkStatusMsgSent:
+      type: NUMERIC
+    obNetRecogRecv:
+      type: NUMERIC
+    obNetRecogSent:
+      type: NUMERIC
+    obRecvUnknownOpcode:
+      type: NUMERIC
+    obRsslAppNotFound:
+      type: NUMERIC
+    obRsslChnlNotFound:
+      type: NUMERIC
+    obRsslStatusMsgFailed:
+      type: NUMERIC
+    obRsslStatusMsgRecv:
+      type: NUMERIC
+    obRsslStatusMsgSent:
+      type: NUMERIC
+    obSendUnknownOpcode:
+      type: NUMERIC
+    obSsl45AppNotFound:
+      type: NUMERIC
+    obSsl45ChnlNotFound:
+      type: NUMERIC
+    obSsl45CloseReqRecv:
+      type: NUMERIC
+    obSsl45CloseReqSent:
+      type: NUMERIC
+    obSsl45ImgReqRecv:
+      type: NUMERIC
+    obSsl45ImgReqSent:
+      type: NUMERIC
+    obSsl45InsertReqRecv:
+      type: NUMERIC
+    obSsl45InsertReqSent:
+      type: NUMERIC
+    obSsl45PriReqRecv:
+      type: NUMERIC
+    obSsl45PriReqSent:
+      type: NUMERIC
+    obSsl45ServiceInfoRecv:
+      type: NUMERIC
+    obSsl45ServiceInfoSent:
+      type: NUMERIC
+    obStartConsRecv:
+      type: NUMERIC
+    obStartConsSent:
+      type: NUMERIC
+    obSyncEventRecv:
+      type: NUMERIC
+    obSyncEventSent:
+      type: NUMERIC
+    obTotBytesRecv:
+      type: NUMERIC
+    obTotBytesSent:
+      type: NUMERIC
+    obTotMsgsRecv:
+      type: NUMERIC
+    obTotMsgsSent:
+      type: NUMERIC
+    obTransErrorRecv:
+      type: NUMERIC
+    obTransErrorSent:
+      type: NUMERIC
+    obTrwfChnlNotFound:
+      type: NUMERIC
+    obTrwfMsgRecv:
+      type: NUMERIC
+    obTrwfMsgSent:
+      type: NUMERIC
+    setRespBufOverflow:
+      type: NUMERIC
+    totalAllocedRequestMsgCount:
+      type: NUMERIC
+    totalAllocedRequestMsgCountSsl:
+      type: NUMERIC
+    totalAllocedResponseMsgCount:
+      type: NUMERIC
+    totalAllocedRvInboundMsgCount:
+      type: NUMERIC
+  SourceItemDispatcher: {}
+  SourceRIPCServer:
+    bufferPoolSize:
+      type: NUMERIC
+    bufferPoolSizePeakUsed:
+      type: NUMERIC
+    bufferPoolSizeUsed:
+      type: NUMERIC
+    bytesReceived:
+      type: COUNTER
+    bytesReceivedRate:
+      type: GAUGE
+    bytesSent:
+      type: COUNTER
+    bytesSentRate:
+      type: GAUGE
+    clientToServerPings:
+      type: BOOLEAN
+    compressPercentage:
+      type: GAUGE
+    compressionType:
+      type: NUMERIC
+    connectionType:
+      type: NUMERIC
+    connectionsAvailable:
+      type: NUMERIC
+    connectionsEnabled:
+      type: BOOLEAN_CONFIG
+    connectionsUsed:
+      type: GAUGE
+    decompressPercentage:
+      type: GAUGE
+    dumpIncoming:
+      type: BOOLEAN
+    dumpOutgoing:
+      type: BOOLEAN
+    forceCompression:
+      type: BOOLEAN
+    guaranteedOutputBuffers:
+      type: NUMERIC
+    interfaceName:
+      max_size: 10
+      type: STRING
+    lastConnectTime:
+      type: STRING
+    lastDisconnectTime:
+      type: STRING
+    maxConnections:
+      type: NUMERIC_CONFIG
+    maxFragmentSize:
+      type: NUMERIC
+    maxOutputBuffers:
+      type: NUMERIC
+    minPingTimeout:
+      type: NUMERIC
+    msgsReceived:
+      type: COUNTER
+    msgsReceivedRate:
+      type: GAUGE
+    msgsSent:
+      type: COUNTER
+    msgsSentRate:
+      type: GAUGE
+    numInputBuffers:
+      type: NUMERIC
+    overflows:
+      type: COUNTER
+    pingTimeout:
+      type: NUMERIC
+    portName:
+      max_size: 24
+      type: STRING
+    portNumber:
+      neg_vals: true
+      type: NUMERIC
+    reusePort:
+      type: BOOLEAN
+    serverEnabled:
+      type: BOOLEAN_CONFIG
+    serverToClientPings:
+      type: BOOLEAN
+    socketId:
+      neg_vals: true
+      type: NUMERIC
+    tcpNoDelay:
+      type: BOOLEAN
+    zlibCompressionLevel:
+      type: NUMERIC
+  SrcDistProdSrvcDbg:
+    cacheTrace:
+      type: BOOLEAN
+    dataErrorLog:
+      type: BOOLEAN
+    dataErrorTrace:
+      type: BOOLEAN
+    dataWarningLog:
+      type: BOOLEAN
+    dataWarningTrace:
+      type: BOOLEAN
+    insertTrace:
+      type: BOOLEAN
+    itemLevelTraceList:
+      type: STRING
+    itemTrace:
+      type: BOOLEAN
+    itemTraceAddFile:
+      type: STRING
+    itemTraceAddItem:
+      type: STRING
+    itemTraceCount:
+      type: NUMERIC
+    itemTraceRmvFile:
+      type: STRING
+    itemTraceRmvItem:
+      type: STRING
+    multipleQosTrace:
+      type: BOOLEAN
+    overflowTrace:
+      type: BOOLEAN
+    preemptTrace:
+      type: BOOLEAN
+    srcMgrTrace:
+      type: BOOLEAN
+    updateTrace:
+      type: BOOLEAN
+    updateTraceAddFile:
+      type: STRING
+    updateTraceAddItem:
+      type: STRING
+    updateTraceCount:
+      type: NUMERIC
+    updateTraceRmvFile:
+      type: STRING
+    updateTraceRmvItem:
+      type: STRING
+  ThreadBindingStats:
+    aggThreadCpu:
+      type: STRING
+    dnsThreadCpu:
+      type: STRING
+    mainThreadCpu:
+      type: STRING
+    primeTopology:
+      type: BOOLEAN
+    restThreadCpu:
+      type: STRING
+    rrcpSrcClckCpu.0:
+      type: STRING
+    rrcpSrcClckCpu.1:
+      type: STRING
+    rrcpSrcEngineCpu.0:
+      type: STRING
+    rrcpSrcEngineCpu.1:
+      type: STRING
+    rrcpSrcUsrCntrlCpu.0:
+      type: STRING
+    rrcpSrcUsrCntrlCpu.1:
+      type: STRING
+    sourceThreadCpu.1:
+      type: STRING
+    sourceThreadCpu.2:
+      type: STRING
+    sourceThreadCpu.3:
+      type: STRING
+    transportThreadCpu.1:
+      type: STRING
+  TransBusProxy:
+    bytesSent:
+      type: COUNTER
+    dumpOutgoingMsgs:
+      type: BOOLEAN
+    itemThreadFragmentSize:
+      type: NUMERIC_CONFIG
+    messagesSent:
+      type: COUNTER
+    multicastBitmapWrites:
+      type: COUNTER
+    multicastWrites:
+      type: COUNTER
+    pointToPointMulticastWrites:
+      type: COUNTER
+    pointToPointWrites:
+      type: COUNTER
+  TransmissionBus:
+    badPackets:
+      type: COUNTER
+    bytesReceived:
+      type: COUNTER
+    bytesSent:
+      type: COUNTER
+    dumpIncomingMsgs:
+      type: BOOLEAN
+    dumpOutgoingMsgs:
+      type: BOOLEAN
+    fragmentList:
+      type: NUMERIC
+    logBadPackets:
+      type: BOOLEAN_CONFIG
+    messagesReceived:
+      type: COUNTER
+    messagesSent:
+      type: COUNTER
+    multicastBitmapWrites:
+      type: COUNTER
+    multicastWrites:
+      type: COUNTER
+    pointToPointMulticastWrites:
+      type: COUNTER
+    pointToPointWrites:
+      type: COUNTER
+    protocol:
+      max_size: 4
+      type: STRING
+  TransportThread:
+    freeResponseBufferCount:
+      type: NUMERIC
+    freeTbusPacketCount:
+      type: NUMERIC
+    noFreeRespBuffer:
+      type: NUMERIC
+    numBytesFromItemThreads:
+      type: NUMERIC
+    numBytesToNetwork:
+      type: NUMERIC
+    numNetworkWrites:
+      type: COUNTER
+    numPacketsFromItemThreads:
+      type: COUNTER
+    responseBufferCount:
+      type: NUMERIC
+    tbusPacketCount:
+      type: NUMERIC
+    totalAllocedResponseBufferCount:
+      type: COUNTER
+    totalAllocedTbusPacketCount:
+      type: COUNTER
+    transportFlushInterval:
+      type: NUMERIC_CONFIG
+  TrlsManager:
+    ADH_PREMIUM:
+      type: BOOLEAN
+    CASCADING:
+      type: BOOLEAN
+    CONFLATION:
+      type: BOOLEAN
+    DELAY:
+      type: BOOLEAN
+    PREFERRED_PRIMARY:
+      type: BOOLEAN
+    PRIVATE_STREAM:
+      type: BOOLEAN
+    VISIBLE_PUBLISHER_IDENTIFIER:
+      type: BOOLEAN
+    daysBeforeExpired:
+      type: NUMERIC
+    licenseExpired:
+      type: BOOLEAN
+    licenseFile:
+      max_size: 40
+      type: STRING
+    licenseStatus:
+      max_size: 7
+      type: STRING
+    licenseType:
+      max_size: 10
+      type: STRING
+    productName:
+      max_size: 3
+      type: STRING
+    productVersion:
+      max_size: 3
+      type: STRING
+    reloadLicenseFile:
+      type: STRING
+  restThread: {}
+  rrcpTransmissionBus:
+    BCDataMsgsToUsers:
+      type: NUMERIC
+    BCDataPktsRcvd:
+      type: NUMERIC
+    BCDataPktsSent:
+      type: NUMERIC
+    BCMsgsFromUsers:
+      type: NUMERIC
+    BCMsgsMisordered:
+      type: NUMERIC
+    BCPktsRcvd:
+      type: NUMERIC
+    BCPktsSent:
+      type: NUMERIC
+    BCmsgGaps:
+      type: NUMERIC
+    BCpktLoss:
+      type: NUMERIC
+    PPDataMsgsToUsers:
+      type: NUMERIC
+    PPDataPktsRcvd:
+      type: NUMERIC
+    PPDataPktsSent:
+      type: NUMERIC
+    PPMsgsFromUsers:
+      type: NUMERIC
+    PPMsgsMisordered:
+      type: NUMERIC
+    PPPktsAckdByWndw:
+      type: NUMERIC
+    PPPktsRcvd:
+      type: NUMERIC
+    PPPktsSent:
+      type: NUMERIC
+    PPmsgGaps:
+      type: NUMERIC
+    PPpktLoss:
+      type: NUMERIC
+    ackPktsRcvd:
+      type: NUMERIC
+    ackPktsSent:
+      type: NUMERIC
+    acksRcvd:
+      type: NUMERIC
+    acksSent:
+      type: NUMERIC
+    badPacket:
+      type: COUNTER
+    badPktFromNet:
+      type: NUMERIC
+    badPktFromUser:
+      type: NUMERIC
+    bufferSize:
+      type: NUMERIC_CONFIG
+    bytesReceived:
+      type: COUNTER
+    bytesSent:
+      type: COUNTER
+    congestionBegin:
+      type: COUNTER
+    congestionEnd:
+      type: COUNTER
+    dataMsgsToUsers:
+      type: NUMERIC
+    discardPktsRcvd:
+      type: NUMERIC
+    discardPktsSent:
+      type: NUMERIC
+    discardRcvd:
+      type: COUNTER
+    discardSent:
+      type: COUNTER
+    filterOutLoopMsg:
+      type: NUMERIC
+    filterOutMsg:
+      type: NUMERIC
+    fragmentWrites:
+      type: COUNTER
+    heartBeatsRcvd:
+      type: NUMERIC
+    heartBeatsSent:
+      type: NUMERIC
+    hostUnreachable:
+      type: COUNTER
+    inboundOverflow:
+      type: COUNTER
+    incmplt:
+      type: NUMERIC
+    incompleteMsg:
+      type: COUNTER
+    inputBias:
+      type: NUMERIC_CONFIG
+    logNodeReboots:
+      type: BOOLEAN_CONFIG
+    lostMsgDiscards:
+      type: NUMERIC
+    lostUsrQOverflow:
+      type: NUMERIC
+    maximumNumRetries:
+      type: NUMERIC_CONFIG
+    maximumPacketsPending:
+      type: NUMERIC_CONFIG
+    msgBuffersInUse:
+      type: NUMERIC
+    msgsFromUsers:
+      type: NUMERIC
+    msgsToUsers:
+      type: NUMERIC
+    noFreeRespBuffer:
+      type: NUMERIC
+    nodeResync:
+      type: NUMERIC
+    nullPktsRcvd:
+      type: NUMERIC
+    nullPktsSent:
+      type: NUMERIC
+    oldBCDiscard:
+      type: NUMERIC
+    oldPPDiscard:
+      type: NUMERIC
+    oldRxmtPPDiscard:
+      type: NUMERIC
+    open:
+      max_size: 3
+      type: STRING
+    outboundBufferOverruns:
+      type: COUNTER
+    outboundPktsDrop:
+      type: COUNTER
+    packetsReceived:
+      type: COUNTER
+    packetsSent:
+      type: COUNTER
+    pktBuffersInUse:
+      type: NUMERIC
+    ppTimeout:
+      type: COUNTER
+    reRxmtPktRcvd:
+      type: NUMERIC
+    reRxmtPktSent:
+      type: NUMERIC
+    reRxmtRqstRcvd:
+      type: NUMERIC
+    reRxmtdRqstSent:
+      type: NUMERIC
+    remoteReboot:
+      type: COUNTER
+    rrcpBCMissedMsgs:
+      type: COUNTER
+    rrcpResync:
+      type: COUNTER
+    rxmtBCPktSent:
+      type: NUMERIC
+    rxmtBCPktsRcvd:
+      type: NUMERIC
+    rxmtPPPktRcvd:
+      type: NUMERIC
+    rxmtPPPktSent:
+      type: NUMERIC
+    rxmtPPReqPktRcvd:
+      type: NUMERIC
+    rxmtPPReqPktSent:
+      type: NUMERIC
+    rxmtRqstPktRcvd:
+      type: NUMERIC
+    rxmtRqstPktSent:
+      type: NUMERIC
+    rxmtRqstRcvd:
+      type: NUMERIC
+    rxmtRqstsCancld:
+      type: NUMERIC
+    rxmtRqstsSent:
+      type: NUMERIC
+    rxmtRqstsStaged:
+      type: NUMERIC
+    statusMsgsToUsers:
+      type: NUMERIC
+    threadBytesSent:
+      type: COUNTER
+    threadPacketsSent:
+      type: COUNTER
+    totalBytesRcvd:
+      type: NUMERIC
+    totalBytesSent:
+      type: NUMERIC
+    totalPktsRcvd:
+      type: NUMERIC
+    totalPktsSent:
+      type: NUMERIC
+    unackdPPPkt:
+      type: NUMERIC
+    unknPktDiscard:
+      type: NUMERIC
+    useMultiPartRRCPLock:
+      type: BOOLEAN_CONFIG
+  sourceSSLDistribution: {}
+info:
+  inst_max_size: 116

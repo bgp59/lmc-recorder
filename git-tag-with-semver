@@ -1,0 +1,37 @@
+#!/bin/bash
+
+this_script=${0##*/}
+    
+usage="
+Usage: $this_script [-f|--force]
+
+Apply semver tag locally and to the remote. Requires
+a clean git status. Use --force to reapply the tag.
+
+"
+force=
+case "$1" in
+    -h|--h*)
+        echo >&2 "$usage"
+        exit 1
+        ;;
+    -f|--force)
+        force="--force"
+        shift
+        ;;
+esac
+
+this_dir=$(dirname $(realpath $0))
+
+set -e
+cd $this_dir
+
+# Must be in in proper git state:
+./check-git-state
+
+# Get semver:
+. release-definitions.sh
+
+# Apply semver tag:
+git tag $force $semver
+git push $force origin tag $semver 

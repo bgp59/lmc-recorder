@@ -1,0 +1,106 @@
+# Classes and variables are mapped into tables and columns accordingly, with
+# some normalization rules to make them  DB safe in terms of allowed characters.
+# The following values control the maximum size of each name:
+table_name_max_size: 64
+col_name_max_size: 255
+
+# The table and column names should not clash with SQL reserved words such
+# select, from, create, table, etc. To avoid unnecessary quoting and/or
+# escaping, use a suffix for each table or column name:
+table_name_suffix: _t
+col_name_suffix: _col
+
+# Each table will have additional 2 columns not based on variable classes:
+# timestamp and instance name.
+
+# Timestamp mapping: the timestamp (float) will be converted according to
+# strfime (https://docs.python.org/3/library/time.html#time.strftime).
+timestamp_col:
+    # For the column name it is best to choose something that may not clash with
+    # variable based columns, lmc_ prefix should be a safe choice:
+    name: lmc_ts_col
+    col_type: datetime
+    # The external format should match something that the database server can
+    # parse:
+    strftime: "%Y-%m-%d %H:%M:%S"
+    # Use GMT instead of local time when converting to the external format.
+    #use_gmt: true
+    
+
+# Instance mapping: 
+instance_col:
+    # For the column name it is best to choose something that may not clash with
+    # variable based columns. lmc_ prefix should be a safe choice:
+    name: lmc_inst_col
+    # col_type will be evaluated as an f-string Python expression
+    # (https://docs.python.org/3/reference/lexical_analysis.html#f-strings);
+    # inst_max_size will be set at runtime based on the lmc schema.
+    col_type: "varchar({max(inst_max_size, 255)})"   
+
+# LMC category -> DB data type mapping:
+data_type_mapping:
+    numeric:
+      # numeric types mapping can map either to one type, or, if the database
+      # supports them, to signed and unsigned types, depending upon whether the
+      # variable has negative values or not.
+      # One type, choose the next size to accommodate the full unsigned range:
+      # col_type: bigint
+      # 2 types:
+      signed_col_type: int
+      unsigned_col_type: unsigned int
+    large_numeric:
+      # See above:
+      signed_col_type: bigint
+      unsigned_col_type: unsigned bigint
+    string:
+      # string col_type will be evaluated as f-string Python expressions
+      # (https://docs.python.org/3/reference/lexical_analysis.html#f-strings);
+      # max_size will be set dynamically before the evaluation based on the lmc
+      # schema.
+      col_type: "varchar({max(max_size, 64)})"
+    boolean:
+      # The database may use a small int type in lieu of bool:
+      col_type: bit
+      # The values to write for true/false:
+      true_value: 1
+      false_value: 0 
+
+# CSV output control:
+csv:
+  # See https://docs.python.org/3.10/library/csv.html#csv.Dialect for details on
+  # dialect. This should match the format expected by the loading tool/command,
+  # e.g. bcp.
+  dialect: unix # choose from excel, excel-tab, unix.
+  dialect_params:
+    # Set/modify individual params:
+    delimiter: ","
+    doublequote: true
+    escapechar: null
+    lineterminator: "\n"
+    quotechar: '"'
+    # For qouting choose from: QUOTE_ALL, QUOTE_MINIMAL, QUOTE_NONNUMERIC,
+    # QUOTE_NONE, case insensitive. Additionally QUOTE_ prefix is optional.
+    quoting: minimal # same as QUOTE_MINIMAL
+  # Whether to include a header or not:
+  include_header: false
+  # Max no of lines per file, use 0 for unlimited. This is may be required if
+  # the loading tool/command does not support batching and it has an upper limit
+  # for transfer.
+  max_rows_per_file: 0
+
+# BCP non-XML format file (.fmt) rules, see
+# https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc30191.1550/html/utility/utility87.htm
+# or
+# https://learn.microsoft.com/en-us/sql/relational-databases/import-export/non-xml-format-files-sql-server?view=sql-server-ver17
+bcp_fmt:
+  # Version or TDS, it should be less or equal to that of the utility:
+  version: 10.0
+  # Host data type should be for ASCII (text, not binary) data file:
+  host_data_type: SYBCHAR
+  # The host file data length should be such that the reading stops at the
+  # delimiter. Some versions of BCP may accept 0, others may require a very
+  # large value:
+  host_data_length: 1024
+  # Collation for string data category field, if left undefined or null, no
+  # collation information will be specified in the fmt file:
+  string_collation: null

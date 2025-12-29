@@ -1,0 +1,1900 @@
+
++-----------------------+
+| Instance & Class Tree |
++-----------------------+
+
+Root
+├── ('lseg1.bgp59.com.1.adh', 'ManagedProcess.SrcDist')
+│   ├── ('lseg1.bgp59.com.1.adh.0.rrcpTransport.0.srcSide.rrcp.send.transmissionBus', 'rrcpTransmissionBus')
+│   ├── ('lseg1.bgp59.com.1.adh.1.rrcpTransport.1.srcSide.rrcp.send.transmissionBus', 'rrcpTransmissionBus')
+│   ├── ('lseg1.bgp59.com.1.adh.admin.MemoryStats', 'ShmemMOServerStats')
+│   ├── ('lseg1.bgp59.com.1.adh.aggregateStatsThread', 'AggregateStatsThread')
+│   ├── ('lseg1.bgp59.com.1.adh.dacs', 'DacsConnectionMgr')
+│   │   └── ('lseg1.bgp59.com.1.adh.dacs.source', 'DacsConnectionMgrClient')
+│   ├── ('lseg1.bgp59.com.1.adh.debugLogger', 'DebugLog')
+│   ├── ('lseg1.bgp59.com.1.adh.DNSapi', 'DNSapi')
+│   ├── ('lseg1.bgp59.com.1.adh.fidDatabase', 'SSLFidDatabase')
+│   ├── ('lseg1.bgp59.com.1.adh.latencyMonitor', 'LatencyMonitor')
+│   ├── ('lseg1.bgp59.com.1.adh.restThread', 'restThread')
+│   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer', 'RRMPSourceConsumer')
+│   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate', 'Server.SrcDist')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.dataStreams', 'ConsumerDataStream.SrcDist')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.incomingSinkDistMessages', 'DataStreamSink6')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.netRecog', 'ServerNetRecog')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.netRecog.incomingSinkDistMessages', 'NetRecSink')
+│   │   │   │   └── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.netRecog.outgoingMessages', 'NetRecSrc')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingDLMessages', 'DataStreamSrcDL')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE', 'ServiceAttributes.SrcDist')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261', 'Server.SrcDist')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.dataStreams', 'ConsumerDataStream.SrcDist')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.incomingSinkDistMessages', 'DataStreamSink6')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.netRecog', 'ServerNetRecog')
+│   │   │       │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.netRecog.incomingSinkDistMessages', 'NetRecSink')
+│   │   │       │   └── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.netRecog.outgoingMessages', 'NetRecSrc')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingDLMessages', 'DataStreamSrcDL')
+│   │   │       └── ('lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.FailbackTransportMgr', 'FailbackTransportSessionMgr')
+│   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.HSaggregate', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.hsFailoverMon', 'RRMPTrafficMonitor')
+│   │   ├── ('lseg1.bgp59.com.1.adh.rrmpConsumer.keepAlive', 'KeepAlive')
+│   │   └── ('lseg1.bgp59.com.1.adh.rrmpConsumer.sourceParser', 'RRMPParsingError')
+│   ├── ('lseg1.bgp59.com.1.adh.serviceGenerator', 'SSLServiceGenerator')
+│   │   └── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool', 'ManagedAggregateService')
+│   │       └── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE', 'RTRManagedService')
+│   │           ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.attributes', 'ServiceAttributes')
+│   │           ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.dataStreams', 'ServiceDataStream')
+│   │           ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.debug', 'SrcDistProdSrvcDbg')
+│   │           ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.inserts', 'ServiceInsert')
+│   │           └── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261', 'RTRManagedServer')
+│   │               ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.attributes', 'ServerAttributes')
+│   │               ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.cacheListMgr', 'CacheListMgr')
+│   │               ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.dataStreams', 'ServerDataStream')
+│   │               ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.inserts', 'ServerInsert')
+│   │               ├── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.noDataCache', 'NoDataCache')
+│   │               └── ('lseg1.bgp59.com.1.adh.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.recovery', 'ServerRecovStream.SrcDist')
+│   ├── ('lseg1.bgp59.com.1.adh.source.server.rest.transmissionBus', 'RESTServer')
+│   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool', 'ManagedSSLDistribution')
+│   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.incomingMessages', 'SSLMsgsAppToSrc')
+│   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.outgoingMessages', 'SSLMsgsSrcToApp')
+│   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher', 'SSLDispatcher')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.localroute', 'SSLRoute')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.localroute.config', 'SSLRouteConfig')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1', 'ProxySSLSourceApplication')
+│   │   │   │   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.incomingMessages', 'SSLMsgsAppToSrc')
+│   │   │   │   │   └── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.outgoingMessages', 'SSLMsgsSrcToApp')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.SSLServerAttributes', 'SSLServerAttributes')
+│   │   │   │   └── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.localroute.rsslChannel.1', 'ManagedSSLChannel')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslDispatcher.source.server.ipc.transmissionBus', 'SourceRIPCServer')
+│   │   └── ('lseg1.bgp59.com.1.adh.sourceApplicationPool.sslIpcSessionHandler', 'ClassicSSLSessionHandler')
+│   ├── ('lseg1.bgp59.com.1.adh.sourceSSLDistribution', 'sourceSSLDistribution')
+│   ├── ('lseg1.bgp59.com.1.adh.srcSide.rrcp.transmissionBus', 'TransmissionBus')
+│   ├── ('lseg1.bgp59.com.1.adh.ThreadBindingStats', 'ThreadBindingStats')
+│   ├── ('lseg1.bgp59.com.1.adh.transportThread.1', 'TransportThread')
+│   │   └── ('lseg1.bgp59.com.1.adh.transportThread.1.srcSide.rrcp.send.transmissionBus.1', 'TransmissionBus')
+│   └── ('lseg1.bgp59.com.1.adh.trlsManager', 'TrlsManager')
+├── ('lseg1.bgp59.com.1.adh.1.sourceThread', 'ManagedProcess.SrcDist')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.1.rrcpTransport.0.srcSide.rrcp.send.transmissionBus', 'rrcpTransmissionBus')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.admin.MemoryStats', 'ShmemMOServerStats')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.dacs.source', 'DacsConnectionMgrClient')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.DISTRIBUTION.ADH.sourceItemThread.1', 'SourceItemDispatcher')
+│   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.DISTRIBUTION.ADH.sourceItemThread.1.DISTRIBUTION.ADH.sourceItemThread.1', 'SideLoadAttributes')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer', 'RRMPSourceConsumer')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate', 'Server.SrcDist')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.dataStreams', 'ConsumerDataStream.SrcDist')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.incomingSinkDistMessages', 'DataStreamSink6')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.netRecog', 'ServerNetRecog')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.netRecog.incomingSinkDistMessages', 'NetRecSink')
+│   │   │   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.netRecog.outgoingMessages', 'NetRecSrc')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingDLMessages', 'DataStreamSrcDL')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE', 'ServiceAttributes.SrcDist')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261', 'Server.SrcDist')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.dataStreams', 'ConsumerDataStream.SrcDist')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.incomingSinkDistMessages', 'DataStreamSink6')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog', 'ServerNetRecog')
+│   │   │       │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog.incomingSinkDistMessages', 'NetRecSink')
+│   │   │       │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog.outgoingMessages', 'NetRecSrc')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingDLMessages', 'DataStreamSrcDL')
+│   │   │       └── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.FailbackTransportMgr', 'FailbackTransportSessionMgr')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.HSaggregate', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.hsFailoverMon', 'RRMPTrafficMonitor')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.keepAlive', 'KeepAlive')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.rrmpTransProxy.1', 'TransBusProxy')
+│   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.sourceParser', 'RRMPParsingError')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator', 'SSLServiceGenerator')
+│   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool', 'ManagedAggregateService')
+│   │       └── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE', 'RTRManagedService')
+│   │           ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.attributes', 'ServiceAttributes')
+│   │           ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.dataStreams', 'ServiceDataStream')
+│   │           ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.debug', 'SrcDistProdSrvcDbg')
+│   │           ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.inserts', 'ServiceInsert')
+│   │           └── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261', 'RTRManagedServer')
+│   │               ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.attributes', 'ServerAttributes')
+│   │               ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.cacheListMgr', 'CacheListMgr')
+│   │               ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.dataStreams', 'ServerDataStream')
+│   │               ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.inserts', 'ServerInsert')
+│   │               ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.noDataCache', 'NoDataCache')
+│   │               └── ('lseg1.bgp59.com.1.adh.1.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.recovery', 'ServerRecovStream.SrcDist')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool', 'ManagedSSLDistribution')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.incomingMessages', 'SSLMsgsAppToSrc')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.outgoingMessages', 'SSLMsgsSrcToApp')
+│   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher', 'SSLDispatcher')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.localroute', 'SSLRoute')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.localroute.config', 'SSLRouteConfig')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1', 'ProxySSLSourceApplication')
+│   │   │   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.incomingMessages', 'SSLMsgsAppToSrc')
+│   │   │   │   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.outgoingMessages', 'SSLMsgsSrcToApp')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.SSLServerAttributes', 'SSLServerAttributes')
+│   │   │   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.localroute.rsslChannel.1', 'ManagedSSLChannel')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslDispatcher.source.server.ipc.transmissionBus', 'SourceRIPCServer')
+│   │   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceApplicationPool.sslIpcSessionHandler', 'ClassicSSLSessionHandler')
+│   ├── ('lseg1.bgp59.com.1.adh.1.sourceThread.sourceSSLDistribution', 'sourceSSLDistribution')
+│   └── ('lseg1.bgp59.com.1.adh.1.sourceThread.srcSide.rrcp.transmissionBus', 'TransmissionBus')
+├── ('lseg1.bgp59.com.1.adh.2.sourceThread', 'ManagedProcess.SrcDist')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.2.rrcpTransport.0.srcSide.rrcp.send.transmissionBus', 'rrcpTransmissionBus')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.admin.MemoryStats', 'ShmemMOServerStats')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.dacs.source', 'DacsConnectionMgrClient')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.DISTRIBUTION.ADH.sourceItemThread.2', 'SourceItemDispatcher')
+│   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.DISTRIBUTION.ADH.sourceItemThread.2.DISTRIBUTION.ADH.sourceItemThread.2', 'SideLoadAttributes')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer', 'RRMPSourceConsumer')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate', 'Server.SrcDist')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.dataStreams', 'ConsumerDataStream.SrcDist')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.incomingSinkDistMessages', 'DataStreamSink6')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.netRecog', 'ServerNetRecog')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.netRecog.incomingSinkDistMessages', 'NetRecSink')
+│   │   │   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.netRecog.outgoingMessages', 'NetRecSrc')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingDLMessages', 'DataStreamSrcDL')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE', 'ServiceAttributes.SrcDist')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261', 'Server.SrcDist')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.dataStreams', 'ConsumerDataStream.SrcDist')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.incomingSinkDistMessages', 'DataStreamSink6')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog', 'ServerNetRecog')
+│   │   │       │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog.incomingSinkDistMessages', 'NetRecSink')
+│   │   │       │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog.outgoingMessages', 'NetRecSrc')
+│   │   │       ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingDLMessages', 'DataStreamSrcDL')
+│   │   │       └── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.FailbackTransportMgr', 'FailbackTransportSessionMgr')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.HSaggregate', 'DataStreamSrc6')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.hsFailoverMon', 'RRMPTrafficMonitor')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.keepAlive', 'KeepAlive')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.rrmpTransProxy.1', 'TransBusProxy')
+│   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.sourceParser', 'RRMPParsingError')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator', 'SSLServiceGenerator')
+│   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool', 'ManagedAggregateService')
+│   │       └── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE', 'RTRManagedService')
+│   │           ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.attributes', 'ServiceAttributes')
+│   │           ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.dataStreams', 'ServiceDataStream')
+│   │           ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.debug', 'SrcDistProdSrvcDbg')
+│   │           ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.inserts', 'ServiceInsert')
+│   │           └── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261', 'RTRManagedServer')
+│   │               ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.attributes', 'ServerAttributes')
+│   │               ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.cacheListMgr', 'CacheListMgr')
+│   │               ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.dataStreams', 'ServerDataStream')
+│   │               ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.inserts', 'ServerInsert')
+│   │               ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.noDataCache', 'NoDataCache')
+│   │               └── ('lseg1.bgp59.com.1.adh.2.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.recovery', 'ServerRecovStream.SrcDist')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool', 'ManagedSSLDistribution')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.incomingMessages', 'SSLMsgsAppToSrc')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.outgoingMessages', 'SSLMsgsSrcToApp')
+│   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher', 'SSLDispatcher')
+│   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.localroute', 'SSLRoute')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.localroute.config', 'SSLRouteConfig')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1', 'ProxySSLSourceApplication')
+│   │   │   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.incomingMessages', 'SSLMsgsAppToSrc')
+│   │   │   │   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.outgoingMessages', 'SSLMsgsSrcToApp')
+│   │   │   │   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.SSLServerAttributes', 'SSLServerAttributes')
+│   │   │   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.localroute.rsslChannel.1', 'ManagedSSLChannel')
+│   │   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslDispatcher.source.server.ipc.transmissionBus', 'SourceRIPCServer')
+│   │   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceApplicationPool.sslIpcSessionHandler', 'ClassicSSLSessionHandler')
+│   ├── ('lseg1.bgp59.com.1.adh.2.sourceThread.sourceSSLDistribution', 'sourceSSLDistribution')
+│   └── ('lseg1.bgp59.com.1.adh.2.sourceThread.srcSide.rrcp.transmissionBus', 'TransmissionBus')
+└── ('lseg1.bgp59.com.1.adh.3.sourceThread', 'ManagedProcess.SrcDist')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.3.rrcpTransport.0.srcSide.rrcp.send.transmissionBus', 'rrcpTransmissionBus')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.admin.MemoryStats', 'ShmemMOServerStats')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.dacs.source', 'DacsConnectionMgrClient')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.DISTRIBUTION.ADH.sourceItemThread.3', 'SourceItemDispatcher')
+    │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.DISTRIBUTION.ADH.sourceItemThread.3.DISTRIBUTION.ADH.sourceItemThread.3', 'SideLoadAttributes')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer', 'RRMPSourceConsumer')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate', 'Server.SrcDist')
+    │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.dataStreams', 'ConsumerDataStream.SrcDist')
+    │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.incomingSinkDistMessages', 'DataStreamSink6')
+    │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.netRecog', 'ServerNetRecog')
+    │   │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.netRecog.incomingSinkDistMessages', 'NetRecSink')
+    │   │   │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.netRecog.outgoingMessages', 'NetRecSrc')
+    │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingDLMessages', 'DataStreamSrcDL')
+    │   │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages', 'DataStreamSrc6')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE', 'ServiceAttributes.SrcDist')
+    │   │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261', 'Server.SrcDist')
+    │   │       ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.dataStreams', 'ConsumerDataStream.SrcDist')
+    │   │       ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.incomingSinkDistMessages', 'DataStreamSink6')
+    │   │       ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog', 'ServerNetRecog')
+    │   │       │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog.incomingSinkDistMessages', 'NetRecSink')
+    │   │       │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.netRecog.outgoingMessages', 'NetRecSrc')
+    │   │       ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingDLMessages', 'DataStreamSrcDL')
+    │   │       └── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages', 'DataStreamSrc6')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.FailbackTransportMgr', 'FailbackTransportSessionMgr')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.HSaggregate', 'DataStreamSrc6')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.hsFailoverMon', 'RRMPTrafficMonitor')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.keepAlive', 'KeepAlive')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.rrmpTransProxy.1', 'TransBusProxy')
+    │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.sourceParser', 'RRMPParsingError')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator', 'SSLServiceGenerator')
+    │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool', 'ManagedAggregateService')
+    │       └── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE', 'RTRManagedService')
+    │           ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.attributes', 'ServiceAttributes')
+    │           ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.dataStreams', 'ServiceDataStream')
+    │           ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.debug', 'SrcDistProdSrvcDbg')
+    │           ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.inserts', 'ServiceInsert')
+    │           └── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261', 'RTRManagedServer')
+    │               ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.attributes', 'ServerAttributes')
+    │               ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.cacheListMgr', 'CacheListMgr')
+    │               ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.dataStreams', 'ServerDataStream')
+    │               ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.inserts', 'ServerInsert')
+    │               ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.noDataCache', 'NoDataCache')
+    │               └── ('lseg1.bgp59.com.1.adh.3.sourceThread.serviceGenerator.srcPrdServicePool.DF_LEV_ONE.localroute.route.261.recovery', 'ServerRecovStream.SrcDist')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool', 'ManagedSSLDistribution')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.incomingMessages', 'SSLMsgsAppToSrc')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.outgoingMessages', 'SSLMsgsSrcToApp')
+    │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher', 'SSLDispatcher')
+    │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.localroute', 'SSLRoute')
+    │   │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.localroute.config', 'SSLRouteConfig')
+    │   │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1', 'ProxySSLSourceApplication')
+    │   │   │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.incomingMessages', 'SSLMsgsAppToSrc')
+    │   │   │   │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.1.outgoingMessages', 'SSLMsgsSrcToApp')
+    │   │   │   ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.localroute.DF_LEV_ONE.SSLServerAttributes', 'SSLServerAttributes')
+    │   │   │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.localroute.rsslChannel.1', 'ManagedSSLChannel')
+    │   │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslDispatcher.source.server.ipc.transmissionBus', 'SourceRIPCServer')
+    │   └── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceApplicationPool.sslIpcSessionHandler', 'ClassicSSLSessionHandler')
+    ├── ('lseg1.bgp59.com.1.adh.3.sourceThread.sourceSSLDistribution', 'sourceSSLDistribution')
+    └── ('lseg1.bgp59.com.1.adh.3.sourceThread.srcSide.rrcp.transmissionBus', 'TransmissionBus')
+
+Instance Max Size: 116
+
+
++------------+
+| Class Tree |
++------------+
+
+Root
+└── ManagedProcess.SrcDist
+    ├── AggregateStatsThread
+    ├── DacsConnectionMgr
+    │   └── DacsConnectionMgrClient
+    ├── DacsConnectionMgrClient
+    ├── DebugLog
+    ├── DNSapi
+    ├── LatencyMonitor
+    ├── ManagedSSLDistribution
+    │   ├── ClassicSSLSessionHandler
+    │   ├── SSLDispatcher
+    │   │   ├── SourceRIPCServer
+    │   │   └── SSLRoute
+    │   │       ├── ManagedSSLChannel
+    │   │       ├── ProxySSLSourceApplication
+    │   │       │   ├── SSLMsgsAppToSrc
+    │   │       │   └── SSLMsgsSrcToApp
+    │   │       ├── SSLRouteConfig
+    │   │       └── SSLServerAttributes
+    │   ├── SSLMsgsAppToSrc
+    │   └── SSLMsgsSrcToApp
+    ├── RESTServer
+    ├── restThread
+    ├── rrcpTransmissionBus
+    ├── RRMPSourceConsumer
+    │   ├── DataStreamSrc6
+    │   ├── FailbackTransportSessionMgr
+    │   ├── KeepAlive
+    │   ├── RRMPParsingError
+    │   ├── RRMPTrafficMonitor
+    │   ├── Server.SrcDist
+    │   │   ├── ConsumerDataStream.SrcDist
+    │   │   ├── DataStreamSink6
+    │   │   ├── DataStreamSrc6
+    │   │   ├── DataStreamSrcDL
+    │   │   └── ServerNetRecog
+    │   │       ├── NetRecSink
+    │   │       └── NetRecSrc
+    │   ├── ServiceAttributes.SrcDist
+    │   │   └── Server.SrcDist
+    │   │       ├── ConsumerDataStream.SrcDist
+    │   │       ├── DataStreamSink6
+    │   │       ├── DataStreamSrc6
+    │   │       ├── DataStreamSrcDL
+    │   │       └── ServerNetRecog
+    │   │           ├── NetRecSink
+    │   │           └── NetRecSrc
+    │   └── TransBusProxy
+    ├── ShmemMOServerStats
+    ├── SourceItemDispatcher
+    │   └── SideLoadAttributes
+    ├── sourceSSLDistribution
+    ├── SSLFidDatabase
+    ├── SSLServiceGenerator
+    │   └── ManagedAggregateService
+    │       └── RTRManagedService
+    │           ├── RTRManagedServer
+    │           │   ├── CacheListMgr
+    │           │   ├── NoDataCache
+    │           │   ├── ServerAttributes
+    │           │   ├── ServerDataStream
+    │           │   ├── ServerInsert
+    │           │   └── ServerRecovStream.SrcDist
+    │           ├── ServiceAttributes
+    │           ├── ServiceDataStream
+    │           ├── ServiceInsert
+    │           └── SrcDistProdSrvcDbg
+    ├── ThreadBindingStats
+    ├── TransmissionBus
+    ├── TransportThread
+    │   └── TransmissionBus
+    └── TrlsManager
+
+
++-----------------+
+| Class Variables |
++-----------------+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+AggregateStatsThread
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+CacheListMgr                 classSize                             NUMERIC
+                             countSize                             NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+ClassicSSLSessionHandler     32PingInterval                        NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             auditFailureBadPriority               COUNTER
+                             auditFailureNoItem                    COUNTER
+                             auditFailureNoSSI                     COUNTER
+                             auditFailures                         COUNTER
+                             auditReqs                             COUNTER
+                             closes                                COUNTER
+                             encodingFailure                       COUNTER
+                             insufficientMemory                    COUNTER
+                             items                                 NUMERIC
+                             nonRecoverableCloses                  COUNTER
+                             nonRecoverableOpens                   COUNTER
+                             pending                               NUMERIC
+                             permissionDenial                      COUNTER
+ConsumerDataStream.SrcDist   preemptionCloses                      COUNTER
+                             priorities                            COUNTER
+                             recoverableCloses                     COUNTER
+                             recoverableOpens                      COUNTER
+                             requests                              COUNTER
+                             sendingItemKey                        BOOLEAN
+                             ssis                                  NUMERIC
+                             watched                               NUMERIC
+                             watchedDomain6                        GAUGE
+                             watchedDomain7                        GAUGE
+                             watchedDomain8                        GAUGE
+                             watchedDomain9                        GAUGE
+                             watchedOk                             NUMERIC
+                             watchedStale                          NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             enableMetering                        BOOLEAN
+                             sendCloseRecovOnTimeout               BOOLEAN
+DacsConnectionMgr            softwareUsageFileDirectory            STRING          MaxSz=2
+                             softwareUsageFileSize                 NUMERIC
+                             softwareUsageWithoutInit              BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             dacsRole                              STRING          MaxSz=9
+                             disconnectDacsDown                    BOOLEAN
+                             domainList                            STRING
+                             doMultiConnect                        BOOLEAN
+DacsConnectionMgrClient      dumpPublisherContinueWatch            BOOLEAN
+                             enabled                               BOOLEAN_CONFIG
+                             iauth2Enabled                         BOOLEAN_CONFIG
+                             publisherContinueWatchExecs           COUNTER
+                             publisherContinueWatchTime            STRING
+                             refuseConnectionsDacsDown             BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             cbrAck                                COUNTER
+                             cbrClose                              COUNTER
+                             cbrOpen                               COUNTER
+                             close                                 COUNTER
+                             generic                               COUNTER
+                             insert                                COUNTER
+DataStreamSink6              insertLatency                         NUMERIC
+                             insertRate                            NUMERIC
+                             priority                              COUNTER
+                             request                               COUNTER
+                             symbolListClose                       COUNTER
+                             symbolListOpen                        COUNTER
+                             total                                 COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             broadcast                             COUNTER
+                             cacheDrop                             COUNTER
+                             cbrInfo                               COUNTER
+                             cbrStatus                             COUNTER
+                             changeRequestID                       COUNTER
+                             dropSink                              COUNTER
+                             generic                               COUNTER
+                             groupMerge                            COUNTER
+                             groupStatus                           COUNTER
+                             insertAck                             COUNTER
+                             insertNak                             COUNTER
+DataStreamSrc6               nodeIDChange                          COUNTER
+                             permissionInfo                        COUNTER
+                             refreshData                           COUNTER
+                             refreshHdr                            COUNTER
+                             refreshLatency                        NUMERIC
+                             refreshRate                           NUMERIC
+                             rename                                COUNTER
+                             setGroup                              COUNTER
+                             status                                COUNTER
+                             total                                 COUNTER
+                             update                                COUNTER
+                             updateLatency                         NUMERIC
+                             updateRate                            NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             DLAdd                                 COUNTER
+                             DLDrop                                COUNTER
+                             DLDropSink                            COUNTER
+DataStreamSrcDL              DLReject                              COUNTER
+                             DLUpdate                              COUNTER
+                             groupMerge                            COUNTER
+                             groupStatus                           COUNTER
+                             total                                 COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             appendToFile                          BOOLEAN_CONFIG
+                             filename                              STRING_CONFIG   MaxSz=7
+DebugLog                     fileSize                              NUMERIC_CONFIG
+                             flushAfterWrite                       BOOLEAN_CONFIG
+                             flushBuffer                           BOOLEAN
+                             numFiles                              NUMERIC_CONFIG
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+DNSapi
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+FailbackTransportSessionMgr
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+KeepAlive                    keepAliveInterval                     NUMERIC_CONFIG
+                             networkDelay                          NUMERIC_CONFIG
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             latencyCalcEnabled                    BOOLEAN
+                             latencyCalcMountBased                 BOOLEAN
+LatencyMonitor               latencyCalcServerBased                BOOLEAN
+                             mountRatesEnabled                     BOOLEAN
+                             numLatencySamples                     NUMERIC_CONFIG
+                             serverRatesEnabled                    BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             autoGenerateIds                       BOOLEAN
+ManagedAggregateService      pending                               GAUGE
+                             pendingOut                            GAUGE
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             clearStats                            BOOLEAN
+                             configFile                            STRING          MaxSz=44
+                             configTrace                           BOOLEAN
+                             dumpConsumerDatabase                  BOOLEAN
+                             dumpDatabase                          BOOLEAN
+                             dumpHashTableStats                    BOOLEAN
+                             dumpProducerDatabase                  BOOLEAN
+                             groupID                               NUMERIC
+                             hotStandby                            BOOLEAN_CONFIG
+                             instance                              STRING          MaxSz=52
+                             libcurlVersion                        STRING          MaxSz=13
+                             loggerLevel                           STRING          MaxSz=6
+                             path                                  STRING          MaxSz=41
+ManagedProcess.SrcDist       processID                             NUMERIC
+                             releaseVersion                        STRING          MaxSz=28
+                             reloadConfig                          BOOLEAN
+                             reloadDictionary                      BOOLEAN
+                             reportSoftwareStats                   BOOLEAN
+                             RTSDKVersion                          STRING          MaxSz=23
+                             shutdown                              BOOLEAN
+                             softwareStatsReportTime               STRING          MaxSz=5
+                             state                                 GAUGE
+                             systemRelease                         STRING          MaxSz=45
+                             systemUname                           STRING          MaxSz=97
+                             time                                  STRING          MaxSz=24
+                             Use send transport                    BOOLEAN_CONFIG
+                             userID                                NUMERIC
+                             version                               STRING          MaxSz=62
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             active                                BOOLEAN
+                             adpTraceRouteInfo                     BOOLEAN
+                             applicationKey                        STRING
+                             applicationName                       STRING
+                             bufferPercentage                      GAUGE
+                             bytesReceived                         COUNTER
+                             bytesReceivedRate                     GAUGE
+                             bytesSent                             COUNTER
+                             bytesSentRate                         GAUGE
+                             cascadingComponent                    BOOLEAN
+                             channel                               NUMERIC         Neg Vals
+                             clientToServerPings                   BOOLEAN
+                             compressionType                       NUMERIC         Neg Vals
+                             compressPercentage                    GAUGE
+                             connectionType                        STRING          MaxSz=6
+                             currentBufferUsage                    NUMERIC
+                             curThrottleIntBytesRcvd               NUMERIC
+                             curThrottleIntMsgsRcvd                NUMERIC
+                             dacsDomain                            STRING
+                             dacsPermDenied                        COUNTER
+                             decompressPercentage                  GAUGE
+                             dictionaryMsgs                        COUNTER
+                             disconnectChannel                     BOOLEAN
+                             disconnectTime                        STRING          MaxSz=24
+                             dumpIncoming                          BOOLEAN
+                             dumpOutgoing                          BOOLEAN
+                             faults                                COUNTER
+                             fdChanges                             COUNTER
+                             genericDisconnect                     COUNTER
+                             guaranteedOutputBuffers               NUMERIC
+                             highThresholdHits                     COUNTER
+                             hostname                              STRING          MaxSz=9
+                             IPAddress                             STRING          MaxSz=9
+                             lastIntervalPeakImageRetrievalTime    NUMERIC
+                             lastOutageDuration                    STRING          MaxSz=10
+                             lastTimeThrottleEnabled               STRING
+                             loginInstance                         STRING
+                             loginMsgs                             COUNTER
+                             maxIncomingBytesPerSecond             NUMERIC_CONFIG
+                             maxIncomingMessagesPerSecond          NUMERIC_CONFIG
+                             maxOutputBuffers                      NUMERIC
+                             minCompressionThreshold               NUMERIC         Neg Vals
+                             mountsAttempted                       COUNTER
+                             mountsFailed                          COUNTER
+                             mountsSucceeded                       COUNTER
+                             msgKeyMismatch                        COUNTER
+                             msgsReceived                          COUNTER
+                             msgsReceivedRate                      GAUGE
+                             msgsSent                              COUNTER
+                             msgsSentRate                          GAUGE
+                             name                                  STRING
+ManagedSSLChannel            numInputBuffers                       NUMERIC
+                             numThrottledOnMsgRate                 COUNTER
+                             numThrottledOnSizeRate                COUNTER
+                             outputThresholdBreach                 NUMERIC
+                             outputThresholdOK                     NUMERIC
+                             overflows                             COUNTER
+                             peakBufferUsage                       NUMERIC
+                             peakDisconnectTime                    STRING          MaxSz=10
+                             peakImageRetrievalTime                NUMERIC
+                             peakImageRetrievalTimeItem            STRING          MaxSz=33
+                             pendingBytesIn                        NUMERIC
+                             pendingBytesOut                       NUMERIC
+                             pendout                               NUMERIC
+                             pingsReceived                         COUNTER
+                             pingsSent                             COUNTER
+                             pingTimeout                           NUMERIC         Neg Vals
+                             portNumber                            NUMERIC
+                             position                              STRING
+                             protocol                              STRING          MaxSz=4
+                             readBias                              NUMERIC
+                             recoveries                            COUNTER
+                             recoveryInterval                      NUMERIC
+                             resetPeakImageRetrieval               BOOLEAN
+                             roundTripLatency                      GAUGE
+                             routeName                             STRING          MaxSz=10
+                             serverToClientPings                   BOOLEAN
+                             sessionAccepted                       COUNTER
+                             sessionDisconnect                     COUNTER
+                             sessionDismount                       COUNTER
+                             sessionNumber                         NUMERIC
+                             sessionReconnect                      COUNTER
+                             sessionRejected                       COUNTER
+                             sourceItems                           NUMERIC
+                             sourceMsgs                            COUNTER
+                             streamIdMismatch                      COUNTER
+                             tcpNoDelay                            BOOLEAN
+                             tcpRecvBufSize                        NUMERIC         Neg Vals
+                             tcpRetransIn                          NUMERIC
+                             tcpRetransOut                         NUMERIC
+                             tcpSegsIn                             NUMERIC
+                             tcpSegsInRate                         GAUGE
+                             tcpSegsOut                            NUMERIC
+                             tcpSegsOutRate                        GAUGE
+                             tcpSendBufSize                        NUMERIC         Neg Vals
+                             time                                  STRING          MaxSz=24
+                             totalConnectTime                      STRING          MaxSz=10
+                             totalDisconnectTime                   STRING          MaxSz=10
+                             uncompBytesReceived                   COUNTER
+                             uncompBytesReceivedRate               GAUGE
+                             uncompBytesSent                       COUNTER
+                             uncompBytesSentRate                   GAUGE
+                             unknownStreamIds                      COUNTER
+                             version                               STRING          MaxSz=35
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             301MountsAccepted                     COUNTER
+                             301MountsRejected                     COUNTER
+                             32MountsAccepted                      COUNTER
+                             32MountsRejected                      COUNTER
+                             40MountsAccepted                      COUNTER
+                             40MountsRejected                      COUNTER
+                             45MountsAccepted                      COUNTER
+                             45MountsRejected                      COUNTER
+                             appTrace                              BOOLEAN
+ManagedSSLDistribution       badMount                              COUNTER
+                             disconnect                            COUNTER
+                             dumpIncoming                          BOOLEAN
+                             dumpOutgoing                          BOOLEAN
+                             eventTrace                            BOOLEAN
+                             lostPing                              COUNTER
+                             mountsAccepted                        COUNTER
+                             mountsRejected                        COUNTER
+                             rsslMountsAccepted                    COUNTER
+                             rsslMountsRejected                    COUNTER
+                             srcThrSyncEvents                      NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             changeState                           COUNTER
+                             exists                                COUNTER
+                             request                               COUNTER
+NetRecSink                   response                              COUNTER
+                             start                                 COUNTER
+                             state                                 COUNTER
+                             total                                 COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             changeConfig                          COUNTER
+                             changeState                           COUNTER
+                             error                                 COUNTER
+                             exist                                 COUNTER
+NetRecSrc                    info                                  COUNTER
+                             request                               COUNTER
+                             response                              COUNTER
+                             start                                 COUNTER
+                             state                                 COUNTER
+                             total                                 COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+NoDataCache                  dataTrace                             BOOLEAN
+                             dataWarning                           BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             appLoadLevel                          NUMERIC         Neg Vals
+                             appName                               STRING          MaxSz=10
+                             cacheType                             STRING          MaxSz=11
+                             caching                               BOOLEAN
+                             criteriaName                          STRING
+                             dacsAttributes                        STRING
+                             dataType                              STRING          MaxSz=9
+                             forwardServerMode                     BOOLEAN
+                             inserts                               BOOLEAN
+                             instance                              STRING          MaxSz=16
+                             ipcHost                               STRING          MaxSz=9
+                             ipcPort                               STRING          MaxSz=20
+ProxySSLSourceApplication    ipcRoute                              STRING          MaxSz=10
+                             ipcSession                            STRING          MaxSz=13
+                             openWindow                            NUMERIC_CONFIG
+                             overflow                              BOOLEAN
+                             permDataErrors                        NUMERIC
+                             ping                                  BOOLEAN
+                             preemptionLocation                    STRING          MaxSz=3
+                             renamePermData                        BOOLEAN
+                             serverQos                             STRING          MaxSz=9
+                             serviceName                           STRING          MaxSz=10
+                             sessionNumber                         NUMERIC
+                             sslChannel                            NUMERIC         Neg Vals
+                             time                                  STRING          MaxSz=20
+                             version                               STRING          MaxSz=4
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             acceptFailures                        COUNTER
+                             bytesReceived                         COUNTER
+                             bytesReceivedRate                     GAUGE
+                             bytesSent                             COUNTER
+                             bytesSentRate                         GAUGE
+                             chainBufferUsage                      NUMERIC
+                             clientDisconnects                     COUNTER
+                             clientToServerPings                   BOOLEAN
+                             compressionType                       NUMERIC
+                             compressPercentage                    GAUGE
+                             connectionsAvailable                  GAUGE
+                             connectionsEnabled                    BOOLEAN
+                             connectionsUsed                       GAUGE
+                             connectionType                        NUMERIC
+                             decompressPercentage                  GAUGE
+                             dumpIncoming                          BOOLEAN
+                             dumpOutgoing                          BOOLEAN
+                             enableAuditLog                        BOOLEAN
+                             enableManageabilityResources          BOOLEAN
+                             enablePort                            BOOLEAN
+                             enableSnapshotServer                  BOOLEAN
+                             errors                                COUNTER
+                             fileDescriptor                        NUMERIC
+                             flushInterval                         NUMERIC
+                             forceCompression                      BOOLEAN
+                             freeChainBuffers                      NUMERIC
+                             guaranteedOutputBuffers               NUMERIC
+                             initTimeouts                          COUNTER
+                             interfaceName                         STRING          MaxSz=10
+                             lastConnectTime                       STRING          MaxSz=24
+RESTServer                   lastDisconnectTime                    STRING          MaxSz=24
+                             maxChainBuffers                       NUMERIC
+                             maxFragmentSize                       NUMERIC
+                             maxMounts                             NUMERIC_CONFIG
+                             maxOutputBuffers                      NUMERIC_CONFIG
+                             minPingTimeout                        NUMERIC
+                             mountNaks                             COUNTER
+                             numInputBuffers                       NUMERIC
+                             outputThresholdBreach                 NUMERIC
+                             outputThresholdOK                     NUMERIC
+                             overflows                             COUNTER
+                             packetsReceived                       COUNTER
+                             packetsReceivedRate                   GAUGE
+                             packetsSent                           COUNTER
+                             packetsSentRate                       GAUGE
+                             pingTimeout                           NUMERIC
+                             poolSize                              NUMERIC
+                             poolSizePeakUsed                      NUMERIC
+                             poolSizeUsed                          NUMERIC
+                             portName                              STRING          MaxSz=24
+                             portNumber                            NUMERIC
+                             readBias                              NUMERIC
+                             removeAllSessions                     BOOLEAN
+                             requestTimeout                        NUMERIC
+                             serverDisconnects                     COUNTER
+                             serverToClientPings                   BOOLEAN
+                             tcpNoDelay                            BOOLEAN
+                             tcpRecvBufSize                        NUMERIC
+                             tcpSendBufSize                        NUMERIC
+                             timedWrites                           BOOLEAN
+                             zlibCompressionLevel                  NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+restThread
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             ackPktsRcvd                           NUMERIC
+                             ackPktsSent                           NUMERIC
+                             acksRcvd                              NUMERIC
+                             acksSent                              NUMERIC
+                             badPacket                             COUNTER
+                             badPktFromNet                         NUMERIC
+                             badPktFromUser                        NUMERIC
+                             BCDataMsgsToUsers                     NUMERIC
+                             BCDataPktsRcvd                        NUMERIC
+                             BCDataPktsSent                        NUMERIC
+                             BCmsgGaps                             NUMERIC
+                             BCMsgsFromUsers                       NUMERIC
+                             BCMsgsMisordered                      NUMERIC
+                             BCpktLoss                             NUMERIC
+                             BCPktsRcvd                            NUMERIC
+                             BCPktsSent                            NUMERIC
+                             bufferSize                            NUMERIC_CONFIG
+                             bytesReceived                         COUNTER
+                             bytesSent                             COUNTER
+                             congestionBegin                       COUNTER
+                             congestionEnd                         COUNTER
+                             dataMsgsToUsers                       NUMERIC
+                             discardPktsRcvd                       NUMERIC
+                             discardPktsSent                       NUMERIC
+                             discardRcvd                           COUNTER
+                             discardSent                           COUNTER
+                             filterOutLoopMsg                      NUMERIC
+                             filterOutMsg                          NUMERIC
+                             fragmentWrites                        COUNTER
+                             heartBeatsRcvd                        NUMERIC
+                             heartBeatsSent                        NUMERIC
+                             hostUnreachable                       COUNTER
+                             inboundOverflow                       COUNTER
+                             incmplt                               NUMERIC
+                             incompleteMsg                         COUNTER
+                             inputBias                             NUMERIC_CONFIG
+                             logNodeReboots                        BOOLEAN_CONFIG
+                             lostMsgDiscards                       NUMERIC
+                             lostUsrQOverflow                      NUMERIC
+                             maximumNumRetries                     NUMERIC_CONFIG
+                             maximumPacketsPending                 NUMERIC_CONFIG
+                             msgBuffersInUse                       NUMERIC
+                             msgsFromUsers                         NUMERIC
+                             msgsToUsers                           NUMERIC
+                             nodeResync                            NUMERIC
+                             noFreeRespBuffer                      NUMERIC
+                             nullPktsRcvd                          NUMERIC
+                             nullPktsSent                          NUMERIC
+rrcpTransmissionBus          oldBCDiscard                          NUMERIC
+                             oldPPDiscard                          NUMERIC
+                             oldRxmtPPDiscard                      NUMERIC
+                             open                                  STRING          MaxSz=3
+                             outboundBufferOverruns                COUNTER
+                             outboundPktsDrop                      COUNTER
+                             packetsReceived                       COUNTER
+                             packetsSent                           COUNTER
+                             pktBuffersInUse                       NUMERIC
+                             PPDataMsgsToUsers                     NUMERIC
+                             PPDataPktsRcvd                        NUMERIC
+                             PPDataPktsSent                        NUMERIC
+                             PPmsgGaps                             NUMERIC
+                             PPMsgsFromUsers                       NUMERIC
+                             PPMsgsMisordered                      NUMERIC
+                             PPpktLoss                             NUMERIC
+                             PPPktsAckdByWndw                      NUMERIC
+                             PPPktsRcvd                            NUMERIC
+                             PPPktsSent                            NUMERIC
+                             ppTimeout                             COUNTER
+                             remoteReboot                          COUNTER
+                             reRxmtdRqstSent                       NUMERIC
+                             reRxmtPktRcvd                         NUMERIC
+                             reRxmtPktSent                         NUMERIC
+                             reRxmtRqstRcvd                        NUMERIC
+                             rrcpBCMissedMsgs                      COUNTER
+                             rrcpResync                            COUNTER
+                             rxmtBCPktSent                         NUMERIC
+                             rxmtBCPktsRcvd                        NUMERIC
+                             rxmtPPPktRcvd                         NUMERIC
+                             rxmtPPPktSent                         NUMERIC
+                             rxmtPPReqPktRcvd                      NUMERIC
+                             rxmtPPReqPktSent                      NUMERIC
+                             rxmtRqstPktRcvd                       NUMERIC
+                             rxmtRqstPktSent                       NUMERIC
+                             rxmtRqstRcvd                          NUMERIC
+                             rxmtRqstsCancld                       NUMERIC
+                             rxmtRqstsSent                         NUMERIC
+                             rxmtRqstsStaged                       NUMERIC
+                             statusMsgsToUsers                     NUMERIC
+                             threadBytesSent                       COUNTER
+                             threadPacketsSent                     COUNTER
+                             totalBytesRcvd                        NUMERIC
+                             totalBytesSent                        NUMERIC
+                             totalPktsRcvd                         NUMERIC
+                             totalPktsSent                         NUMERIC
+                             unackdPPPkt                           NUMERIC
+                             unknPktDiscard                        NUMERIC
+                             useMultiPartRRCPLock                  BOOLEAN_CONFIG
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             logParsingErrors                      BOOLEAN_CONFIG
+RRMPParsingError             logUnknownOpcodes                     BOOLEAN_CONFIG
+                             num6ParsingErrors                     COUNTER
+                             num6UnknownOpcodes                    COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             congestion                            BOOLEAN
+                             containers                            NUMERIC_CONFIG
+                             enableLoopPrevention                  BOOLEAN
+                             enableMFTCounter                      BOOLEAN
+RRMPSourceConsumer           hashTableSize                         NUMERIC
+                             hotStandbyFailoverPace                NUMERIC_CONFIG
+                             microsFlushCounter                    COUNTER
+                             microsFlushInterval                   NUMERIC_CONFIG
+                             sinkCleanupPace                       NUMERIC_CONFIG
+                             sinkRequestsPerInvocation             NUMERIC_CONFIG
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             clientCount                           NUMERIC
+                             maxRRMPMsgRate                        NUMERIC_CONFIG
+RRMPTrafficMonitor           rrmpMsgRate                           NUMERIC
+                             rrmpMsgsSent                          NUMERIC
+                             xoff                                  BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+RTRManagedServer
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             cacheRepublish                        BOOLEAN
+                             clearScreenOnComFault                 BOOLEAN
+                             clearScreenOnPreemption               BOOLEAN
+RTRManagedService            dumpAccessLockFileName                STRING          MaxSz=24
+                             dumpAuditUserInfoFileName             STRING          MaxSz=27
+                             dumpCacheInputFile                    STRING
+                             simulateOverflow                      BOOLEAN
+                             suspend                               BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             cacheDownload                         STRING          MaxSz=10
+                             consumerSideRestartTimeSec            NUMERIC_CONFIG
+                             itemsDownloaded                       NUMERIC
+Server.SrcDist               maxNumDLMsg                           NUMERIC_CONFIG
+                             numIntervalsForDLAck                  NUMERIC_CONFIG
+                             numItemsInDLMsg                       NUMERIC_CONFIG
+                             sourceDownload                        STRING          MaxSz=10
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             activeAppCriteria                     NUMERIC
+                             ageUnwatchedItemTime                  NUMERIC
+                             appCriteriaAgeTime                    NUMERIC_CONFIG
+                             appCriteriaStreams                    NUMERIC
+                             appProvidingLoad                      BOOLEAN
+                             cacheCriteriaStreams                  NUMERIC
+                             cacheType                             STRING          MaxSz=11
+                             consumers                             NUMERIC
+                             consumerShutdownInProgress            BOOLEAN
+                             consumerStartupScheduled              BOOLEAN
+                             cost                                  NUMERIC
+                             dataType                              STRING          MaxSz=9
+                             discourageRequestsOnOutage            BOOLEAN
+                             dismountedDueToRoundTripLatency       BOOLEAN
+                             dismountOnOutage                      BOOLEAN
+                             dismountOnRoundTripLatency            BOOLEAN
+                             imageRetrievalTimeThreshold           NUMERIC_CONFIG
+                             imageRetrievalTimeThresholdLog        BOOLEAN
+                             includeUnwatchedItemsInLoad           BOOLEAN
+                             load                                  GAUGE
+                             lockItemThreshold                     NUMERIC
+                             lowPriThreadExecs                     COUNTER
+                             maxCache                              NUMERIC
+ServerAttributes             maxLoadLevel                          NUMERIC
+                             multiLevelAggregation                 BOOLEAN
+                             multipleQosEnabled                    BOOLEAN
+                             name                                  STRING          MaxSz=10
+                             openWindow                            NUMERIC
+                             operatingMode                         STRING
+                             outageHandlingActive                  BOOLEAN
+                             overflow                              BOOLEAN
+                             overflows                             NUMERIC
+                             overrideFeatureQos                    BOOLEAN
+                             overrideProviderQos                   BOOLEAN
+                             rebalanceNumItems                     NUMERIC_CONFIG
+                             rebalanceRate                         NUMERIC_CONFIG
+                             removeBIRImages                       BOOLEAN
+                             removeUnwatchedItems                  BOOLEAN
+                             routeName                             STRING          MaxSz=10
+                             serverCapabilities                    STRING          MaxSz=7
+                             serverID                              NUMERIC
+                             serverPartitions                      STRING
+                             serverPartitionsNegation              STRING
+                             serverQos                             STRING          MaxSz=23
+                             serviceID                             NUMERIC
+                             shutdownInProgress                    BOOLEAN
+                             shutdownPending                       BOOLEAN
+                             supportsPosting                       BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             activeOkay                            NUMERIC
+                             activeStale                           NUMERIC
+                             agedOut                               COUNTER
+                             agedOutNakItems                       COUNTER
+                             broadcast                             COUNTER
+                             cached                                NUMERIC
+                             cacheDataErrors                       COUNTER
+                             cacheDataWarnings                     COUNTER
+                             cacheListFullCount                    COUNTER
+                             closeItem                             STRING
+                             closeItemFile                         STRING
+                             drops                                 COUNTER
+                             dump                                  BOOLEAN
+                             groupMerge                            COUNTER
+                             highPriorityPendOut                   GAUGE
+                             hostRequests                          COUNTER
+                             images                                COUNTER
+                             items                                 NUMERIC
+                             itemsDomain6                          GAUGE
+                             itemsDomain7                          GAUGE
+                             itemsDomain8                          GAUGE
+                             itemsDomain9                          GAUGE
+                             lastIntervalPeakImageRetrievalTime    NUMERIC
+                             locks                                 COUNTER
+                             lowPriorityPendOut                    GAUGE
+                             mediumPriorityPendOut                 GAUGE
+                             naked                                 NUMERIC
+                             normalRequests                        COUNTER
+                             numGroupEvents                        GAUGE
+                             opens                                 COUNTER
+                             peakCacheListSize                     NUMERIC
+                             peakImageRetrievalTime                NUMERIC
+ServerDataStream             pending                               NUMERIC
+                             pendingAgeOut                         NUMERIC
+                             pendingCacheRetrieval                 NUMERIC
+                             pendingClose                          NUMERIC
+                             pendingImageComp                      NUMERIC
+                             pendingOut                            GAUGE
+                             pendingOutTimeouts                    COUNTER
+                             pendingPriority                       NUMERIC
+                             percentCacheListUsed                  NUMERIC
+                             permissionDenial                      COUNTER
+                             preemptionCloses                      COUNTER
+                             privateOkay                           NUMERIC
+                             privateStale                          NUMERIC
+                             queryItemInFile                       STRING
+                             queryItemOutFile                      STRING          MaxSz=20
+                             recoverableCloses                     COUNTER
+                             refreshItem                           STRING
+                             removeItem                            STRING
+                             removeItemFile                        STRING
+                             snapRequests                          COUNTER
+                             status                                COUNTER
+                             totalItemsClosed                      COUNTER
+                             totalItemsClosedErrors                COUNTER
+                             totalItemsClosedNoAction              COUNTER
+                             totalItemsRefreshed                   COUNTER
+                             totalItemsRefreshedErrors             COUNTER
+                             totalItemsRefreshedNoAction           COUNTER
+                             totalItemsRemoved                     COUNTER
+                             totalItemsRemovedErrors               COUNTER
+                             totalItemsRemovedNoAction             COUNTER
+                             totalItemsSaved                       COUNTER
+                             unsolicitedImages                     COUNTER
+                             unsolicitedStatus                     COUNTER
+                             updates                               COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             acknowledged                          COUNTER
+                             failed                                COUNTER
+ServerInsert                 pending                               GAUGE
+                             pendingOut                            GAUGE
+                             total                                 COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+ServerNetRecog               dupSinkIds                            COUNTER
+                             sinks                                 NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             eventDiscardedNoSeqNum                NUMERIC
+                             maxRecoveryBuffer                     NUMERIC_CONFIG
+                             OldUpdatesFiltered                    NUMERIC
+                             recovError                            NUMERIC
+                             recoveryDelayTime                     NUMERIC_CONFIG
+                             recoveryDomains                       STRING_CONFIG   MaxSz=1
+                             recoveryEnabled                       BOOLEAN_CONFIG
+                             recoveryProviderTimeout               NUMERIC_CONFIG
+                             recoveryRequestWindow                 NUMERIC_CONFIG
+                             recoveryRetryLimit                    NUMERIC_CONFIG
+                             recovFailExceedRetryLimit             NUMERIC
+                             recovFailProviderTimeout              NUMERIC
+                             recovNotSupported                     NUMERIC
+                             recovOutOfBuffer                      NUMERIC
+                             recovPendingCurrent                   NUMERIC
+                             recovPendingTotal                     NUMERIC
+                             recovPendOutCurrent                   NUMERIC
+ServerRecovStream.SrcDist    recovPendOutTotal                     NUMERIC
+                             recovPendProviderCurrent              NUMERIC
+                             recovPendProviderTotal                NUMERIC
+                             recovStagingAtPO                      NUMERIC
+                             recovStagingCurrent                   NUMERIC
+                             recovStagingNotPO                     NUMERIC
+                             recovStagingTotal                     NUMERIC
+                             recovTotal                            NUMERIC
+                             reorderBufCount                       NUMERIC
+                             reorderBufTotal                       NUMERIC
+                             reorderShuffleTolerance               NUMERIC_CONFIG
+                             reorderTimeout                        NUMERIC_CONFIG
+                             repeatRecovery                        NUMERIC
+                             repeatStaging                         NUMERIC
+                             totalNumberOfDuplicateMsgs            NUMERIC
+                             totalNumberOfGaps                     NUMERIC
+                             totalNumberOfLostMsgs                 NUMERIC
+                             unsolRespNoRecov                      NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             ageUnwatchedItemTime                  NUMERIC
+                             aggregationInterval                   STRING_CONFIG   MaxSz=1
+                             aggregationStyle                      STRING
+                             cacheLocation                         STRING          MaxSz=6
+                             cacheType                             STRING          MaxSz=11
+                             consumers                             NUMERIC
+                             consumerService                       STRING          MaxSz=4
+                             datafeedInterruptionDetectionEnabled  BOOLEAN
+                             dataType                              STRING          MaxSz=9
+                             delayEnabled                          BOOLEAN
+                             detectionDuration                     NUMERIC
+                             detectionTrafficWindow                NUMERIC
+                             disableAggregationItemList            STRING_CONFIG
+                             disconnectServiceDown                 BOOLEAN
+                             dump                                  BOOLEAN
+                             dumpAccessLock                        BOOLEAN
+                             dumpAllItemsLockInfo                  BOOLEAN
+                             dumpAuditUserInfo                     BOOLEAN
+                             dumpTemplateDatabase                  BOOLEAN
+                             dumpToPersistence                     BOOLEAN
+                             enableSourceBlending                  BOOLEAN
+                             fieldFiltering                        BOOLEAN
+                             lockedItemThreshold                   NUMERIC
+                             logGroupStatus                        BOOLEAN
+ServiceAttributes            maxCache                              NUMERIC
+                             minimumUpdateRate                     NUMERIC
+                             multiLevelAggregation                 BOOLEAN
+                             multipleQosEnabled                    BOOLEAN
+                             nakListAgeOutTime                     NUMERIC
+                             nakListMaxItems                       NUMERIC
+                             name                                  STRING          MaxSz=10
+                             openWindow                            NUMERIC
+                             originalServiceEnabled                BOOLEAN
+                             pendingToSrcAppTimeout                NUMERIC
+                             persistentCacheDir                    STRING
+                             persistentCacheOn                     BOOLEAN
+                             publisherAugmentation                 BOOLEAN
+                             reloadContribData                     BOOLEAN
+                             removeBIRImages                       BOOLEAN
+                             removeUnwatchedItems                  BOOLEAN
+                             resetPeakImageRetrieval               BOOLEAN
+                             servers                               NUMERIC
+                             serviceID                             NUMERIC
+                             snapshot                              BOOLEAN
+                             supportPauseResume                    BOOLEAN
+                             supportWarmStandby                    BOOLEAN
+                             trafficManagement                     BOOLEAN
+                             updateAggregation                     BOOLEAN
+                             useServiceIdFromSrc                   BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             auditTrace                            BOOLEAN_CONFIG
+                             backlogTrace                          BOOLEAN_CONFIG
+                             criteriaTrace                         BOOLEAN_CONFIG
+                             downloadTrace                         BOOLEAN_CONFIG
+                             errorTrace                            BOOLEAN_CONFIG
+                             firstBroadcastBitmapImgHdr            BOOLEAN_CONFIG
+                             forwardPriority                       BOOLEAN_CONFIG
+                             insertTimeout                         NUMERIC_CONFIG
+                             insertTrace                           BOOLEAN_CONFIG
+                             itemLevelTraceList                    STRING
+                             itemTrace                             BOOLEAN_CONFIG
+                             itemTraceAddFile                      STRING
+                             itemTraceAddItem                      STRING
+                             itemTraceCount                        NUMERIC
+                             itemTraceRmvFile                      STRING
+                             itemTraceRmvItem                      STRING
+                             matchFailureTrace                     BOOLEAN_CONFIG
+                             maxPendingOutInsert                   NUMERIC_CONFIG
+                             networkFlushInterval                  NUMERIC_CONFIG
+ServiceAttributes.SrcDist    networkInsertRespFlushInterval        NUMERIC_CONFIG
+                             networkP2PFlushInterval               NUMERIC_CONFIG
+                             networkTrace                          BOOLEAN_CONFIG
+                             nonRecoverablePolling                 BOOLEAN_CONFIG
+                             poll                                  BOOLEAN_CONFIG
+                             preemptionThreshold                   NUMERIC_CONFIG
+                             removeUnwatchedItems                  BOOLEAN_CONFIG
+                             servers                               NUMERIC
+                             serviceID                             NUMERIC
+                             transportNum                          NUMERIC
+                             updateTrace                           BOOLEAN_CONFIG
+                             updateTraceAddFile                    STRING
+                             updateTraceAddItem                    STRING
+                             updateTraceCount                      NUMERIC
+                             updateTraceRmvFile                    STRING
+                             updateTraceRmvItem                    STRING
+                             usePointToPointCont                   BOOLEAN_CONFIG
+                             usePointToPointCriteria               BOOLEAN_CONFIG
+                             usePointToPointData                   BOOLEAN_CONFIG
+                             usePointToPointResp                   BOOLEAN_CONFIG
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             activeOkay                            NUMERIC
+                             activeStale                           NUMERIC
+                             agedOutNakItems                       COUNTER
+                             cached                                NUMERIC
+                             conversionOverflows                   NUMERIC
+                             items                                 NUMERIC
+                             lastIntervalPeakImageRetrievalTime    NUMERIC
+                             naked                                 NUMERIC
+                             numGroupEvents                        GAUGE
+ServiceDataStream            opens                                 COUNTER
+                             peakImageRetrievalTime                NUMERIC
+                             peakImageRetrievalTimeItem            STRING          MaxSz=22
+                             pending                               NUMERIC
+                             pendingOut                            GAUGE
+                             permissionDenial                      COUNTER
+                             preemptionCloses                      COUNTER
+                             privateOkay                           NUMERIC
+                             privateStale                          NUMERIC
+                             recoverableCloses                     COUNTER
+                             updateRate                            NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             acknowledged                          COUNTER
+                             failed                                COUNTER
+ServiceInsert                pending                               GAUGE
+                             pendingOut                            GAUGE
+                             servers                               NUMERIC
+                             total                                 COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             # class descs                         NUMERIC
+                             # managed objs                        GAUGE
+                             # managed vars                        GAUGE
+                             # var descs                           NUMERIC
+                             alc dynamic mem                       GAUGE
+                             alc overhead mem                      NUMERIC
+                             alc static mem                        NUMERIC
+                             elements freed                        NUMERIC
+                             elements in use                       NUMERIC
+                             heartbeat                             NUMERIC
+ShmemMOServerStats           items activity                        GAUGE
+                             items managed                         GAUGE
+                             maxClients                            NUMERIC
+                             numClients                            NUMERIC
+                             outOfSharedMemory                     BOOLEAN
+                             partitionAvail                        NUMERIC
+                             partitionSize                         NUMERIC
+                             partitionUsed                         NUMERIC
+                             pid                                   NUMERIC
+                             semaphoreId                           NUMERIC
+                             semaphoreKey                          STRING          MaxSz=4
+                             time                                  NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             avgBytesPerMsg                        NUMERIC
+                             clearRespBufOverflow                  NUMERIC
+                             freeRequestMsgQCount                  NUMERIC
+                             freeRequestMsgQCountSsl               NUMERIC
+                             freeResponseMsgQCount                 NUMERIC
+                             freeRvInboundMsgQCount                NUMERIC
+                             ibAddCacheAppRecv                     NUMERIC
+                             ibAddCacheAppSent                     NUMERIC
+                             ibAddRouteRecv                        NUMERIC
+                             ibAddRouteSent                        NUMERIC
+                             ibAppOverflowRecv                     NUMERIC
+                             ibAppOverflowSent                     NUMERIC
+                             ibBgsNewChanRecv                      NUMERIC
+                             ibBgsNewChanSent                      NUMERIC
+                             ibBgsStartAppRecv                     NUMERIC
+                             ibBgsStartAppSent                     NUMERIC
+                             ibBgsStopAppRecv                      NUMERIC
+                             ibBgsStopAppSent                      NUMERIC
+                             ibChanDisconnRecv                     NUMERIC
+                             ibChanDisconnSent                     NUMERIC
+                             ibChannelMsgRecv                      NUMERIC
+                             ibChannelMsgSent                      NUMERIC
+                             ibChannelResetMsgRecv                 NUMERIC
+                             ibChannelResetMsgSent                 NUMERIC
+                             ibClsc40AppRdyRecv                    NUMERIC
+                             ibClsc40AppRdySent                    NUMERIC
+                             ibClsc40DelAppRecv                    NUMERIC
+                             ibClsc40DelAppSent                    NUMERIC
+                             ibClsc40MsgRecv                       NUMERIC
+                             ibClsc40MsgSent                       NUMERIC
+                             ibClsc40NewAppRecv                    NUMERIC
+                             ibClsc40NewAppSent                    NUMERIC
+                             ibClscAppNotFound                     NUMERIC
+                             ibDecodeError                         NUMERIC
+                             ibDelChanRecv                         NUMERIC
+                             ibDelChanSent                         NUMERIC
+                             ibDynamicMountMsgRecv                 NUMERIC
+                             ibDynamicMountMsgSent                 NUMERIC
+                             ibFailbackHBRecv                      NUMERIC
+                             ibFailbackHBSent                      NUMERIC
+                             ibGlobalStatusRecv                    NUMERIC
+                             ibGlobalStatusSent                    NUMERIC
+                             ibMvSettingRecv                       NUMERIC
+                             ibMvSettingSent                       NUMERIC
+                             ibNCIListRecv                         NUMERIC
+                             ibNCIListSent                         NUMERIC
+                             ibNetRecogRecv                        NUMERIC
+                             ibNetRecogSent                        NUMERIC
+                             ibNewChanRecv                         NUMERIC
+                             ibNewChanSent                         NUMERIC
+                             ibRecvUnknownOpcode                   NUMERIC
+                             ibRsslAppNotFound                     NUMERIC
+                             ibRsslChnlNotFound                    NUMERIC
+                             ibSendUnknownOpcode                   NUMERIC
+                             ibShutdownServerRecv                  NUMERIC
+                             ibShutdownServerSent                  NUMERIC
+                             ibSrcDirRecv                          NUMERIC
+                             ibSrcDirSent                          NUMERIC
+                             ibSsl45AppNotFound                    NUMERIC
+                             ibSsl45ChnlNotFound                   NUMERIC
+                             ibSsl45MsgRecv                        NUMERIC
+                             ibSsl45MsgSent                        NUMERIC
+                             ibSsl45ServiceInfoRecv                NUMERIC
+                             ibSsl45ServiceInfoSent                NUMERIC
+                             ibStartConsRecv                       NUMERIC
+                             ibStartConsSent                       NUMERIC
+                             ibTotBytesRecv                        NUMERIC
+                             ibTotBytesSent                        NUMERIC
+                             ibTotMsgsRecv                         NUMERIC
+                             ibTotMsgsSent                         NUMERIC
+SideLoadAttributes           ibTrwfChnlNotFound                    NUMERIC
+                             ibTrwfLoginRecv                       NUMERIC
+                             ibTrwfLoginSent                       NUMERIC
+                             ibTrwfMsgRecv                         NUMERIC
+                             ibTrwfMsgSent                         NUMERIC
+                             internalLinkListError                 NUMERIC
+                             maxThreadBufferCeiling                NUMERIC_CONFIG
+                             maxThreadBufferCount                  NUMERIC_CONFIG
+                             noFreeReqBuf                          NUMERIC
+                             noFreeRespBuf                         NUMERIC
+                             obChannelMsgRecv                      NUMERIC
+                             obChannelMsgSent                      NUMERIC
+                             obChannelResetMsgRecv                 NUMERIC
+                             obChannelResetMsgSent                 NUMERIC
+                             obClsc40CloseReqRecv                  NUMERIC
+                             obClsc40CloseReqSent                  NUMERIC
+                             obClsc40HaltUpdReqRecv                NUMERIC
+                             obClsc40HaltUpdReqSent                NUMERIC
+                             obClsc40ImgReqRecv                    NUMERIC
+                             obClsc40ImgReqSent                    NUMERIC
+                             obClsc40InsertReqRecv                 NUMERIC
+                             obClsc40InsertReqSent                 NUMERIC
+                             obClsc40PriReqRecv                    NUMERIC
+                             obClsc40PriReqSent                    NUMERIC
+                             obClscAppNotFound                     NUMERIC
+                             obDictReloadRecv                      NUMERIC
+                             obDictReloadSent                      NUMERIC
+                             obDynamicMountRecv                    NUMERIC
+                             obDynamicMountSent                    NUMERIC
+                             obEncodeError                         NUMERIC
+                             obLinkStatusMsgRecv                   NUMERIC
+                             obLinkStatusMsgSent                   NUMERIC
+                             obNetRecogRecv                        NUMERIC
+                             obNetRecogSent                        NUMERIC
+                             obRecvUnknownOpcode                   NUMERIC
+                             obRsslAppNotFound                     NUMERIC
+                             obRsslChnlNotFound                    NUMERIC
+                             obRsslStatusMsgFailed                 NUMERIC
+                             obRsslStatusMsgRecv                   NUMERIC
+                             obRsslStatusMsgSent                   NUMERIC
+                             obSendUnknownOpcode                   NUMERIC
+                             obSsl45AppNotFound                    NUMERIC
+                             obSsl45ChnlNotFound                   NUMERIC
+                             obSsl45CloseReqRecv                   NUMERIC
+                             obSsl45CloseReqSent                   NUMERIC
+                             obSsl45ImgReqRecv                     NUMERIC
+                             obSsl45ImgReqSent                     NUMERIC
+                             obSsl45InsertReqRecv                  NUMERIC
+                             obSsl45InsertReqSent                  NUMERIC
+                             obSsl45PriReqRecv                     NUMERIC
+                             obSsl45PriReqSent                     NUMERIC
+                             obSsl45ServiceInfoRecv                NUMERIC
+                             obSsl45ServiceInfoSent                NUMERIC
+                             obStartConsRecv                       NUMERIC
+                             obStartConsSent                       NUMERIC
+                             obSyncEventRecv                       NUMERIC
+                             obSyncEventSent                       NUMERIC
+                             obTotBytesRecv                        NUMERIC
+                             obTotBytesSent                        NUMERIC
+                             obTotMsgsRecv                         NUMERIC
+                             obTotMsgsSent                         NUMERIC
+                             obTransErrorRecv                      NUMERIC
+                             obTransErrorSent                      NUMERIC
+                             obTrwfChnlNotFound                    NUMERIC
+                             obTrwfMsgRecv                         NUMERIC
+                             obTrwfMsgSent                         NUMERIC
+                             setRespBufOverflow                    NUMERIC
+                             totalAllocedRequestMsgCount           NUMERIC
+                             totalAllocedRequestMsgCountSsl        NUMERIC
+                             totalAllocedResponseMsgCount          NUMERIC
+                             totalAllocedRvInboundMsgCount         NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+SourceItemDispatcher
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             bufferPoolSize                        NUMERIC
+                             bufferPoolSizePeakUsed                NUMERIC
+                             bufferPoolSizeUsed                    NUMERIC
+                             bytesReceived                         COUNTER
+                             bytesReceivedRate                     GAUGE
+                             bytesSent                             COUNTER
+                             bytesSentRate                         GAUGE
+                             clientToServerPings                   BOOLEAN
+                             compressionType                       NUMERIC
+                             compressPercentage                    GAUGE
+                             connectionsAvailable                  NUMERIC
+                             connectionsEnabled                    BOOLEAN_CONFIG
+                             connectionsUsed                       GAUGE
+                             connectionType                        NUMERIC
+                             decompressPercentage                  GAUGE
+                             dumpIncoming                          BOOLEAN
+                             dumpOutgoing                          BOOLEAN
+                             forceCompression                      BOOLEAN
+                             guaranteedOutputBuffers               NUMERIC
+                             interfaceName                         STRING          MaxSz=10
+SourceRIPCServer             lastConnectTime                       STRING
+                             lastDisconnectTime                    STRING
+                             maxConnections                        NUMERIC_CONFIG
+                             maxFragmentSize                       NUMERIC
+                             maxOutputBuffers                      NUMERIC
+                             minPingTimeout                        NUMERIC
+                             msgsReceived                          COUNTER
+                             msgsReceivedRate                      GAUGE
+                             msgsSent                              COUNTER
+                             msgsSentRate                          GAUGE
+                             numInputBuffers                       NUMERIC
+                             overflows                             COUNTER
+                             pingTimeout                           NUMERIC
+                             portName                              STRING          MaxSz=24
+                             portNumber                            NUMERIC         Neg Vals
+                             reusePort                             BOOLEAN
+                             serverEnabled                         BOOLEAN_CONFIG
+                             serverToClientPings                   BOOLEAN
+                             socketId                              NUMERIC         Neg Vals
+                             tcpNoDelay                            BOOLEAN
+                             zlibCompressionLevel                  NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+sourceSSLDistribution
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             cacheTrace                            BOOLEAN
+                             dataErrorLog                          BOOLEAN
+                             dataErrorTrace                        BOOLEAN
+                             dataWarningLog                        BOOLEAN
+                             dataWarningTrace                      BOOLEAN
+                             insertTrace                           BOOLEAN
+                             itemLevelTraceList                    STRING
+                             itemTrace                             BOOLEAN
+                             itemTraceAddFile                      STRING
+                             itemTraceAddItem                      STRING
+                             itemTraceCount                        NUMERIC
+SrcDistProdSrvcDbg           itemTraceRmvFile                      STRING
+                             itemTraceRmvItem                      STRING
+                             multipleQosTrace                      BOOLEAN
+                             overflowTrace                         BOOLEAN
+                             preemptTrace                          BOOLEAN
+                             srcMgrTrace                           BOOLEAN
+                             updateTrace                           BOOLEAN
+                             updateTraceAddFile                    STRING
+                             updateTraceAddItem                    STRING
+                             updateTraceCount                      NUMERIC
+                             updateTraceRmvFile                    STRING
+                             updateTraceRmvItem                    STRING
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             addRoute                              STRING
+                             dumpIncoming                          BOOLEAN
+                             dumpOutgoing                          BOOLEAN
+                             enableAuthRestLog                     BOOLEAN
+SSLDispatcher                enableNIPServer                       BOOLEAN
+                             reloadRouteList                       BOOLEAN
+                             removeRoute                           STRING
+                             sourceItemHashTableSize               NUMERIC
+                             sourceItems                           NUMERIC
+                             tokenReissueRatio                     STRING          MaxSz=4
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             enumDictId                            NUMERIC
+                             enumDictName                          STRING          MaxSz=7
+                             enumDictType                          NUMERIC
+                             enumDictVersion                       STRING_CONFIG   MaxSz=5
+                             enumTypeFile                          STRING_CONFIG   MaxSz=40
+SSLFidDatabase               fieldDictFile                         STRING_CONFIG   MaxSz=46
+                             fieldDictId                           NUMERIC
+                             fieldDictName                         STRING          MaxSz=6
+                             fieldDictType                         NUMERIC
+                             fieldDictVersion                      STRING_CONFIG   MaxSz=7
+                             preloadTemplateFile                   STRING_CONFIG
+                             reloadCount                           COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             broadcast                             COUNTER
+                             close                                 COUNTER
+                             criteriaAck                           COUNTER
+                             criteriaAdd                           COUNTER
+                             criteriaClose                         COUNTER
+                             criteriaDelete                        COUNTER
+                             criteriaInfo                          COUNTER
+                             criteriaNak                           COUNTER
+                             generic                               COUNTER
+                             genericDropped                        COUNTER
+                             globalStatus                          COUNTER
+                             groupChange                           COUNTER
+                             groupMerge                            COUNTER
+                             groupStatus                           COUNTER
+                             image                                 COUNTER
+                             insertAck                             COUNTER
+SSLMsgsAppToSrc              insertNak                             COUNTER
+                             load                                  COUNTER
+                             lock                                  COUNTER
+                             obsolete                              COUNTER
+                             openWindow                            COUNTER
+                             pingAck                               COUNTER
+                             ready                                 COUNTER
+                             refresh                               COUNTER
+                             refreshRate                           NUMERIC
+                             rename                                COUNTER
+                             status                                COUNTER
+                             totalImageLength                      COUNTER
+                             totalInsertAckLength                  COUNTER
+                             totalInsertNakLength                  COUNTER
+                             totalUpdateLength                     COUNTER
+                             unknown                               COUNTER
+                             update                                COUNTER
+                             updateRate                            NUMERIC
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             active                                COUNTER
+                             close                                 COUNTER
+                             closeNak                              COUNTER
+                             criteriaClose                         COUNTER
+                             criteriaOpen                          COUNTER
+                             generic                               COUNTER
+                             genericDropped                        COUNTER
+                             haltUpdates                           COUNTER
+                             imageNak                              COUNTER
+                             insert                                COUNTER
+                             insertByteRate                        NUMERIC
+SSLMsgsSrcToApp              insertLatency                         NUMERIC
+                             insertRate                            NUMERIC
+                             open                                  COUNTER
+                             openNak                               COUNTER
+                             overflows                             COUNTER
+                             ping                                  COUNTER
+                             priority                              COUNTER
+                             renameNak                             COUNTER
+                             standby                               COUNTER
+                             statusNak                             COUNTER
+                             totalInsertLength                     COUNTER
+                             updateNak                             COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             activeSessions                        NUMERIC
+                             backupServersActive                   NUMERIC
+                             backupServersConfigured               NUMERIC
+                             dumpIncoming                          BOOLEAN
+                             dumpOutgoing                          BOOLEAN
+SSLRoute                     dynamicDismounts                      COUNTER
+                             dynamicMounts                         COUNTER
+                             gatewayServersActive                  NUMERIC
+                             gatewayServersConfigured              NUMERIC
+                             name                                  STRING          MaxSz=10
+                             routeEnabled                          BOOLEAN
+                             sessionNeeded                         BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             acceptAllServices                     BOOLEAN
+                             allowSuspectData                      BOOLEAN
+                             authenticationMethod                  STRING          MaxSz=4
+                             blockedServiceList                    STRING
+                             compressionType                       NUMERIC
+                             connectionType                        STRING          MaxSz=6
+                             disableDataConversion                 BOOLEAN
+                             dynamicMount                          BOOLEAN
+                             enableOnInboundThreads                BOOLEAN
+                             enablePreferredHost                   BOOLEAN
+                             hostList                              STRING          MaxSz=9
+                             location                              STRING
+                             maxIncomingUnconfirmedMessages        NUMERIC
+                             maxOutgoingUnconfirmedMessages        NUMERIC
+                             minCompressionThreshold               NUMERIC
+                             numExtendedLines                      NUMERIC
+                             numIpcInputBuffers                    NUMERIC
+                             numIpcOutputBuffers                   NUMERIC
+                             numSessions                           NUMERIC
+SSLRouteConfig               persistentMount                       BOOLEAN
+                             pingTimeout                           NUMERIC
+                             port                                  STRING          MaxSz=20
+                             portNumber                            NUMERIC
+                             protocol                              STRING          MaxSz=4
+                             proxyHost                             STRING
+                             proxyPort                             STRING
+                             recoveryBySSLLib                      BOOLEAN
+                             recoveryInterval                      NUMERIC
+                             resetHostListOnReconnection           BOOLEAN
+                             roundTripLatency                      BOOLEAN
+                             serviceDiscovery                      BOOLEAN
+                             serviceList                           STRING
+                             singleOpen                            BOOLEAN
+                             synchronizeHostList                   BOOLEAN
+                             tcpNoDelay                            BOOLEAN
+                             tcpRecvBufSize                        NUMERIC
+                             tcpSendBufSize                        NUMERIC
+                             udpRecvBufSize                        NUMERIC
+                             userName                              STRING          MaxSz=12
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             appServiceName                        STRING          MaxSz=10
+                             isBackup                              BOOLEAN
+SSLServerAttributes          isEnabled                             BOOLEAN
+                             isNeeded                              BOOLEAN
+                             mdhServiceName                        STRING          MaxSz=10
+                             routeName                             STRING          MaxSz=10
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             contribFileToReload                   STRING
+                             errContribReloads                     COUNTER
+                             globalCacheListFullCount              COUNTER
+SSLServiceGenerator          globalItems                           NUMERIC
+                             hashTableSize                         NUMERIC
+                             masterFidList                         STRING_CONFIG
+                             maxSecondLevelElementSize             NUMERIC
+                             okContribReloads                      COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             aggThreadCpu                          STRING
+                             dnsThreadCpu                          STRING
+                             mainThreadCpu                         STRING
+                             primeTopology                         BOOLEAN
+                             restThreadCpu                         STRING
+                             rrcpSrcClckCpu.0                      STRING
+                             rrcpSrcClckCpu.1                      STRING
+ThreadBindingStats           rrcpSrcEngineCpu.0                    STRING
+                             rrcpSrcEngineCpu.1                    STRING
+                             rrcpSrcUsrCntrlCpu.0                  STRING
+                             rrcpSrcUsrCntrlCpu.1                  STRING
+                             sourceThreadCpu.1                     STRING
+                             sourceThreadCpu.2                     STRING
+                             sourceThreadCpu.3                     STRING
+                             transportThreadCpu.1                  STRING
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             bytesSent                             COUNTER
+                             dumpOutgoingMsgs                      BOOLEAN
+                             itemThreadFragmentSize                NUMERIC_CONFIG
+TransBusProxy                messagesSent                          COUNTER
+                             multicastBitmapWrites                 COUNTER
+                             multicastWrites                       COUNTER
+                             pointToPointMulticastWrites           COUNTER
+                             pointToPointWrites                    COUNTER
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             badPackets                            COUNTER
+                             bytesReceived                         COUNTER
+                             bytesSent                             COUNTER
+                             dumpIncomingMsgs                      BOOLEAN
+                             dumpOutgoingMsgs                      BOOLEAN
+                             fragmentList                          NUMERIC
+TransmissionBus              logBadPackets                         BOOLEAN_CONFIG
+                             messagesReceived                      COUNTER
+                             messagesSent                          COUNTER
+                             multicastBitmapWrites                 COUNTER
+                             multicastWrites                       COUNTER
+                             pointToPointMulticastWrites           COUNTER
+                             pointToPointWrites                    COUNTER
+                             protocol                              STRING          MaxSz=4
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             freeResponseBufferCount               NUMERIC
+                             freeTbusPacketCount                   NUMERIC
+                             noFreeRespBuffer                      NUMERIC
+                             numBytesFromItemThreads               NUMERIC
+                             numBytesToNetwork                     NUMERIC
+TransportThread              numNetworkWrites                      COUNTER
+                             numPacketsFromItemThreads             COUNTER
+                             responseBufferCount                   NUMERIC
+                             tbusPacketCount                       NUMERIC
+                             totalAllocedResponseBufferCount       COUNTER
+                             totalAllocedTbusPacketCount           COUNTER
+                             transportFlushInterval                NUMERIC_CONFIG
+---------------------------  ------------------------------------  --------------  --------
+
+
+---------------------------  ------------------------------------  --------------  --------
+Class                        Variable                              Type            Obs
+---------------------------  ------------------------------------  --------------  --------
+                             ADH_PREMIUM                           BOOLEAN
+                             CASCADING                             BOOLEAN
+                             CONFLATION                            BOOLEAN
+                             daysBeforeExpired                     NUMERIC
+                             DELAY                                 BOOLEAN
+                             licenseExpired                        BOOLEAN
+                             licenseFile                           STRING          MaxSz=40
+TrlsManager                  licenseStatus                         STRING          MaxSz=7
+                             licenseType                           STRING          MaxSz=10
+                             PREFERRED_PRIMARY                     BOOLEAN
+                             PRIVATE_STREAM                        BOOLEAN
+                             productName                           STRING          MaxSz=3
+                             productVersion                        STRING          MaxSz=3
+                             reloadLicenseFile                     STRING
+                             VISIBLE_PUBLISHER_IDENTIFIER          BOOLEAN
+---------------------------  ------------------------------------  --------------  --------
+

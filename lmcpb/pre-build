@@ -1,0 +1,28 @@
+#! /bin/bash --noprofile
+
+# Invoked before python build:
+
+semver_file=semver.txt
+
+case "$0" in
+    /*|*/*) this_dir=$(dirname $(realpath $0));;
+    *) this_dir=$(dirname $(realpath $(which $0)));;
+esac
+
+set -e
+cd $this_dir
+
+cat > src/lmcrec/playback/buildinfo.py <<EOM
+# This file was generated automatically at build time.
+# Note that it is excluded from git control.
+
+gitinfo = "$(
+    if [[ -n "$(git status --porcelain)" ]]; then
+        dirty="-dirty"
+    else
+        dirty=""
+    fi
+    echo $(git rev-parse HEAD)${dirty}
+)"
+version = "$(cat semver.txt)"
+EOM

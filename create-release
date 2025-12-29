@@ -1,0 +1,33 @@
+#!/bin/bash --noprofile
+
+# Infer project root from invocation:
+this_script=${0##*/}
+case "$0" in
+    /*|*/*) this_dir=$(dirname $(realpath $0));;
+    *) this_dir=$(dirname $(realpath $(which $0)));;
+esac
+
+set -e
+cd $this_dir
+
+# Source definitions:
+. release-definitions.sh
+
+# Must be in proper git state and have semver tag applied at the HEAD; this can
+# be disabled by setting env __lmcrec_ignore_git_state=y .
+if ! (set -x; ./check-git-state $semver); then
+    echo >&2 "$this_script: cannot continue"
+    exit 1
+fi
+
+# Generate release files:
+(
+    set -ex
+    mkdir -p $release_dir
+    rm -rf $release_dir/*
+    ./lmcrec/create-release-files
+    ./lmcpb/create-release-files
+)
+
+echo
+echo "$this_script - Release created under $(realpath $release_dir)"

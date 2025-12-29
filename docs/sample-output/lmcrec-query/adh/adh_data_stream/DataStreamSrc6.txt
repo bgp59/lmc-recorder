@@ -1,0 +1,593 @@
+[2025-12-11T13:13:03.827389-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:13:08.830354-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:13:28.626058-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:13:33.625205-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         10          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              10          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          7           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages               7           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         33          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              33          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:13:38.627964-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:13:43.626202-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         10          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              10          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          7           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages               7           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         33          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              33          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:13:48.629136-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:13:53.626096-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         10          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              10          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          7           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages               7           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         33          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              33          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:13:58.628945-08:00] Class: DataStreamSrc6
+Instance                                                                             changeRequestID:d    refreshData:d    refreshHdr:d    total:d    update:d
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   35               35              35        130          25
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        35               35              35        130          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   32               32              32        121          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        32               32              32        121          25
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   33               33              33         99           0
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        33               33              33         99           0
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                                 100              100             100        350          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                                      100              100             100        350          50
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+
+[2025-12-11T13:14:03.628092-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         10          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              10          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          7           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages               7           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         33          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              33          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:08.629250-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:13.625471-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         10          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              10          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          7           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages               7           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         33          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              33          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:18.626102-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:23.626261-08:00] Class: DataStreamSrc6
+Instance                                                                             changeRequestID:d    refreshData:d    refreshHdr:d    total:d    update:d
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   35               35              35        115          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        35               35              35        115          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   32               32              32        103           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        32               32              32        103           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   33               33              33        132          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        33               33              33        132          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                                 100              100             100        350          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                                      100              100             100        350          50
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+
+[2025-12-11T13:14:28.626133-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:33.625392-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         10          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              10          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          7           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages               7           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         33          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              33          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:38.626126-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              25          25
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:43.627831-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         10          10
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              10          10
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          7           7
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages               7           7
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         33          33
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              33          33
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:48.626779-08:00] Class: DataStreamSrc6
+Instance                                                                        total:d    update:d
+----------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages         25          25
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages          5           5
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                        30          30
+----------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:14:53.630490-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:14:58.627806-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:15:03.628765-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:15:08.625919-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:15:13.624687-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:15:18.627693-08:00] Class: DataStreamSrc6
+Instance                                                                             changeRequestID:d    refreshData:d    refreshHdr:d    total:d    update:d
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   35               35              35        125          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        35               35              35        125          20
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   32               32              32         96           0
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        32               32              32         96           0
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   33               33              33         99           0
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        33               33              33         99           0
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                                 100              100             100        320          20
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                                      100              100             100        320          20
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+
+[2025-12-11T13:15:23.628094-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:15:28.625761-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:15:33.627666-08:00] Class: DataStreamSrc6
+Instance                                                                             changeRequestID:d    refreshData:d    refreshHdr:d    total:d    update:d
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   35               35              35        120          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        35               35              35        120          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   32               32              32        128          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        32               32              32        128          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   33               33              33        102           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        33               33              33        102           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                                 100              100             100        350          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                                      100              100             100        350          50
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+
+[2025-12-11T13:15:38.624888-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:15:43.625300-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:15:48.626347-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:15:53.628305-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:15:58.627395-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:03.625560-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:08.625375-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:13.627298-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:18.624280-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:23.625362-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:28.624263-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:33.627241-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:38.624346-08:00] Class: DataStreamSrc6
+Instance                                                                             changeRequestID:d    refreshData:d    refreshHdr:d    total:d    update:d
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   35               35              35        125          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        35               35              35        125          20
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   32               32              32         96           0
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        32               32              32         96           0
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   33               33              33        129          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        33               33              33        129          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                                 100              100             100        350          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                                      100              100             100        350          50
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+
+[2025-12-11T13:16:43.625004-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          3           3
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages               3           3
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:48.627965-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:53.627945-08:00] Class: DataStreamSrc6
+Instance                                                                        total:d    update:d
+----------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages         15          15
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages          5           5
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                        20          20
+----------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:16:58.629444-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:17:03.624944-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:17:08.625124-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:17:13.617443-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:17:18.617505-08:00] Class: DataStreamSrc6
+
+
+
+
+[2025-12-11T13:17:23.615557-08:00] Class: DataStreamSrc6
+Instance                                                                             changeRequestID:d    refreshData:d    refreshHdr:d    total:d    update:d
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   70               70              70        240          30
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        70               70              70        240          30
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   32               32              32         96           0
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        32               32              32         96           0
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                   33               33              33         99           0
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages                        33               33              33         99           0
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                                 135              135             135        435          30
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                                      135              135             135        435          30
+---------------------------------------------------------------------------------  -------------------  ---------------  --------------  ---------  ----------
+
+[2025-12-11T13:17:28.616499-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          5           5
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages               5           5
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         13          13
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              13          13
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:17:33.616471-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:17:38.618423-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          5           5
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages               5           5
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         13          13
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              13          13
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:17:43.627509-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:17:48.624524-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          5           5
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages               5           5
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         13          13
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              13          13
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:17:53.627396-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         30          30
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages              30          30
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         20          20
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              20          20
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+
+[2025-12-11T13:17:58.624539-08:00] Class: DataStreamSrc6
+Instance                                                                             total:d    update:d
+---------------------------------------------------------------------------------  ---------  ----------
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages          5           5
+lseg1.bgp59.com.1.adh.1.sourceThread.rrmpConsumer.aggregate.outgoingMessages               5           5
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         32          32
+lseg1.bgp59.com.1.adh.2.sourceThread.rrmpConsumer.aggregate.outgoingMessages              32          32
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages         13          13
+lseg1.bgp59.com.1.adh.3.sourceThread.rrmpConsumer.aggregate.outgoingMessages              13          13
+lseg1.bgp59.com.1.adh.rrmpConsumer.DF_LEV_ONE.261.outgoingMessages                        50          50
+lseg1.bgp59.com.1.adh.rrmpConsumer.aggregate.outgoingMessages                             50          50
+---------------------------------------------------------------------------------  ---------  ----------
+

@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lmcrec"
+dynamic = ["version"]
+authors = [
+  { name="Emy Parparita", email="emy.parparita@gmail.com" },
+]
+description = "lmcrec playback"
+readme = "README.txt"
+requires-python = ">=3.10"
+dependencies = [
+    "pyyaml",
+    "tabulate",
+    "tzlocal",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+
+[project.scripts]
+lmcrec-check-consistency = "lmcrec.playback.commands.lmcrec_check_consistency:main"
+lmcrec-check-index = "lmcrec.playback.commands.lmcrec_check_index:main"
+lmcrec-check-response = "lmcrec.playback.commands.lmcrec_check_response:main"
+lmcrec-dump = "lmcrec.playback.commands.lmcrec_dump:main"
+lmcrec-cleanup = "lmcrec.playback.commands.lmcrec_cleanup:main"
+lmcrec-export = "lmcrec.playback.commands.lmcrec_export:main"
+lmcrec-inflate = "lmcrec.playback.commands.lmcrec_inflate:main"
+lmcrec-info = "lmcrec.playback.commands.lmcrec_info:main"
+lmcrec-inventory = "lmcrec.playback.commands.lmcrec_inventory:main"
+lmcrec-merge-schema = "lmcrec.playback.commands.lmcrec_merge_schema:main"
+lmcrec-pb-perf = "lmcrec.playback.commands.lmcrec_pb_perf:main"
+lmcrec-query = "lmcrec.playback.commands.lmcrec_query:main"
+lmcrec-report = "lmcrec.playback.commands.lmcrec_report:main"
+lmcrec-stats = "lmcrec.playback.commands.lmcrec_stats:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {file = "semver.txt"}
+
+[tool.autoflake]
+exclude = ["**/bin/*", "**/build*/*", "**/local/*", "**/releases/*", "**/runtime/*", "**/staging/*", "**/testdata/*", "**/volumes/*", "*_pb2.py", "**/tests/lmcrec/*", "**/lmcpb/lmcrec/*"]
+ignore_init_module_imports = true
+in_place = true
+recursive = true
+remove_all_unused_imports = true
+remove_unused_variables = true
+
+[tool.black]
+extend-exclude = '''^/(lmcrec|tests/lmcrec)/'''
+
+[tool.isort]
+profile = "black"
+extend_skip_glob = ["**/bin/*", "**/build*/*", "**/local/*", "**/releases/*", "**/runtime/*", "**/staging/*", "**/testdata/*", "**/volumes/*", "*_pb2.py", "**/tests/lmcrec/*", "**/lmcpb/lmcrec/*"]
+

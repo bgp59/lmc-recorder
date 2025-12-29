@@ -1,0 +1,14 @@
+# Combine adh data stream and rrcp queries together
+- n: adh_data_stream
+  c: DataStreamSrc6
+  t: [NUMERIC, GAUGE, COUNTER:d]
+  # Exclude ...Rate variables since they duplicated in the class and as such,
+  # unreliable:
+  V: [refreshRate, updateRate]
+- n: rrcp_transmission_bus
+  c: rrcpTransmissionBus
+  t: [NUMERIC:d, COUNTER:d, GAUGE]
+
+
+
+

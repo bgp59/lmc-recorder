@@ -1,0 +1,11 @@
+LmcrecInfo(
+  version='v0.0.1',
+  prev_file_name='2025-12-11/21:13:28+00:00.lmcrec.gz',
+  start_ts=2025-12-11T15:13:28.642042-08:00 (1765494808.642042),
+  state=<LmcrecInfoState.CLOSED: 2>,
+  most_recent_ts=2025-12-11T15:59:58.670830-08:00 (1765497598.670830),
+  total_in_num_bytes=23091248,
+  total_in_num_inst=130890,
+  total_in_num_var=2676128,
+  total_out_num_var=138474
+)
