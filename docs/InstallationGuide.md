@@ -237,8 +237,8 @@ file, will assume the stricter JSON syntax and they will flag constructs that
 the YAML parser supports.
 
 To start at configuration file, e.g. `lmcrec-config.yaml`, prime it from
-`lmcrec-reference.yaml` file under `lmcrec-linux-amd64/reference` and add to the
-`recorders` section the relevant information: inst (see
+[lmcrec-config-reference.yaml](../reference/config/lmcrec-config-reference.yaml)
+and add to the `recorders` section the relevant information: inst (see
 [Instances](Internals.md#instances)) and URL. If needed, add the security key
 file as well (env var supported). e.g.
 

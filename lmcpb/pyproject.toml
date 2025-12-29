@@ -37,6 +37,7 @@ lmcrec-pb-perf = "lmcrec.playback.commands.lmcrec_pb_perf:main"
 lmcrec-query = "lmcrec.playback.commands.lmcrec_query:main"
 lmcrec-report = "lmcrec.playback.commands.lmcrec_report:main"
 lmcrec-stats = "lmcrec.playback.commands.lmcrec_stats:main"
+lmcrec-version = "lmcrec.playback.commands.lmcrec_version:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -107,7 +107,7 @@ Potential recording solutions:
 ## Principles Of Operations
 
 The recorder maintains an internal cache with the previous scan and, except for
-checkpoints, it will generate records only for variables whose value has
+checkpoints, it will generate records only for variables whose values have
 changed. The recorder uses a [custom structure, binary
 format](docs/DataModel.md) which replaces string names with numeric ID's. The
 information about name <-> ID mapping is recorded first time when a new mapping
