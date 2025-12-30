@@ -75,7 +75,7 @@ Instance, class and variable names will be mapped to numerics ID's for the purpo
 | LMCREC_TYPE_DURATION_USEC | rec_type<br>µsec | uvarint<br>varint | How long the scan took in µsec<br>Marks the end of a scan |
 | LMCREC_TYPE_EOR | rec_type | uvarint | End Of Recording, the last record before closing the file<br>Inform the playback tool that no more data will be available |
 
-[lmcrec-dump](./PlaybackToolsCatalogue.md#lmcrec-dump) can be used to inspect a record file and its output next illustrates the logical succession of records:
+[lmcrec-dump](./PlaybackToolsCatalog.md#lmcrec-dump) can be used to inspect a record file and its output next illustrates the logical succession of records:
 
 1. New class discovered: record the name -> ID mapping and info about its variables:
 

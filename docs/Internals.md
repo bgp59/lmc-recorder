@@ -26,11 +26,11 @@ During normal operation lmcrec will rollover the record files:
 - after a failed scan
 - upon detecting that the recorded process has changed between scans[^2]
 
-lmcrec will indicate if the new file is a continuation of the previous one or not,
-by populating (or leaving empty) the `prev_name` field in the companion [info
-file](DataModel.md#info-file). This is important for delta calculations since it
-indicates if the first scan of new record file is next scan of the last one
-of the previous file or not.
+lmcrec will indicate if the new file is a continuation of the previous one or
+not, by populating (or leaving empty) the `prev_name` field in the companion
+[info file](DataModel.md#info-file). This is important for delta calculations
+since it indicates if the first scan of new record file is next scan of the last
+one of the previous file or not.
 
 When the playback state object is being initialized, it organizes the recording
 files in chains of consecutive files, sorted chronologically:

@@ -22,6 +22,7 @@
       - [duration](#duration)
       - [scan_tally](#scan_tally)
       - [new_inst, deleted_inst](#new_inst-deleted_inst)
+      - [new_class_def](#new_class_def)
       - [num_scans](#num_scans)
       - [first_ts, last_ts](#first_ts-last_ts)
       - [new_chain](#new_chain)
@@ -234,8 +235,16 @@ recorded).
 
 ##### new_inst, deleted_inst
 
-`new_inst: bool` and `deleted_inst: bool` are flags indicating whether
-new/deleted (vanished, that is) instances were detected at the current scan.
+`new_inst: bool` and `deleted_inst: bool` are flags indicating that new or
+deleted (vanished, that is) instances were encountered in the current scan. This
+can be used in cases were instance info mapping is being cached: the cache has
+to be updated.
+
+##### new_class_def
+
+`new_class_def: bool` is a flag indicating that a new class definition was
+encountered in the current scan. This can be used in cases were class info
+mapping is being cached: the cache has to be updated.
 
 ##### num_scans
 
@@ -278,7 +287,7 @@ parse_ts(spec: str) -> float
 ```
 
 Parse ISO 8601 datetime specification, `YYYY-DD-MMTHH:MM:SS[±HH:MM|Z]` into a
-timestamp observing [Datetime Handling](PlaybackToolsCatalogue.md#datetime-handling)
+timestamp observing [Datetime Handling](PlaybackToolsCatalog.md#datetime-handling)
 
 #### format_ts()
 
@@ -288,7 +297,7 @@ format_ts(ts: Optional[float] = None) -> str
 
 Convert `ts` or `time.time()` if `ts` is `None` to ISO 8601 format
 `YYYY-DD-MMTHH:MM:SS[±HH:MM]` observing [Datetime
-Handling](PlaybackToolsCatalogue.md#datetime-handling)
+Handling](PlaybackToolsCatalog.md#datetime-handling)
 
 ## Writing New Command Tools
 

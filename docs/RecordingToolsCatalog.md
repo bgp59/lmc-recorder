@@ -1,4 +1,4 @@
-# Recording Tools Catalogue
+# Recording Tools Catalog
 
 <!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
 

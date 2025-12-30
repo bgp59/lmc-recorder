@@ -69,7 +69,7 @@
 
 Before proceeding with the configuration and the deployment, it may be useful to run a few sanity checks:
 
-1. Use [snap-samples.sh](RecordingToolsCatalogue.md#snap-samplessh) to collect a
+1. Use [snap-samples.sh](RecordingToolsCatalog.md#snap-samplessh) to collect a
    few REST samples from each relevant type and configuration of LSEG component:
    adh, ads, etc. Upon completion the command will print the location where the
    samples were collected to both stdout and stderr, collect the stdout for
@@ -92,7 +92,7 @@ Before proceeding with the configuration and the deployment, it may be useful to
     ```
 
 1. Run a basic validation of the response(s) using
-   [lmcrec-check-response](PlaybackToolsCatalogue.md#lmcrec-check-response):
+   [lmcrec-check-response](PlaybackToolsCatalog.md#lmcrec-check-response):
 
     ```bash
     lmcrec-check-response response-body.*
@@ -135,7 +135,7 @@ Before proceeding with the configuration and the deployment, it may be useful to
     `ADS 3.8` comes out clean.
 
     To inspect one or more responses inflate them (if the reply was compressed)
-    with [lmcrec-inflate](PlaybackToolsCatalogue.md#lmcrec-inflate) and pipe the
+    with [lmcrec-inflate](PlaybackToolsCatalog.md#lmcrec-inflate) and pipe the
     result through `jq` to convert single line `JSON` into multiline line one:
 
     ```bash
@@ -179,10 +179,10 @@ Before proceeding with the configuration and the deployment, it may be useful to
     happens to be populated (as seen above) then it may be usable, but it should
     be considered unreliable.
 
-1. Use [lmcrec-from-samples](RecordingToolsCatalogue.md#lmcrec-from-samples) to
+1. Use [lmcrec-from-samples](RecordingToolsCatalog.md#lmcrec-from-samples) to
    generate a record file out of the samples and verify that the latter is
    consistent with the former via
-   [lmcrec-check-consistency](PlaybackToolsCatalogue.md#lmcrec-check-consistency):
+   [lmcrec-check-consistency](PlaybackToolsCatalog.md#lmcrec-check-consistency):
 
     ```bash
     lmcrec-from-samples .
@@ -284,7 +284,7 @@ recorders:
 
 ### lmcrec Handling Scripts
 
-They are all located under `lmcrec-linux-amd64/scripts` which should be part of `PATH`. All scripts expect the [instance](Internals.md#instances) `INST` as the first argument (no `-inst` required); the rest of the arguments are passed verbatim to [lmcrec](RecordingToolsCatalogue.md#lmcrec).
+They are all located under `lmcrec-linux-amd64/scripts` which should be part of `PATH`. All scripts expect the [instance](Internals.md#instances) `INST` as the first argument (no `-inst` required); the rest of the arguments are passed verbatim to [lmcrec](RecordingToolsCatalog.md#lmcrec).
 
 | Script         | Role                                                                         | Example                    |
 | -------------- | ---------------------------------------------------------------------------- | -------------------------- |

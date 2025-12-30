@@ -6,8 +6,8 @@
   - [Installation Guide](docs/InstallationGuide.md)
   - [Playback Tools User Guide](docs/PlaybackToolsUserGuide.md)
   - [Using Recorded Data In Python](docs/API.md)
-  - [Recording Tools Catalogue](docs/RecordingToolsCatalogue.md)
-  - [Playback Tools Catalogue](docs/PlaybackToolsCatalogue.md)
+  - [Recording Tools Catalog](docs/RecordingToolsCatalog.md)
+  - [Playback Tools Catalog](docs/PlaybackToolsCatalog.md)
   - [Data Model](docs/DataModel.md)
   - [Developer Guide](docs/DeveloperGuide.md)
 - [License](LICENSE)
@@ -26,15 +26,15 @@ Conceptually each component of a LSEG process exposes some information in the
 form of a class. A class is a template grouping data together as a list of
 variables. A specific component is identified by an instance (name).
 
-This is based on the object oriented approach, whereby a component is
-implemented by a class providing its state and functionality; the component
-exposes information through a management class. At runtime, instances of the
-component and its associated management classes are created/destroyed as needed.
+This is based on an object-oriented approach, where a component is implemented
+by a class that provides its state and functionality. The component exposes
+information through a management class. At runtime, instances of the component
+and its associated management classes are created and destroyed as needed.
 
 The instances are grouped in a tree structure, starting from an empty root.
 
-In addition to the C++ library, realtime components support a REST API providing access in
-[JSON](https://www.json.org/json-en.html) format:
+In addition to the C++ library, real-time components support a REST API
+providing access in [JSON](https://www.json.org/json-en.html) format:
 
 ```json
 [
@@ -82,37 +82,36 @@ Potential recording solutions:
    to a file.
 
    This is a very simple solution but it has an inefficient storage format: text
-   (albeit compressed) and content: all info in each snap, regardless of whether
-   it has changed from the previous snap or not.
+   (albeit compressed) and repetitive content: all information in each snapshot,
+   regardless of whether it has changed from the previous snapshot or not.
 
 1. Snap the (compressed) JSON and store only the changes in a custom binary
    format in a compressed file.
 
-   This is the approach taken by this project and it yields a 20:1 .. 50:1
-   (in compressed:out compressed) shrinking ratio over #1.
+   This is the approach taken by this project and it yields a 20:1 to 50:1
+   compression ratio improvement over approach #1.
 
 1. Store the parsed information into a relational database.
 
-   This would map classes into tables and variables into columns, probably it
-   would be less efficient than #2 (a guess on my part). However there might
-   some merit in having the relevant data (a certain time window for a few
-   components) into a RDB, so this project provides an export capability to
-   create BCP like files for import.
+   This would map classes to tables and variables to columns, and would probably
+   be less efficient than #2 (though this is speculative). However, there might
+   be some merit in having the relevant data (a certain time window for a few
+   components) in a relational database, so this project provides an export
+   capability to create BCP-like files for import.
 
-1. Store the parsed information into a timeseries database like
+1. Store the parsed information in a time-series database like
    [VictoriaMetrics](https://victoriametrics.com/)
 
-   This might be as efficient as #2 and it will the subject of a future project.
+   This might be as efficient as #2 and will be the subject of a future project.
 
 ## Principles Of Operations
 
-The recorder maintains an internal cache with the previous scan and, except for
-checkpoints, it will generate records only for variables whose values have
-changed. The recorder uses a [custom structure, binary
-format](docs/DataModel.md) which replaces string names with numeric ID's. The
-information about name <-> ID mapping is recorded first time when a new mapping
-is encountered and at checkpoints, when all info is recorded regardless of it
-being old and/or unchanged.
+The recorder maintains an internal cache of the previous scan and, except for
+checkpoints, generates records only for variables whose values have changed. The
+recorder uses a [custom-structured binary format](docs/DataModel.md) that
+replaces string names with numeric IDs. The mapping between names and IDs is
+recorded the first time a new mapping is encountered and at checkpoints, when
+all information is recorded regardless of whether it is old or unchanged.
 
 ```text
               +------------+
@@ -124,8 +123,8 @@ being old and/or unchanged.
         |   .   current scan --------->        .     |
         |   .        v        .      . compare .     |
         |   .     prev scan ---------->        .     |
-        |   ...................      ...........     |
-        |                                 | changes  |
+        |   . cache           .      ...........     |
+        |   ...................           | changes  |
         |                            .....V.....     |
         |                            . encoder .     |
         |   lmcrec                   ...........     |
@@ -150,8 +149,8 @@ The recorded data can be used:
 
 - [programmatically](docs/API.md) in Python
 - [queried](docs/QueryDescription.md) via a
-  [command tool](docs/PlaybackToolsUserGuide.md#running-queries)
-- for limited subsets of data, imported into a SQL database, using the the files
+  [command-line tool](docs/PlaybackToolsUserGuide.md#running-queries)
+- for limited subsets of data, imported into a SQL database using the files
   generated by the [export](docs/) command
 
 ## Further Reading
@@ -159,7 +158,7 @@ The recorded data can be used:
 - [Installation Guide](docs/InstallationGuide.md)
 - [Playback Tools User Guide](docs/PlaybackToolsUserGuide.md)
 - [Using Recorded Data In Python](docs/API.md)
-- [Recording Tools Catalague](docs/RecordingToolsCatalogue.md)
-- [Playback Tools Catalogue](docs/PlaybackToolsCatalogue.md)
+- [Recording Tools Catalog](docs/RecordingToolsCatalog.md)
+- [Playback Tools Catalog](docs/PlaybackToolsCatalog.md)
 - [Data Model](docs/DataModel.md)
 - [Developer Guide](docs/DeveloperGuide.md)
