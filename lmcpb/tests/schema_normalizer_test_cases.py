@@ -2,6 +2,8 @@
 # Model: Claude Sonnet 4.5
 """Test cases for test_schema_normalizer"""
 
+# IMPORTANT! manually tweaked (log message)
+
 # noqa
 # fmt: off
 
@@ -69,8 +71,8 @@ test_cases = [
         word_expect=[
             ("verylongname", "verylongna"),
             ("verylongname", "verylongn2"),
-            ("verylongname", "verylong10"),
-            ("verylongname", "verylong11"),
+            ("verylongname", "verylongn3"),
+            ("verylongname", "verylongn4"),
         ]
     ),
     SchemaNormalizerTestCase(
@@ -137,7 +139,7 @@ test_cases = [
         word_expect=[
             ("verylongname", "verylongname"),
             ("verylongname", "verylongnam2"),
-            ("verylongname", "verylong1000"),
+            ("verylongname", "verylongnam3"),
         ]
     ),
     SchemaNormalizerTestCase(
@@ -147,8 +149,8 @@ test_cases = [
         suffix="_col",
         word_expect=[
             ("ShortName", "short_name_col"),
-            ("ExactlyTenChars", "exactly_te_col"),
-            ("VeryLongVariableName", "very_long__col"),
+            ("ExactlyTenChars", "exactly_ten_col"),
+            ("VeryLongVariableName", "very_long_v_col"),
         ]
     ),
     SchemaNormalizerTestCase(
@@ -158,8 +160,8 @@ test_cases = [
         suffix="_t",
         word_expect=[
             ("MySpecialTable", "my_special_table_t"),
-            ("VeryLongTableNameHere", "very_long_table_t"),
-            ("ACRONYMTableName", "acronym_table_na_t"),
+            ("VeryLongTableNameHere", "very_long_table_na_t"),
+            ("ACRONYMTableName", "acronym_table_name_t"),
         ]
     ),
     SchemaNormalizerTestCase(
@@ -171,8 +173,8 @@ test_cases = [
         word_expect=[
             ("MyVar", "my_var2_col"),
             ("MyVar", "my_var3_col"),
-            ("VeryLongVariableName", "very_long_v_col"),
-            ("VeryLongVariableName", "very_long_2_col"),
+            ("VeryLongVariableName", "very_long_vari_col"),
+            ("VeryLongVariableName", "very_long_var2_col"),
             ("# of items", "no_of_items_col"),
         ]
     ),
@@ -183,9 +185,9 @@ test_cases = [
         suffix="_type",
         word_expect=[
             ("short", "short_type"),
-            ("mediumname", "medium_type"),
-            ("verylongname", "verylo_type"),
-            ("verylongname", "veryl2_type"),
+            ("mediumname", "mediumn_type"),
+            ("verylongname", "verylon_type"),
+            ("verylongname", "verylo2_type"),
         ]
     ),
     SchemaNormalizerTestCase(
