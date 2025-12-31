@@ -2,8 +2,6 @@
 # Model: Claude Sonnet 4.5
 """Test cases for test_schema_normalizer"""
 
-# see commit message "manual tweak"
-
 # noqa
 # fmt: off
 
@@ -24,199 +22,197 @@ test_cases = [
     # Simple test cases - one condition at a time
     SchemaNormalizerTestCase(
         name="PatternRulesOnly",
-        description="Test pattern-based normalization rules without length or disambiguation constraints",
+        description="Apply pattern rules: camelCase to snake_case, ACRONYM handling, special chars",
         max_len=0,
         word_expect=[
             ("SchemaNormalizer", "schema_normalizer"),
             ("ACRONYMWord", "acronym_word"),
             ("camelCase", "camel_case"),
             ("camel123Case", "camel123_case"),
-            ("# of items", "no_of_items"),
-            ("# records", "no_of_records"),
-            ("My__Special___Variable", "my_special_variable"),
-            ("_leadingUnderscore", "leading_underscore"),
-            ("trailingUnderscore_", "trailing_underscore"),
-            ("Multiple   Spaces", "multiple_spaces"),
-            ("123StartWithDigit", "_123_start_with_digit"),
-            ("special!@#chars", "special_chars"),
-            ("end!!!special", "end_special"),
+            ("# of records", "no_of_records"),
+            ("# items", "no_of_items"),
+            ("my-special.var!", "my_special_var"),
+            ("__leading_underscores", "leading_underscores"),
+            ("trailing_underscores__", "trailing_underscores"),
+            ("multiple___underscores", "multiple_underscores"),
+            ("123starts_with_digit", "_123starts_with_digit"),
+            ("MixedCASEWord", "mixed_case_word"),
         ]
     ),
     SchemaNormalizerTestCase(
         name="LengthLimitOnly",
-        description="Test length truncation without suffix or disambiguation",
+        description="Truncate words to max_len when no suffix is present",
         max_len=10,
         word_expect=[
+            ("short", "short"),
+            ("exactly_ten", "exactly_te"),
+            ("this_is_a_very_long_variable_name", "this_is_a_"),
             ("SchemaNormalizer", "schema_nor"),
-            ("ShortName", "short_name"),
-            ("VeryLongVariableName", "very_long_"),
         ]
     ),
     SchemaNormalizerTestCase(
         name="SimpleDisambiguationOnly",
-        description="Test disambiguation by appending numbers without additional shortening",
+        description="Add numeric suffix for duplicate normalized names",
         max_len=0,
         word_expect=[
-            ("FirstVariable", "first_variable"),
-            ("FirstVariable", "first_variable2"),
-            ("FirstVariable", "first_variable3"),
-            ("DifferentName", "different_name"),
-            ("FirstVariable", "first_variable4"),
+            ("SchemaNormalizer", "schema_normalizer"),
+            ("SchemaNormalizer", "schema_normalizer2"),
+            ("SchemaNormalizer", "schema_normalizer3"),
+            ("schema_normalizer", "schema_normalizer4"),
+            ("Schema-Normalizer", "schema_normalizer5"),
         ]
     ),
     SchemaNormalizerTestCase(
         name="DisambiguationWithShortening",
-        description="Test disambiguation that requires truncation to fit within max_len",
-        max_len=12,
+        description="Shorten word when disambiguation suffix causes length overflow",
+        max_len=10,
         word_expect=[
-            ("VeryLongName", "very_long_na"),
-            ("VeryLongName", "very_long_n2"),
-            ("VeryLongName", "very_long_n3"),
-            ("VeryLongName", "very_long_n4"),
-            ("VeryLongName", "very_long_n5"),
-            ("VeryLongName", "very_long_n6"),
-            ("VeryLongName", "very_long_n7"),
-            ("VeryLongName", "very_long_n8"),
-            ("VeryLongName", "very_long_n9"),
-            ("VeryLongName", "very_long_10"),
+            ("verylongname", "verylongna"),
+            ("verylongname", "verylongn2"),
+            ("verylongname", "verylong10"),
+            ("verylongname", "verylong11"),
         ]
     ),
     SchemaNormalizerTestCase(
         name="SuffixOnly",
-        description="Test suffix addition without other constraints",
-        suffix="_col",
-        max_len=0,
-        word_expect=[
-            ("VariableName", "variable_name_col"),
-            ("AnotherVar", "another_var_col"),
-            ("AlreadyHasSuffix_col", "already_has_suffix_col"),
-        ]
-    ),
-    SchemaNormalizerTestCase(
-        name="ReservedNamesOnly",
-        description="Test that reserved names cause disambiguation",
-        max_len=0,
-        reserved_names=["status", "count", "value"],
-        word_expect=[
-            ("status", "status2"),
-            ("count", "count2"),
-            ("value", "value2"),
-            ("normal", "normal"),
-        ]
-    ),
-    
-    # Complex test cases - combining multiple conditions
-    SchemaNormalizerTestCase(
-        name="PatternAndLength",
-        description="Test pattern rules combined with length limit",
-        max_len=15,
-        word_expect=[
-            ("VeryLongCamelCaseName", "very_long_camel"),
-            ("ACRONYMTest", "acronym_test"),
-            ("Short", "short"),
-        ]
-    ),
-    SchemaNormalizerTestCase(
-        name="PatternAndDisambiguation",
-        description="Test pattern rules with disambiguation",
-        max_len=0,
-        word_expect=[
-            ("CamelCaseName", "camel_case_name"),
-            ("CamelCaseName", "camel_case_name2"),
-            ("camelCaseName", "camel_case_name3"),
-        ]
-    ),
-    SchemaNormalizerTestCase(
-        name="LengthAndDisambiguation",
-        description="Test length limit with disambiguation",
-        max_len=8,
-        word_expect=[
-            ("LongName", "long_nam"),
-            ("LongName", "long_na2"),
-            ("LongName", "long_na3"),
-        ]
-    ),
-    SchemaNormalizerTestCase(
-        name="SuffixAndLength",
-        description="Test suffix with length limit",
+        description="Append suffix to normalized words",
         suffix="_t",
-        max_len=10,
+        max_len=0,
         word_expect=[
-            ("TableName", "table_na_t"),
-            ("Short", "short_t"),
-            ("VeryLongTableName", "very_lon_t"),
+            ("SchemaNormalizer", "schema_normalizer_t"),
+            ("MyTable", "my_table_t"),
+            ("simple", "simple_t"),
         ]
     ),
     SchemaNormalizerTestCase(
-        name="SuffixAndDisambiguation",
-        description="Test suffix with disambiguation",
+        name="SuffixWithDuplicates",
+        description="Handle disambiguation when suffix is present",
         suffix="_t",
         max_len=0,
         word_expect=[
             ("MyTable", "my_table_t"),
             ("MyTable", "my_table2_t"),
-            ("MyTable", "my_table3_t"),
+            ("my_table", "my_table3_t"),
         ]
     ),
     SchemaNormalizerTestCase(
-        name="ReservedWithSuffix",
-        description="Test reserved names with suffix handling",
-        suffix="_col",
+        name="ReservedNamesOnly",
+        description="Skip reserved names in disambiguation sequence",
         max_len=0,
-        reserved_names=["special_col", "normal"],
+        reserved_names=["schema_normalizer", "schema_normalizer3"],
         word_expect=[
-            ("special", "special2_col"),
-            ("normal", "normal2_col"),
-            ("other", "other_col"),
+            ("SchemaNormalizer", "schema_normalizer2"),
+            ("SchemaNormalizer", "schema_normalizer4"),
+            ("schema_normalizer", "schema_normalizer5"),
+        ]
+    ),
+    SchemaNormalizerTestCase(
+        name="ReservedNamesWithSuffix",
+        description="Handle reserved names that end with the suffix",
+        suffix="_col",
+        reserved_names=["my_var_col", "another_var_col"],
+        max_len=0,
+        word_expect=[
+            ("MyVar", "my_var2_col"),
+            ("AnotherVar", "another_var2_col"),
+            ("NewVar", "new_var_col"),
+        ]
+    ),
+    
+    # Complex test cases - combining multiple conditions
+    SchemaNormalizerTestCase(
+        name="PatternAndLengthLimit",
+        description="Apply pattern rules then truncate to length limit",
+        max_len=15,
+        word_expect=[
+            ("VeryLongCamelCaseVariable", "very_long_camel"),
+            ("AnotherLongACRONYMWord", "another_long_ac"),
+            ("# of very long items", "no_of_very_long"),
+        ]
+    ),
+    SchemaNormalizerTestCase(
+        name="LengthLimitAndDisambiguation",
+        description="Truncate to max_len and handle disambiguation",
+        max_len=12,
+        word_expect=[
+            ("verylongname", "verylongname"),
+            ("verylongname", "verylongnam2"),
+            ("verylongname", "verylong1000"),
+        ]
+    ),
+    SchemaNormalizerTestCase(
+        name="LengthLimitWithSuffix",
+        description="Account for suffix length when truncating",
+        max_len=15,
+        suffix="_col",
+        word_expect=[
+            ("ShortName", "short_name_col"),
+            ("ExactlyTenChars", "exactly_te_col"),
+            ("VeryLongVariableName", "very_long__col"),
+        ]
+    ),
+    SchemaNormalizerTestCase(
+        name="PatternLengthAndSuffix",
+        description="Apply patterns, truncate, and add suffix",
+        max_len=20,
+        suffix="_t",
+        word_expect=[
+            ("MySpecialTable", "my_special_table_t"),
+            ("VeryLongTableNameHere", "very_long_table_t"),
+            ("ACRONYMTableName", "acronym_table_na_t"),
         ]
     ),
     SchemaNormalizerTestCase(
         name="AllConditionsCombined",
-        description="Test all conditions: patterns, length, disambiguation, suffix, and reserved names",
-        suffix="_t",
-        max_len=15,
-        reserved_names=["table", "schema"],
-        word_expect=[
-            ("VeryLongTableName", "very_long_tab_t"),
-            ("VeryLongTableName", "very_long_ta2_t"),
-            ("CamelCaseName", "camel_case_na_t"),
-            ("table", "table2_t"),
-            ("schema", "schema2_t"),
-            ("ACRONYMName", "acronym_name_t"),
-        ]
-    ),
-    SchemaNormalizerTestCase(
-        name="EdgeCasePatterns",
-        description="Test edge cases in pattern matching",
-        max_len=0,
-        word_expect=[
-            ("___multiple_underscores___", "multiple_underscores"),
-            ("ALLCAPS", "allcaps"),
-            ("lowercaseonly", "lowercaseonly"),
-            ("123456", "_123456"),
-            ("ABC123DEF", "abc123_def"),
-        ]
-    ),
-    SchemaNormalizerTestCase(
-        name="ComplexDisambiguationScenario",
-        description="Test complex disambiguation with varied inputs",
+        description="Pattern rules, length limit, disambiguation, suffix, and reserved names",
         max_len=18,
+        suffix="_col",
+        reserved_names=["my_var_col"],
         word_expect=[
-            ("VariableName", "variable_name"),
-            ("variable_name", "variable_name2"),
-            ("Variable_Name", "variable_name3"),
-            ("VARIABLE_NAME", "variable_name4"),
+            ("MyVar", "my_var2_col"),
+            ("MyVar", "my_var3_col"),
+            ("VeryLongVariableName", "very_long_v_col"),
+            ("VeryLongVariableName", "very_long_2_col"),
+            ("# of items", "no_of_items_col"),
         ]
     ),
     SchemaNormalizerTestCase(
-        name="SuffixOverlapHandling",
-        description="Test handling when normalized word ends with suffix pattern",
-        suffix="_col",
+        name="EdgeCaseSuffixTruncation",
+        description="Handle edge cases where suffix and word both need adjustment",
+        max_len=12,
+        suffix="_type",
+        word_expect=[
+            ("short", "short_type"),
+            ("mediumname", "medium_type"),
+            ("verylongname", "verylo_type"),
+            ("verylongname", "veryl2_type"),
+        ]
+    ),
+    SchemaNormalizerTestCase(
+        name="ComplexPatternHandling",
+        description="Test complex patterns with multiple special characters and mixed cases",
         max_len=0,
         word_expect=[
-            ("MyColumn", "my_column_col"),
-            ("status_col", "status_col"),
-            ("data__col", "data_col"),
+            ("HTTPSConnection", "https_connection"),
+            ("XMLParser", "xml_parser"),
+            ("getHTTPResponse", "get_http_response"),
+            ("parseJSONData", "parse_json_data"),
+            ("# of HTTP requests", "no_of_http_requests"),
+            ("user-ID_123", "user_id_123"),
+            ("data__with___many____underscores", "data_with_many_underscores"),
+        ]
+    ),
+    SchemaNormalizerTestCase(
+        name="DisambiguationWithReservedAndSuffix",
+        description="Complex disambiguation with reserved names and suffix",
+        max_len=20,
+        suffix="_t",
+        reserved_names=["my_table_t", "my_table3_t"],
+        word_expect=[
+            ("MyTable", "my_table2_t"),
+            ("MyTable", "my_table4_t"),
+            ("my_table", "my_table5_t"),
+            ("MY_TABLE", "my_table6_t"),
         ]
     ),
 ]
