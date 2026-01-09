@@ -73,7 +73,7 @@ default:
   #
   #     "SECURITY_KEY": verbatim, not recommended since the config
   #                     is most likely publicly readable
-  #security-key: "file:$HOME/.lmcrec/security-key"
+  #security_key: "file:$HOME/.lmcrec/security-key"
 
   # Whether to request compressed response data or not. The valid values are
   # true, false and remote_only. For the last one compressed requests are
