@@ -65,6 +65,25 @@
     pip3 install --upgrade /tmp/lmcrec-0.0.1-py3-none-any.whl
     ```
 
+    If the environment where the installation is performed is very restricted,
+    as in it doesn't have access to neither [PyPI](https://pypi.org/) nor to
+    local mirrors, then the [lmcrec dependencies](https://github.com/bgp59/lmc-recorder/blob/99af33f8d42651900bf8e97742b3be3dae5f6be2/lmcpb/pyproject.toml#L14)
+    can to be downloaded beforehand from
+    <https://github.com/bgp59/lmc-recorder/releases/tag/lmcrec-py-dep-linux-amd64>.
+
+    Assuming that the archive was extracted under
+    `/tmp/lmcrec-py-dep-linux-amd64`, the installation steps are the following:
+
+    ```bash
+    # Optional virtual environment steps:
+    python3 -m venv $HOME/venv/lmcrec
+    . $HOME/venv/lmcrec/bin/activate
+
+    pip3 install --upgrade \
+        --no-index --find-links /tmp/lmcrec-py-dep-linux-amd64 \
+        /tmp/lmcrec-0.0.1-py3-none-any.whl
+    ```
+
 ## Preliminary Steps
 
 Before proceeding with the configuration and the deployment, it may be useful to run a few sanity checks:
