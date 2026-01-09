@@ -1,13 +1,27 @@
 # Installation Guide
 
+<!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
+
+- [Prerequisites](#prerequisites)
+- [Software](#software)
+- [LSEG Configuration](#lseg-configuration)
+- [Preliminary Steps](#preliminary-steps)
+- [Configuration](#configuration)
+- [Deployment](#deployment)
+  - [Environment Variables](#environment-variables)
+  - [lmcrec Handling Scripts](#lmcrec-handling-scripts)
+  - [Runtime Directory Structure](#runtime-directory-structure)
+
+<!-- /TOC -->
+
 ## Prerequisites
 
-* 64 bit Linux
-* [curl](https://curl.se/docs/manpage.html) and [jq](https://jqlang.org/manual/) packages installed (RPMs available for all major distro's). While they are not required for normal operation, they are needed for the preliminary steps.
-* Python >= 3.10
-* a writable directory to serve as lmcrec runtime root; set its path into the `LMCREC_RUNTIME` env var. If not set, `LMCREC_RUNTIME` will default to `$HOME/runtime/lmcrec`
-* LSEG components configured w/ the REST interface on
-* if LSEG components are configured w/ `securityKey` then place the clear text in an owner only access file, for instance `$HOME/.lmcrec/security-key` (this is similar to a ssh private key). Note that the clear text can be recovered from the encrypted form by running:
+- 64 bit Linux
+- [curl](https://curl.se/docs/manpage.html) and [jq](https://jqlang.org/manual/) packages installed (RPMs available for all major distro's). While they are not required for normal operation, they are needed for the preliminary steps.
+- Python >= 3.10
+- a writable directory to serve as lmcrec runtime root; set its path into the `LMCREC_RUNTIME` env var. If not set, `LMCREC_RUNTIME` will default to `$HOME/runtime/lmcrec`
+- LSEG components configured w/ the REST interface on
+- if LSEG components are configured w/ `securityKey` then place the clear text in an owner only access file, for instance `$HOME/.lmcrec/security-key` (this is similar to a ssh private key). Note that the clear text can be recovered from the encrypted form by running:
 
     ```bash
     dacsObfuscatePassword -d ENCRYPTED_SECURITY_KEY
@@ -23,9 +37,9 @@
 
 ## Software
 
-* download the recorder archive and the playback Python wheel from the [latest
+- download the recorder archive and the playback Python wheel from the [latest
   release](https://github.com/bgp59/lmc-recorder/releases) page
-* extract the archive to a convenient location, e.g. `/usr/local`. The archive
+- extract the archive to a convenient location, e.g. `/usr/local`. The archive
   contains both the versioned path for the release and a symlink to it.
 
     ```bash
@@ -43,7 +57,7 @@
                                         /scripts
     ```
 
-* add `scripts` location to `PATH` in the shell's initialization file. For
+- add `scripts` location to `PATH` in the shell's initialization file. For
   instance for `bash` add to `~/.bashrc`:
 
     ```bash
@@ -54,7 +68,7 @@
     esac
     ```
 
-* install the Python package, potentially under a virtual environment:
+- install the Python package, potentially under a virtual environment:
 
     ```bash
     # Optional virtual environment steps:
@@ -83,6 +97,19 @@
         --no-index --find-links /tmp/lmcrec-py-dep-linux-amd64 \
         /tmp/lmcrec-0.0.1-py3-none-any.whl
     ```
+
+## LSEG Configuration
+
+It is highly advisable to enable compression for the REST response, especially
+if the recorder is running on a different host. The following parameters should
+be set in `distribution.cnf`:
+
+```text
+*adh*REST_PORT*compressionType: 1
+*adh*REST_PORT*zlibCompressionLevel: 6
+*ads*REST_PORT*compressionType: 1
+*ads*REST_PORT*zlibCompressionLevel: 6
+```
 
 ## Preliminary Steps
 
@@ -153,14 +180,36 @@ Before proceeding with the configuration and the deployment, it may be useful to
 
     `ADS 3.8` comes out clean.
 
-    To inspect one or more responses inflate them (if the reply was compressed)
-    with [lmcrec-inflate](PlaybackToolsCatalog.md#lmcrec-inflate) and pipe the
-    result through `jq` to convert single line `JSON` into multiline line one:
+    To inspect one or more responses, they have to be converted to indented JSON
+    format to make them more readable.
 
-    ```bash
-    mkdir json
-    lmcrec-inflate response-body.1 | jq > json/response-body.1.json
-    ```
+    - check the headers for compressed response (`Content-Encoding: deflate`):
+
+        ```bash
+        grep -i content-encoding response-headers.1
+
+        Content-Encoding: deflate
+        ```
+
+    - if the response was compressed (deflated) then it should be inflated first
+      w/ [lmcrec-inflate](PlaybackToolsCatalog.md#lmcrec-inflate) and the passed
+      through `jq`
+
+        ```bash
+        mkdir json
+        lmcrec-inflate response-body.1 | jq > json/response-body.1.json
+        ```
+
+    - if the response was not compressed, either because compression was not
+    requested or because compression was not enabled for the component in
+    [LSEG Configuration](#lseg-configuration) then
+    [lmcrec-inflate](PlaybackToolsCatalog.md#lmcrec-inflate) will raise an
+    exception and it should be skipped:
+
+        ```bash
+        mkdir json
+        jq < response-body.1 > json/response-body.1.json
+        ```
 
     Indeed `json/response-body.1.json` shows the duplicated variables:
 
