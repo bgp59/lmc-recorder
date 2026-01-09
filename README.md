@@ -3,14 +3,15 @@
 - [Motivation](#motivation)
 - [Principles Of Operations](#principles-of-operations)
 - [Further Reading](#further-reading)
-  - [Installation Guide](docs/InstallationGuide.md)
+
   - [Playback Tools User Guide](docs/PlaybackToolsUserGuide.md)
   - [Using Recorded Data In Python](docs/API.md)
   - [Recording Tools Catalog](docs/RecordingToolsCatalog.md)
   - [Playback Tools Catalog](docs/PlaybackToolsCatalog.md)
   - [Data Model](docs/DataModel.md)
   - [Developer Guide](docs/DeveloperGuide.md)
-- [License](LICENSE)
+
+- [Reporting Issues](#reporting-issues)
 
 ## Motivation
 
@@ -162,3 +163,9 @@ The recorded data can be used:
 - [Playback Tools Catalog](docs/PlaybackToolsCatalog.md)
 - [Data Model](docs/DataModel.md)
 - [Developer Guide](docs/DeveloperGuide.md)
+
+## Reporting Issues
+
+The preferred method is via the [issue
+tracker](https://github.com/bgp59/lmc-recorder/issues), but if the access to it is
+restricted then they can be reported via e-mail to [lmcrec.bgp59@google.com](mailto:lmcrec.bgp59@google.com).
