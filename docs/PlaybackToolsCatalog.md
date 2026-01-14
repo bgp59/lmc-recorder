@@ -211,8 +211,6 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -z, --inflate         Assume deflate(d) content even if the file does not end
-                        in .gz and no headers file can be found
   -m, --missing-variables
                         Add missing variables from instances that share the same
                         class to the report
@@ -324,38 +322,30 @@ options:
 ### lmcrec-inflate
 
 ```text
-usage: lmcrec-inflate [-h] deflate_file [out_file]
+usage: lmcrec-inflate [-h] [-r] response_body_file [out_file]
 
 Inflate deflate(d) REST response, for instance one captured using:
 
     curl -H 'Accept-Encoding: deflate' -o OUT_FILE URL
 
-Notes:
+and display it in indented JSON format, to make it more human readable (The JSON
+body of the response a single, very long line).
 
-    1. It should be used only if the response contains the following header:
-
-        Content-Encoding: deflate
+Note that gunzip / gzip -d commands cannot be used directly on body response
+file since they would fail with:
     
-    2. gunzip / gzip -d commands cannot be used directly on that file since they
-       would fail with:
+    gzip: unknown compression format
 
-            gzip: unknown compression format
-
-       error
-
-    3. The JSON body of the response is not formatted (one single very, very
-       long line, that is), so is best passed through `jq':
-
-            lmcrec-inflate RESP_FILE | jq
+If the response was not deflated simply read its content as-is.
 
 positional arguments:
-  deflate_file
-  out_file      Output file, if not specified then it defaults to stdout. Since
-                the original content is not indented or line separated, it is
-                advisable to pipe the output through `jq'
+  response_body_file  Response body file, potentially deflated.
+  out_file            Output file, if not specified then it defaults to stdout.
 
 options:
-  -h, --help    show this help message and exit
+  -h, --help          show this help message and exit
+  -r, --raw           Disable JSON format, print the raw output raw. Useful to
+                      perform strictly inflation.
 ```
 
 ### lmcrec-info

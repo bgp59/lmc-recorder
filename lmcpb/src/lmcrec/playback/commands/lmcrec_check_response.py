@@ -226,13 +226,6 @@ def main() -> int:
         description=description,
     )
     parser.add_argument(
-        "-z",
-        "--inflate",
-        action="store_true",
-        help="""Assume deflate(d) content even if the file does not end in .gz
-             and no headers file can be found""",
-    )
-    parser.add_argument(
         "-m",
         "--missing-variables",
         action="store_true",
@@ -244,7 +237,7 @@ def main() -> int:
 
     for rest_json_file in args.rest_json_file:
         star(rest_json_file)
-        inst_list, _ = load_sample_file(rest_json_file, force_compressed=args.inflate)
+        inst_list, _ = load_sample_file(rest_json_file)
         check_instances(inst_list, args.missing_variables)
 
 
