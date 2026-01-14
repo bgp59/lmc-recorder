@@ -5,32 +5,24 @@ Inflate deflate(d) REST response, for instance one captured using:
 
     curl -H 'Accept-Encoding: deflate' -o OUT_FILE URL
 
-Notes:
+and display it in indented JSON format, to make it more human readable (The JSON
+body of the response a single, very long line).
 
-    1. It should be used only if the response contains the following header:
-
-        Content-Encoding: deflate
+Note that gunzip / gzip -d commands cannot be used directly on body response
+file since they would fail with:
     
-    2. gunzip / gzip -d commands cannot be used directly on that file since they
-       would fail with:
+    gzip: unknown compression format
 
-            gzip: unknown compression format
-
-       error
-
-    3. The JSON body of the response is not formatted (one single very, very
-       long line, that is), so is best passed through `jq':
-
-            lmcrec-inflate RESP_FILE | jq
+If the response was not deflated simply read its content as-is.
 
 """
 
 import argparse
+import json
 import sys
 
-from misc.deflate import Inflate
-
 from .help_formatter import CustomWidthFormatter
+from .lmcrec_check_consistency import load_body_response
 
 
 def main():
@@ -38,32 +30,33 @@ def main():
         formatter_class=CustomWidthFormatter,
         description=description,
     )
-    parser.add_argument("deflate_file")
+    parser.add_argument(
+        "-r",
+        "--raw",
+        action="store_true",
+        help="""Disable JSON format, print the raw output raw. Useful to perform
+        strictly inflation.""",
+    )
+    parser.add_argument(
+        "response_body_file", help="""Response body file, potentially deflated."""
+    )
     parser.add_argument(
         "out_file",
         nargs="?",
-        help="""Output file, if not specified then it defaults to stdout. Since
-        the original content is not indented or line separated, it is advisable
-        to pipe the output through `jq'
-        """,
+        help="""Output file, if not specified then it defaults to stdout.""",
     )
     args = parser.parse_args()
+    raw = args.raw
     out_file = args.out_file
 
-    in_f = Inflate(args.deflate_file)
+    body = load_body_response(args.response_body_file, raw=raw)
+    if not raw:
+        body = bytes(json.dumps(body, indent=2) + "\n", "utf-8")
     if out_file:
-        out_f = open(out_file, "wb")
+        with open(out_file, "wb") as f:
+            f.write(body)
     else:
-        out_f = sys.stdout.buffer
-
-    while True:
-        data = in_f.read(65536)
-        if not data:
-            break
-        out_f.write(data)
-
-    if out_file:
-        out_f.close()
+        sys.stdout.buffer.write(body)
     return 0
 
 

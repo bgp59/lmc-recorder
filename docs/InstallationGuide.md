@@ -17,7 +17,7 @@
 ## Prerequisites
 
 - 64 bit Linux
-- [curl](https://curl.se/docs/manpage.html) and [jq](https://jqlang.org/manual/) packages installed (RPMs available for all major distro's). While they are not required for normal operation, they are needed for the preliminary steps.
+- [curl](https://curl.se/docs/manpage.html) packages installed (RPM available for all major distro's). While this is not required for normal operation, it is needed for the preliminary steps.
 - Python >= 3.10
 - a writable directory to serve as lmcrec runtime root; set its path into the `LMCREC_RUNTIME` env var. If not set, `LMCREC_RUNTIME` will default to `$HOME/runtime/lmcrec`
 - LSEG components configured w/ the REST interface on
@@ -181,35 +181,12 @@ Before proceeding with the configuration and the deployment, it may be useful to
     `ADS 3.8` comes out clean.
 
     To inspect one or more responses, they have to be converted to indented JSON
-    format to make them more readable.
+    format to make them more readable:
 
-    - check the headers for compressed response (`Content-Encoding: deflate`):
-
-        ```bash
-        grep -i content-encoding response-headers.1
-
-        Content-Encoding: deflate
-        ```
-
-    - if the response was compressed (deflated) then it should be inflated first
-      w/ [lmcrec-inflate](PlaybackToolsCatalog.md#lmcrec-inflate) and the passed
-      through `jq`
-
-        ```bash
-        mkdir json
-        lmcrec-inflate response-body.1 | jq > json/response-body.1.json
-        ```
-
-    - if the response was not compressed, either because compression was not
-    requested or because compression was not enabled for the component in
-    [LSEG Configuration](#lseg-configuration) then
-    [lmcrec-inflate](PlaybackToolsCatalog.md#lmcrec-inflate) will raise an
-    exception and it should be skipped:
-
-        ```bash
-        mkdir json
-        jq < response-body.1 > json/response-body.1.json
-        ```
+    ```bash
+    mkdir json
+    lmcrec-inflate response-body.1 json/response-body.1.json
+    ```
 
     Indeed `json/response-body.1.json` shows the duplicated variables:
 

@@ -16,9 +16,10 @@ import json
 import os
 import re
 import sys
+import zlib
 from collections import defaultdict
 from http.client import parse_headers
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, ByteString, Dict, List, Optional, Tuple, Union
 
 from cache import LmcrecScanRetCode, LmcrecStateCache
 from codec import LmcrecFileDecoder, LmcVarType
@@ -72,32 +73,61 @@ def extract_numeric_range(val: str) -> int:
 extract_val_fn_by_type = {"Numeric Range": extract_numeric_range}
 
 
-def load_sample_file(
-    sample_file: str, force_compressed: bool = False
-) -> Tuple[List[Dict[str, Any]], int]:
+def load_body_response(
+    fname: str, deflated: Optional[bool] = None, raw: bool = False
+) -> Union[ByteString, Dict, List[Dict[str, Any]]]:
+    """Load body response
 
-    header_file = sample_file.replace(
-        SAMPLE_RESPONSE_BODY_FILE_PREFIX, SAMPLE_RESPONSE_HEADERS_FILE_PREFIX
-    )
-    content_length, compressed = -1, sample_file.endswith(".gz")
-    if os.path.exists(header_file):
-        compressed = False
-        with open(header_file, "rb") as f:
-            f.readline()
-            headers_message = parse_headers(f)
-            for hdr, val in headers_message.items():
-                if hdr == "Content-Encoding":
-                    compressed = val == "deflate"
-                elif hdr == "Content-Length":
-                    content_length = int(val)
+    Args:
+        fname (str): the file name
 
-    if force_compressed or compressed:
-        f = Inflate(sample_file)
-    else:
-        f = open(sample_file, "rb")
-    sample_inst_list = json.load(f)
-    f.close()
-    return sample_inst_list, content_length
+        deflated (None|bool):
+            If None, guess: try deflated first then try as-is. If bool make only
+            one attempt, accordingly.
+
+        raw (bool): if set, return the raw bytes, otherwise return the JSON
+            decoded structure.
+
+    Return:
+        bytes for raw, data object otherwise
+    """
+
+    if deflated is None:
+        try:
+            return load_body_response(fname, deflated=True, raw=raw)
+        except zlib.error as e:
+            print(
+                f"Attempt to inflate {fname!r} raised {e}, reading the file as-is",
+                file=sys.stderr,
+            )
+            return load_body_response(fname, deflated=False, raw=raw)
+    try:
+        f = None
+        f = Inflate(fname) if deflated else open(fname, "rb")
+        return f.read() if raw else json.load(f)
+    finally:
+        if f is not None:
+            f.close()
+
+
+def load_sample_file(sample_file: str) -> Tuple[List[Dict[str, Any]], int]:
+
+    content_length, deflated = -1, sample_file.endswith(".gz") or None
+    if sample_file.startswith(SAMPLE_RESPONSE_BODY_FILE_PREFIX):
+        header_file = sample_file.replace(
+            SAMPLE_RESPONSE_BODY_FILE_PREFIX, SAMPLE_RESPONSE_HEADERS_FILE_PREFIX
+        )
+        if os.path.exists(header_file):
+            deflated = False
+            with open(header_file, "rb") as f:
+                f.readline()
+                headers_message = parse_headers(f)
+                for hdr, val in headers_message.items():
+                    if hdr == "Content-Encoding":
+                        deflated = val == "deflate"
+                    elif hdr == "Content-Length":
+                        content_length = int(val)
+    return load_body_response(sample_file, deflated=deflated), content_length
 
 
 def compare_instances(
