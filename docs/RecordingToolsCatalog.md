@@ -60,8 +60,8 @@ Collect N_SAMPLES from URL and store them under OUT_DIR/TIMESTAMP dir.
 
 Args:
     -k SECURITY_KEY_FILE
-        Read security from this file, empty if no security key is needed. 
-        Default: `'
+        Read security key from this file, empty if no key is needed. 
+        Default: $LMCREC_SECURITY_KEY_FILE='.../.lmcrec/security-key'
 
     -n N_SAMPLES
         The number of samples to collect. Default: 5
@@ -71,7 +71,9 @@ Args:
 
     -o OUTPUT_DIR_ROOT
         Output dir root; the samples will placed under
+
             OUTPUT_DIR_ROOT/HOST:PORT/PATH/YYYY-MM-DDTHH:MM:SS±HHMM
+        
         directory. HOST:PORT/PATH is derived from the URL
         http[s]://HOST:PORT/PATH with the http[s]:// removed. The full
         path of the actual dir will be displayed to stdout at the end
@@ -79,7 +81,7 @@ Args:
 
             samples_dir=`snap-samples.sh ARGS...`
         
-        Each response will create 2 files, OUT_DIR/response-body.K
+        Each response will create 2 file sets, OUT_DIR/response-body.K
         and OUT_DIR/response-headers.K where K=1..N_SAMPLES.
         Default: `.../runtime/lmcrec/samples'
 
