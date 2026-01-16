@@ -70,12 +70,15 @@ case "$this_script" in
         export PATH="$LMCREC_BIN/$go_os-$go_arch:$LMCREC_BIN:$PATH"
 
         if [[ "$this_script" = start* ]]; then
+            inst_out_dir=$LMCREC_RUNTIME/out/$inst
             (
-                inst_out_dir=$LMCREC_RUNTIME/out/$inst
                 set -ex
                 mkdir -p $inst_out_dir
                 lmcrec -inst $inst "$@" >$inst_out_dir/lmcrec.out 2>$inst_out_dir/lmcrec.err </dev/null &
             )
+            echo >&2 "$this_script:"
+            echo >&2 " stdout redirected to $inst_out_dir/lmcrec.out"
+            echo >&2 " stderr redirected to $inst_out_dir/lmcrec.err (e.g. for config info)"
             exit $?
         else
             set -ex

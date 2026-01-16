@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/signal"
 	"path"
+	"path/filepath"
 	"syscall"
 	"time"
 
@@ -40,15 +41,12 @@ func init() {
 func Run() int {
 	logrusx.EnableLoggerArgs()
 
-	configFile := os.Getenv(CONFIG_ENV_VAR)
-	if configFile == "" {
-		configFile = CONFIG_FILE_DEFAULT
-	}
+	configFile, configFileSrc := "", ""
 	flag.StringVar(
 		&configFile,
 		CONFIG_FLAG,
-		configFile,
-		fmt.Sprintf("Config file (default based on $%s, with fallback over %q)", CONFIG_ENV_VAR, CONFIG_FILE_DEFAULT),
+		"",
+		fmt.Sprintf("Config file. If not specified then env var %s with fallback over %q", CONFIG_ENV_VAR, CONFIG_FILE_DEFAULT),
 	)
 
 	inst := ""
@@ -87,6 +85,31 @@ func Run() int {
 		return 1
 	}
 
+	// Resolve config file:
+	if configFile != "" {
+		configFileSrc = fmt.Sprintf("command line -%s %s", CONFIG_FLAG, configFile)
+	} else {
+		configFile = os.Getenv(CONFIG_ENV_VAR)
+		if configFile != "" {
+			configFileSrc = fmt.Sprintf("env var %s=%s", CONFIG_ENV_VAR, configFile)
+		} else {
+			configFile = CONFIG_FILE_DEFAULT
+			configFileSrc = fmt.Sprintf("built-in default=%s", configFile)
+		}
+	}
+
+	configFileSrc = "Config based on " + configFileSrc
+
+	if !filepath.IsAbs(configFile) {
+		var err error
+		configFile, err = filepath.Abs(configFile)
+		if err != nil {
+			runnerLogger.Fatalf("cannot determine abs path for config based on %s: %v", configFileSrc, err)
+		}
+		configFileSrc += fmt.Sprintf(", abs path=%s", configFile)
+	}
+
+	runnerLogger.Info(configFileSrc)
 	config, loggerConfig, err := LoadLmcrecConfig(configFile, inst)
 	if err != nil {
 		runnerLogger.Error(err)
@@ -120,6 +143,10 @@ func Run() int {
 	signal.Notify(rolloverSignal, syscall.SIGUSR2)
 
 	runnerLogger.Infof("Start %s recorder", recorder.Inst)
+	// If log file is in effect, log config file resolution into it too:
+	if loggerConfig.LogFile != "" {
+		runnerLogger.Info(configFileSrc)
+	}
 	taskLoop.Start(recorder.Inst, recorder.Scan, *config.ScanInterval)
 
 	retCode := 1
