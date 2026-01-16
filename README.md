@@ -4,6 +4,7 @@
 - [Principles Of Operations](#principles-of-operations)
 - [Further Reading](#further-reading)
 
+  - [Installation Guide](docs/InstallationGuide.md)
   - [Playback Tools User Guide](docs/PlaybackToolsUserGuide.md)
   - [Using Recorded Data In Python](docs/API.md)
   - [Recording Tools Catalog](docs/RecordingToolsCatalog.md)
