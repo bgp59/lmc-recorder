@@ -1,3 +1,35 @@
+2026/01/16  v0.0.2
+
+Address the following issues:
+
+* [Issue# 5](https://github.com/bgp59/lmc-recorder/issues/5): Log path to config
+
+    Log abs path to config and config file resolution: command line, env var,
+    built-in default to stderr and log file; to improve troubleshooting.
+
+
+* [Issue# 6](https://github.com/bgp59/lmc-recorder/issues/6): Improve lmcrec-inflate
+
+    * add heuristics to body response load function: unless deflation status can be
+    inferred, try inflate first and if it fails trye raw. Impacted:
+        * lmcrec-check-consistency
+        * lmcrec-check-response
+        * lmcrec-inflate
+
+    * add JSON format w/ indentation to lmcrec-inflate, `jq` is no longer required
+
+* [Issue# 7](https://github.com/bgp59/lmc-recorder/issues/7): Add lack of compression warning
+
+    * add warning to `snap-samples.sh` and `lmcrec` when an uncompressed body
+    response is received if compression was expected
+
+    * `snap-samples.sh` improvements:
+        * honor $LMCREC_SECURITY_KEY_FILE, if set
+        * add timeout protection to curl
+        * display error message and stop for 4xx HTTP codes
+
+
+
 2025/12/29  v0.0.1
 
 Initial release
