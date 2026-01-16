@@ -44,17 +44,17 @@
 
     ```bash
     cd /usr/local
-    tar xvf /tmp/lmcrec-linux-amd64-v0.0.1.tgz
+    tar xvf /tmp/lmcrec-linux-amd64-vMAJ.MIN.PATCH.tgz
     ```
 
     will create:
 
     ```text
-    /usr/local/lmcrec-linux-amd64 -> lmcrec-linux-amd64-v0.0.1
-    /usr/local/lmcrec-linux-amd64-v0.0.1/bin
-                                        /reference
-                                        relnotes.txt
-                                        /scripts
+    /usr/local/lmcrec-linux-amd64 -> lmcrec-linux-amd64-vMAJ.MIN.PATCH
+    /usr/local/lmcrec-linux-amd64-vMAJ.MIN.PATCH/bin
+                                                /reference
+                                                relnotes.txt
+                                                /scripts
     ```
 
 - add `scripts` location to `PATH` in the shell's initialization file. For
