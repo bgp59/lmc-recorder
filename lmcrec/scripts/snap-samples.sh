@@ -2,7 +2,7 @@
 
 this_script=${0##*/}
 
-security_key_file=
+security_key_file=$LMCREC_SECURITY_KEY_FILE
 n_samples=5
 interval=5
 if [[ -z "$LMCREC_RUNTIME" ]]; then
@@ -23,8 +23,8 @@ Collect N_SAMPLES from URL and store them under OUT_DIR/TIMESTAMP dir.
 
 Args:
     -k SECURITY_KEY_FILE
-        Read security from this file, empty if no security key is needed. 
-        Default: \`$security_key_file'
+        Read security key from this file, empty if no key is needed. 
+        Default: \$LMCREC_SECURITY_KEY_FILE='$security_key_file'
 
     -n N_SAMPLES
         The number of samples to collect. Default: $n_samples
@@ -34,7 +34,9 @@ Args:
 
     -o OUTPUT_DIR_ROOT
         Output dir root; the samples will placed under
+
             OUTPUT_DIR_ROOT/HOST:PORT/PATH/YYYY-MM-DDTHH:MM:SS±HHMM
+        
         directory. HOST:PORT/PATH is derived from the URL
         http[s]://HOST:PORT/PATH with the http[s]:// removed. The full
         path of the actual dir will be displayed to stdout at the end
@@ -42,7 +44,7 @@ Args:
 
             samples_dir=\`$this_script ARGS...\`
         
-        Each response will create 2 files, OUT_DIR/$response_body_file.K
+        Each response will create 2 file sets, OUT_DIR/$response_body_file.K
         and OUT_DIR/$response_headers_file.K where K=1..N_SAMPLES.
         Default: \`$output_dir_root'
 
@@ -85,7 +87,7 @@ samples_dir=$output_dir_root/$(echo "$url" | sed -e 's|http[s]*://||' -e 's|/*$|
 mkdir -p $samples_dir
 cd $samples_dir
 
-# Prevent unauthorized access to the request header file  while the script is
+# Prevent unauthorized access to the request header file while the script is
 # running since it may contain the secret key:
 touch $request_headers_file
 chmod 0600 $request_headers_file
@@ -97,15 +99,29 @@ chmod 0600 $request_headers_file
 # Remove the request header file upon exit since it may contain the secret key:
 trap "rm -rf $request_headers_file" 0 INT TERM
 
-k=0
 for ((i=1; i<=$n_samples; i++)); do
     if [[ $i -gt 1 ]]; then (set -x; exec sleep $interval); fi
-    (set -x; exec curl -k -s -S -H @$request_headers_file -D $response_headers_file.$i -o $response_body_file.$i $url)
+    (   
+        set -x
+        exec curl \
+            --connect-timeout 1 \
+            --dump-header $response_headers_file.$i \
+            --fail \
+            --header @$request_headers_file \
+            --insecure \
+            --max-time 2 \
+            --output $response_body_file.$i \
+            --show-error \
+            --silent \
+            $url
+    )
     chmod -w $response_headers_file.$i $response_body_file.$i # to prevent accidental alteration
-    k=$(($k + 1))
+    if [[ "$compressed" == "yes" ]] && ! grep -qis deflate $response_headers_file.$i; then
+        echo >&2 "$this_script: WARNING! response body is not compressed"
+    fi
 done
 
 echo $samples_dir # to be captured in samples_dir=`...`
-echo >&2 "$this_script: $k sample(s) saved under $samples_dir" # info
+echo >&2 "$this_script: $n_samples sample(s) saved under $samples_dir" # info
 
 

@@ -97,11 +97,12 @@ type Lmcrec struct {
 	parseErrorGauge int
 
 	// Needed for REST API:
-	url            string        // needed for config logging
-	tcpConnTimeout time.Duration // needed for config logging
-	tcpKeepAlive   any           // needed for config logging (it may be not set)
-	httpClient     HttpClientDoer
-	httpRequest    *http.Request
+	url                string        // needed for config logging
+	tcpConnTimeout     time.Duration // needed for config logging
+	tcpKeepAlive       any           // needed for config logging (it may be not set)
+	httpClient         HttpClientDoer
+	httpRequest        *http.Request
+	requestCompression bool
 	// If the remote process is down then connection refused error messages
 	// would be logged with every scan, filling the logs. Keep track of the last
 	// message and its occurrence count and log it only so often.
@@ -176,8 +177,9 @@ func NewLmcrec(config *LmcrecConfig, loop *TaskLoop) (*Lmcrec, error) {
 	}
 
 	isRemote := !strings.HasPrefix(strings.ToLower(parsedUrl.Host), "localhost") && !strings.HasPrefix(parsedUrl.Host, "127.")
-	if *config.CompressedRequests == COMPRESSED_REQUESTS_REMOTE_ONLY && isRemote ||
-		len(*config.CompressedRequests) > 0 && strings.HasPrefix("true", strings.ToLower(*config.CompressedRequests)) {
+	requestCompression := *config.CompressedRequests == COMPRESSED_REQUESTS_REMOTE_ONLY && isRemote ||
+		len(*config.CompressedRequests) > 0 && strings.HasPrefix("true", strings.ToLower(*config.CompressedRequests))
+	if requestCompression {
 		if req.Header == nil {
 			req.Header = http.Header{}
 		}
@@ -258,6 +260,7 @@ func NewLmcrec(config *LmcrecConfig, loop *TaskLoop) (*Lmcrec, error) {
 			Timeout:   *config.RequestTimeout,
 		},
 		httpRequest:          req,
+		requestCompression:   requestCompression,
 		logger:               logger,
 		lck:                  &sync.Mutex{},
 		recordFilesDir:       recordFilesDir,
@@ -389,7 +392,7 @@ func (r *Lmcrec) logConfig() {
 			if r.compressionLevel == zlib.DefaultCompression {
 				explanation = " (default compression)"
 			}
-			logger.Infof("compression_level=%d%s", r.compressionLevel, explanation)
+			logger.Infof("recording file compression_level=%d%s", r.compressionLevel, explanation)
 		} else {
 			explanation := ""
 			if r.bufSize < 0 {
@@ -397,7 +400,7 @@ func (r *Lmcrec) logConfig() {
 			} else if r.bufSize == 0 {
 				explanation = " (no buffering)"
 			}
-			logger.Infof("buf_size=%d%s", r.bufSize, explanation)
+			logger.Infof("recording file buf_size=%d%s", r.bufSize, explanation)
 		}
 	}
 }
@@ -558,6 +561,13 @@ func (r *Lmcrec) Scan() bool {
 		}
 		// Force a flush for the first scan of a new encoder to create the info file:
 		firstTimeFlush = true
+		// Check if the response is compressed as expected, if not log a
+		// warning, once per record file:
+		if r.requestCompression && !isDeflated {
+			if r.logger != nil {
+				r.logger.Warn("requested compression but REST response body not compressed")
+			}
+		}
 	} else if checkpoint {
 		if err = r.encoder.Checkpoint(startTs); err != nil {
 			return r.reportError(err, SCAN_FATAL_ERR)
