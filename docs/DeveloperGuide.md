@@ -113,7 +113,7 @@ Tahoe 2.62`.
 ### Running Python Commands
 
 - activate the virtual environment (if one is used)
-- have `.../mc-recorder/lmcpb/commands` in `PATH`
+- have `.../lmc-recorder/lmcpb/commands` in `PATH`
 - share env `LMCREC_CONFIG` and `LMCREC_RUNTIME` with [GO binaries](#running-go-binaries)
 
 ## Creating Releases
@@ -121,14 +121,14 @@ Tahoe 2.62`.
 ### Version And Release Notes
 
 The semantic version should be maintained in [semver.txt](../semver.txt) file in
-`vMAJ.MIN.PATCH` format.
+`MAJ.MIN.PATCH` format.
 
 The release notes should be maintained in [relnotes.txt](../relnotes.txt) file
 in the most recent to the oldest order. Each release should be headed by date
 and version:
 
 ```text
-YYYY/MM/DD      vMAJ.MIN.PATCH
+YYYY/MM/DD      MAJ.MIN.PATCH
 
 Description
 ```
@@ -148,7 +148,7 @@ The project should be a clean state on the `main` branch, with semver tag applie
 - apply the semver tag:
 
     ```bash
-    ./git-tag-with-semver
+    ./apply-release-tag
     ```
 
 - create the release:
