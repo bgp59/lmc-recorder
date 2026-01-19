@@ -44,24 +44,24 @@
 
     ```bash
     cd /usr/local
-    tar xvf /tmp/lmcrec-linux-amd64-v0.0.2.tgz
+    tar xvf /tmp/lmcrec-0.2.0-linux-amd64.tgz
     ```
 
     will create:
 
     ```text
-    /usr/local/lmcrec-linux-amd64 -> lmcrec-linux-amd64-v0.0.2
-    /usr/local/lmcrec-linux-amd64-v0.0.2/bin
-                                        /reference
-                                        relnotes.txt
-                                        /scripts
+    /usr/local/lmcrec -> lmcrec-0.2.0
+    /usr/local/lmcrec-0.2.0/bin
+                           /reference
+                           relnotes.txt
+                           /scripts
     ```
 
 - add `scripts` location to `PATH` in the shell's initialization file. For
   instance for `bash` add to `~/.bashrc`:
 
     ```bash
-    lmcrec_path=/usr/local/lmcrec-linux-amd64/scripts
+    lmcrec_path=/usr/local/lmcrec/scripts
     case "$PATH" in
         $lmcrec_path|$lmcrec_path:*|*:$lmcrec_path|*:$lmcrec_path:*) : ;;
         *) export PATH="$lmcrec_path${PATH:+:}$PATH";;
@@ -76,7 +76,7 @@
     . $HOME/venv/lmcrec/bin/activate
     
 
-    pip3 install --upgrade /tmp/lmcrec-0.0.2-py3-none-any.whl
+    pip3 install --upgrade /tmp/lmcrec-0.2.0-py3-none-any.whl
     ```
 
     If the environment where the installation is performed is very restricted,
@@ -97,7 +97,7 @@
         --upgrade \
         --no-index \
         --find-links /tmp/lmcrec-py-dep-linux-amd64 \
-        /tmp/lmcrec-0.0.2-py3-none-any.whl
+        /tmp/lmcrec-0.2.0-py3-none-any.whl
     ```
 
 ## LSEG Configuration

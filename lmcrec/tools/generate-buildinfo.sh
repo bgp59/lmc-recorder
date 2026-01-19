@@ -7,9 +7,6 @@ semver_file=semver.txt
 
 if [[ -z "$semver" && -r "$semver_file" ]]; then
     semver=$(cat $semver_file)
-    case "$semver" in
-        [0-9]*) semver="v$semver";;
-    esac
 fi
 
 set -e

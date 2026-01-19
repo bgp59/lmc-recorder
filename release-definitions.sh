@@ -17,5 +17,7 @@ if [[ -z "$semver" ]]; then
     exit 1
 fi
 
-release_dir=$release_root_dir/$semver
-
+release_prefix="lmcrec"
+release="$release_prefix-$semver"
+release_dir="$release_root_dir/$release"
+release_tag="$release"

@@ -13,9 +13,9 @@ cd $this_dir
 # Source definitions:
 . release-definitions.sh
 
-# Must be in proper git state and have semver tag applied at the HEAD; this can
+# Must be in proper git state and have release tag applied at the HEAD; this can
 # be disabled by setting env __lmcrec_ignore_git_state=y .
-if ! (set -x; ./check-git-state $semver); then
+if ! (set -x; ./check-git-state $release_tag); then
     echo >&2 "$this_script: cannot continue"
     exit 1
 fi
