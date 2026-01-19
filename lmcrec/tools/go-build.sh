@@ -88,9 +88,6 @@ fi
 semver=
 if [[ -r $semver_file ]]; then
     semver=$(cat $semver_file)
-    case "$semver" in
-        [0-9]*) semver="v$semver";;
-    esac
 fi
 
 echo >&2 "$this_script: exec_root='$exec_root', semver='$semver'"

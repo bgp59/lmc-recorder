@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/bin/bash --noprofile
 
 this_script=${0##*/}
     
 usage="
 Usage: $this_script [-f|--force]
 
-Apply semver tag locally and to the remote. Requires
+Apply release tag locally and to the remote. Requires
 a clean git status. Use --force to reapply the tag.
 
 "
@@ -32,6 +32,6 @@ cd $this_dir
 # Get semver:
 . release-definitions.sh
 
-# Apply semver tag:
-git tag $force $semver
-git push $force origin tag $semver 
+# Apply release tag:
+git tag $force $release_tag
+git push $force origin tag $release_tag 
