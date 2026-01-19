@@ -1,6 +1,6 @@
 2026/01/19  0.2.0
 
-Repackage using lmcrec-SEMVER schema, with SEMVER compliant MAJ.MIN.PATH
+Repackage using lmcrec-SEMVER schema, with SEMVER compliant MAJ.MIN.PATCH
 numbering (no v prefix). v0.0.x are no obsolete and they will be removed.
 
 No functional changes otherwise.
