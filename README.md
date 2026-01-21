@@ -90,7 +90,7 @@ Potential recording solutions:
 1. Snap the (compressed) JSON and store only the changes in a custom binary
    format in a compressed file.
 
-   This is the approach taken by this project and it yields a 20:1 to 50:1
+   This is the approach taken by this project and it yields a 10:1 to 30:1
    compression ratio improvement over approach #1.
 
 1. Store the parsed information into a relational database.

@@ -34,8 +34,8 @@ def main():
         "-r",
         "--raw",
         action="store_true",
-        help="""Disable JSON format, print the raw output raw. Useful to perform
-        strictly inflation.""",
+        help="""Disable JSON format and print the raw output, useful for
+             performing strictly inflation.""",
     )
     parser.add_argument(
         "response_body_file", help="""Response body file, potentially deflated."""

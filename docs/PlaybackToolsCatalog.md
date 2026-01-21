@@ -344,8 +344,8 @@ positional arguments:
 
 options:
   -h, --help          show this help message and exit
-  -r, --raw           Disable JSON format, print the raw output raw. Useful to
-                      perform strictly inflation.
+  -r, --raw           Disable JSON format and print the raw output, useful for
+                      performing strictly inflation.
 ```
 
 ### lmcrec-info
@@ -512,10 +512,7 @@ usage: lmcrec-query [-h] [-f FROM_TS] [-t TO_TS] [-c CONFIG] [-i INST]
 Run queries against recorded data.
 
 For query syntax see:
-    https://github.com/bgp59/lmc-recorder/docs/QueryDescription.md
-
-For additional help with the command see:
-    https://github.com/bgp59/lmc-recorder/docs/Commands.md#lmcrec-query
+    https://github.com/bgp59/lmc-recorder/tree/main/docs/QueryDescription.md
 
 positional arguments:
   QUERY_OR_FILE         query or query_file, the latter if it has '.yaml' suffix

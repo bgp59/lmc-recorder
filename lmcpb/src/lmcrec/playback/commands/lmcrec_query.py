@@ -4,12 +4,7 @@ description = """
 Run queries against recorded data.
 
 For query syntax see:
-    https://github.com/bgp59/lmc-recorder/docs/QueryDescription.md
-
-
-For additional help with the command see:
-    https://github.com/bgp59/lmc-recorder/docs/Commands.md#lmcrec-query
-
+    https://github.com/bgp59/lmc-recorder/tree/main/docs/QueryDescription.md
 
 """
 
