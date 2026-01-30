@@ -27,6 +27,8 @@ default:
   request_timeout: 5s
   ignore_tls_verify: false
   tcp_conn_timeout: 3s
+  tcp_keep_alive: 30s
+  host_addr_cache_ttl: 5m
   record_files_dir: "/tmp/rec"
   buf_size: 8192
   compression_level: 6
@@ -114,6 +116,18 @@ recorders:
 		t.Errorf("field TcpConnTimeout: want: %v, got: %v", want, got)
 	}
 
+	if config.TcpKeepAlive == nil {
+		t.Error("field TcpKeepAlive should not be nil")
+	} else if want, got = 30*time.Second, *config.TcpKeepAlive; want != got {
+		t.Errorf("field TcpKeepAlive: want: %v, got: %v", want, got)
+	}
+
+	if config.HostAddrCacheTTL == nil {
+		t.Error("field HostAddrCacheTTL should not be nil")
+	} else if want, got = 5*time.Minute, *config.HostAddrCacheTTL; want != got {
+		t.Errorf("field HostAddrCacheTTL: want: %v, got: %v", want, got)
+	}
+
 	if config.RecordFilesDir == nil {
 		t.Error("field RecordFilesDir should not be nil")
 	} else if want, got = "/tmp/rec", *config.RecordFilesDir; want != got {
@@ -176,7 +190,6 @@ recorders:
 		t.Errorf("field RequestTimeout: want: %v, got: %v", want, got)
 	}
 
-	// Check default values are applied
 	if config.ScanInterval == nil {
 		t.Error("field ScanInterval should not be nil")
 	} else if want, got = 5*time.Second, *config.ScanInterval; want != got {
@@ -187,6 +200,84 @@ recorders:
 		t.Error("field FlushInterval should not be nil")
 	} else if want, got = 5*time.Minute, *config.FlushInterval; want != got {
 		t.Errorf("field FlushInterval: want: %v, got: %v", want, got)
+	}
+
+	if config.CheckpointInterval == nil {
+		t.Error("field CheckpointInterval should not be nil")
+	} else if want, got = RECORDER_CONFIG_CHECKPOINT_INTERVAL_DEFAULT, *config.CheckpointInterval; want != got {
+		t.Errorf("field CheckpointInterval: want: %v, got: %v", want, got)
+	}
+
+	if config.RolloverInterval == nil {
+		t.Error("field RolloverInterval should not be nil")
+	} else if want, got = RECORDER_CONFIG_ROLLOVER_INTERVAL_DEFAULT, *config.RolloverInterval; want != got {
+		t.Errorf("field RolloverInterval: want: %v, got: %v", want, got)
+	}
+
+	if config.MidnightRollover == nil {
+		t.Error("field MidnightRollover should not be nil")
+	} else if want, got = RECORDER_CONFIG_MIDNIGHT_ROLLOVER_DEFAULT, *config.MidnightRollover; want != got {
+		t.Errorf("field MidnightRollover: want: %v, got: %v", want, got)
+	}
+
+	if config.ParseErrorThreshold == nil {
+		t.Error("field ParseErrorThreshold should not be nil")
+	} else if want, got = RECORDER_CONFIG_PARSE_ERROR_THRESHOLD_DEFAULT, *config.ParseErrorThreshold; want != got {
+		t.Errorf("field ParseErrorThreshold: want: %v, got: %v", want, got)
+	}
+
+	if config.SecurityKey == nil {
+		t.Error("field SecurityKey should not be nil")
+	} else if want, got = RECORDER_CONFIG_SECURITY_KEY_DEFAULT, *config.SecurityKey; want != got {
+		t.Errorf("field SecurityKey: want: %v, got: %v", want, got)
+	}
+
+	if config.CompressedRequests == nil {
+		t.Error("field CompressedRequests should not be nil")
+	} else if want, got = RECORDER_CONFIG_COMPRESSED_REQUESTS_DEFAULT, *config.CompressedRequests; want != got {
+		t.Errorf("field CompressedRequests: want: %v, got: %v", want, got)
+	}
+
+	if config.IgnoreTlsVerify == nil {
+		t.Error("field IgnoreTlsVerify should not be nil")
+	} else if want, got = RECORDER_CONFIG_IGNORE_TLS_VERIFY_DEFAULT, *config.IgnoreTlsVerify; want != got {
+		t.Errorf("field IgnoreTlsVerify: want: %v, got: %v", want, got)
+	}
+
+	if config.TcpConnTimeout == nil {
+		t.Error("field TcpConnTimeout should not be nil")
+	} else if want, got = RECORDER_CONFIG_TCP_CONNECTION_TIMEOUT_DEFAULT, *config.TcpConnTimeout; want != got {
+		t.Errorf("field TcpConnTimeout: want: %v, got: %v", want, got)
+	}
+
+	if config.TcpKeepAlive == nil {
+		t.Error("field TcpKeepAlive should not be nil")
+	} else if want, got = RECORDER_CONFIG_TCP_KEEP_ALIVE_DEFAULT, *config.TcpKeepAlive; want != got {
+		t.Errorf("field TcpKeepAlive: want: %v, got: %v", want, got)
+	}
+
+	if config.HostAddrCacheTTL == nil {
+		t.Error("field HostAddrCacheTTL should not be nil")
+	} else if want, got = RECORDER_CONFIG_HOST_ADDR_CACHE_TTL_DEFAULT, *config.HostAddrCacheTTL; want != got {
+		t.Errorf("field HostAddrCacheTTL: want: %v, got: %v", want, got)
+	}
+
+	if config.RecordFilesDir == nil {
+		t.Error("field RecordFilesDir should not be nil")
+	} else if want, got = RECORDER_CONFIG_RECORD_FILES_DIR_DEFAULT, *config.RecordFilesDir; want != got {
+		t.Errorf("field RecordFilesDir: want: %v, got: %v", want, got)
+	}
+
+	if config.BufSize == nil {
+		t.Error("field BufSize should not be nil")
+	} else if want, got = RECORDER_CONFIG_RECORD_BUFSIZE_DEFAULT, *config.BufSize; want != got {
+		t.Errorf("field BufSize: want: %v, got: %v", want, got)
+	}
+
+	if config.CompressionLevel == nil {
+		t.Error("field CompressionLevel should not be nil")
+	} else if want, got = RECORDER_CONFIG_COMPRESSION_LEVEL_DEFAULT, *config.CompressionLevel; want != got {
+		t.Errorf("field CompressionLevel: want: %v, got: %v", want, got)
 	}
 }
 
@@ -229,6 +320,90 @@ recorders:
 	} else if want, got = 7*time.Second, *config.ScanInterval; want != got {
 		t.Errorf("field ScanInterval: want: %v, got: %v", want, got)
 	}
+
+	if config.CheckpointInterval == nil {
+		t.Error("field CheckpointInterval should not be nil")
+	} else if want, got = RECORDER_CONFIG_CHECKPOINT_INTERVAL_DEFAULT, *config.CheckpointInterval; want != got {
+		t.Errorf("field CheckpointInterval: want: %v, got: %v", want, got)
+	}
+
+	if config.RolloverInterval == nil {
+		t.Error("field RolloverInterval should not be nil")
+	} else if want, got = RECORDER_CONFIG_ROLLOVER_INTERVAL_DEFAULT, *config.RolloverInterval; want != got {
+		t.Errorf("field RollooverInterval: want: %v, got: %v", want, got)
+	}
+
+	if config.MidnightRollover == nil {
+		t.Error("field MidnightRollover should not be nil")
+	} else if want, got = RECORDER_CONFIG_MIDNIGHT_ROLLOVER_DEFAULT, *config.MidnightRollover; want != got {
+		t.Errorf("field MidnightRollover: want: %v, got: %v", want, got)
+	}
+
+	if config.ParseErrorThreshold == nil {
+		t.Error("field ParseErrorThreshold should not be nil")
+	} else if want, got = RECORDER_CONFIG_PARSE_ERROR_THRESHOLD_DEFAULT, *config.ParseErrorThreshold; want != got {
+		t.Errorf("field ParseErrorThreshold: want: %v, got: %v", want, got)
+	}
+
+	if config.SecurityKey == nil {
+		t.Error("field SecurityKey should not be nil")
+	} else if want, got = RECORDER_CONFIG_SECURITY_KEY_DEFAULT, *config.SecurityKey; want != got {
+		t.Errorf("field SecurityKey: want: %v, got: %v", want, got)
+	}
+
+	if config.CompressedRequests == nil {
+		t.Error("field CompressedRequests should not be nil")
+	} else if want, got = RECORDER_CONFIG_COMPRESSED_REQUESTS_DEFAULT, *config.CompressedRequests; want != got {
+		t.Errorf("field CompressedRequests: want: %v, got: %v", want, got)
+	}
+
+	if config.RequestTimeout == nil {
+		t.Error("field RequestTimeout should not be nil")
+	} else if want, got = RECORDER_CONFIG_REQUEST_TIMEOUT_DEFAULT, *config.RequestTimeout; want != got {
+		t.Errorf("field RequestTimeout: want: %v, got: %v", want, got)
+	}
+
+	if config.IgnoreTlsVerify == nil {
+		t.Error("field IgnoreTlsVerify should not be nil")
+	} else if want, got = RECORDER_CONFIG_IGNORE_TLS_VERIFY_DEFAULT, *config.IgnoreTlsVerify; want != got {
+		t.Errorf("field IgnoreTlsVerify: want: %v, got: %v", want, got)
+	}
+
+	if config.TcpConnTimeout == nil {
+		t.Error("field TcpConnTimeout should not be nil")
+	} else if want, got = RECORDER_CONFIG_TCP_CONNECTION_TIMEOUT_DEFAULT, *config.TcpConnTimeout; want != got {
+		t.Errorf("field TcpConnTimeout: want: %v, got: %v", want, got)
+	}
+
+	if config.TcpKeepAlive == nil {
+		t.Error("field TcpKeepAlive should not be nil")
+	} else if want, got = RECORDER_CONFIG_TCP_KEEP_ALIVE_DEFAULT, *config.TcpKeepAlive; want != got {
+		t.Errorf("field TcpKeepAlive: want: %v, got: %v", want, got)
+	}
+
+	if config.HostAddrCacheTTL == nil {
+		t.Error("field HostAddrCacheTTL should not be nil")
+	} else if want, got = RECORDER_CONFIG_HOST_ADDR_CACHE_TTL_DEFAULT, *config.HostAddrCacheTTL; want != got {
+		t.Errorf("field HostAddrCacheTTL: want: %v, got: %v", want, got)
+	}
+
+	if config.RecordFilesDir == nil {
+		t.Error("field RecordFilesDir should not be nil")
+	} else if want, got = RECORDER_CONFIG_RECORD_FILES_DIR_DEFAULT, *config.RecordFilesDir; want != got {
+		t.Errorf("field RecordFilesDir: want: %v, got: %v", want, got)
+	}
+
+	if config.BufSize == nil {
+		t.Error("field BufSize should not be nil")
+	} else if want, got = RECORDER_CONFIG_RECORD_BUFSIZE_DEFAULT, *config.BufSize; want != got {
+		t.Errorf("field BufSize: want: %v, got: %v", want, got)
+	}
+
+	if config.CompressionLevel == nil {
+		t.Error("field CompressionLevel should not be nil")
+	} else if want, got = RECORDER_CONFIG_COMPRESSION_LEVEL_DEFAULT, *config.CompressionLevel; want != got {
+		t.Errorf("field CompressionLevel: want: %v, got: %v", want, got)
+	}
 }
 
 func TestLoadRecorderConfigNoMatch(t *testing.T) {
@@ -266,6 +441,8 @@ default:
   request_timeout: 2s
   ignore_tls_verify: false
   tcp_conn_timeout: 1s
+  tcp_keep_alive: 20s
+  host_addr_cache_ttl: 10m
   record_files_dir: "$LMCREC_RUNTIME/rec/<INST>"
   buf_size: 4096
   compression_level: 5
@@ -284,7 +461,6 @@ recorders:
 
 	var want, got interface{}
 
-	// Overridden values
 	if config.ScanInterval == nil {
 		t.Error("field ScanInterval should not be nil")
 	} else if want, got = 15*time.Second, *config.ScanInterval; want != got {
@@ -303,7 +479,6 @@ recorders:
 		t.Errorf("field ParseErrorThreshold: want: %v, got: %v", want, got)
 	}
 
-	// Default values preserved
 	if config.FlushInterval == nil {
 		t.Error("field FlushInterval should not be nil")
 	} else if want, got = 5*time.Minute, *config.FlushInterval; want != got {
@@ -356,6 +531,18 @@ recorders:
 		t.Error("field TcpConnTimeout should not be nil")
 	} else if want, got = 1*time.Second, *config.TcpConnTimeout; want != got {
 		t.Errorf("field TcpConnTimeout: want: %v, got: %v", want, got)
+	}
+
+	if config.TcpKeepAlive == nil {
+		t.Error("field TcpKeepAlive should not be nil")
+	} else if want, got = 20*time.Second, *config.TcpKeepAlive; want != got {
+		t.Errorf("field TcpKeepAlive: want: %v, got: %v", want, got)
+	}
+
+	if config.HostAddrCacheTTL == nil {
+		t.Error("field HostAddrCacheTTL should not be nil")
+	} else if want, got = 10*time.Minute, *config.HostAddrCacheTTL; want != got {
+		t.Errorf("field HostAddrCacheTTL: want: %v, got: %v", want, got)
 	}
 
 	if config.RecordFilesDir == nil {
@@ -461,22 +648,16 @@ recorders:
 		t.Errorf("field TcpConnTimeout: want: %v, got: %v", want, got)
 	}
 
-	if config.RecordFilesDir == nil {
-		t.Error("field RecordFilesDir should not be nil")
-	} else if want, got = RECORDER_CONFIG_RECORD_FILES_DIR_DEFAULT, *config.RecordFilesDir; want != got {
-		t.Errorf("field RecordFilesDir: want: %v, got: %v", want, got)
+	if config.TcpKeepAlive == nil {
+		t.Error("field TcpKeepAlive should not be nil")
+	} else if want, got = RECORDER_CONFIG_TCP_KEEP_ALIVE_DEFAULT, *config.TcpKeepAlive; want != got {
+		t.Errorf("field TcpKeepAlive: want: %v, got: %v", want, got)
 	}
 
-	if config.BufSize == nil {
-		t.Error("field BufSize should not be nil")
-	} else if want, got = RECORDER_CONFIG_RECORD_BUFSIZE_DEFAULT, *config.BufSize; want != got {
-		t.Errorf("field BufSize: want: %v, got: %v", want, got)
-	}
-
-	if config.CompressionLevel == nil {
-		t.Error("field CompressionLevel should not be nil")
-	} else if want, got = RECORDER_CONFIG_COMPRESSION_LEVEL_DEFAULT, *config.CompressionLevel; want != got {
-		t.Errorf("field CompressionLevel: want: %v, got: %v", want, got)
+	if config.HostAddrCacheTTL == nil {
+		t.Error("field HostAddrCacheTTL should not be nil")
+	} else if want, got = RECORDER_CONFIG_HOST_ADDR_CACHE_TTL_DEFAULT, *config.HostAddrCacheTTL; want != got {
+		t.Errorf("field HostAddrCacheTTL: want: %v, got: %v", want, got)
 	}
 }
 
@@ -500,6 +681,7 @@ recorders:
     ignore_tls_verify: true
     tcp_conn_timeout: 5s
     tcp_keep_alive: 60s
+    host_addr_cache_ttl: 15m
     record_files_dir: "/custom/path/recordings"
     buf_size: 16384
     compression_level: 9
@@ -597,6 +779,12 @@ recorders:
 		t.Errorf("field TcpKeepAlive: want: %v, got: %v", want, got)
 	}
 
+	if config.HostAddrCacheTTL == nil {
+		t.Error("field HostAddrCacheTTL should not be nil")
+	} else if want, got = 15*time.Minute, *config.HostAddrCacheTTL; want != got {
+		t.Errorf("field HostAddrCacheTTL: want: %v, got: %v", want, got)
+	}
+
 	if config.RecordFilesDir == nil {
 		t.Error("field RecordFilesDir should not be nil")
 	} else if want, got = "/custom/path/recordings", *config.RecordFilesDir; want != got {
@@ -684,5 +872,17 @@ recorders:
 		t.Error("field CompressionLevel should not be nil")
 	} else if want, got = codec.DEFAULT_COMPRESSION_LEVEL, *config.CompressionLevel; want != got {
 		t.Errorf("field CompressionLevel: want: %v, got: %v", want, got)
+	}
+
+	if config.TcpKeepAlive == nil {
+		t.Error("field TcpKeepAlive should not be nil")
+	} else if want, got = RECORDER_CONFIG_TCP_KEEP_ALIVE_DEFAULT, *config.TcpKeepAlive; want != got {
+		t.Errorf("field TcpKeepAlive: want: %v, got: %v", want, got)
+	}
+
+	if config.HostAddrCacheTTL == nil {
+		t.Error("field HostAddrCacheTTL should not be nil")
+	} else if want, got = RECORDER_CONFIG_HOST_ADDR_CACHE_TTL_DEFAULT, *config.HostAddrCacheTTL; want != got {
+		t.Errorf("field HostAddrCacheTTL: want: %v, got: %v", want, got)
 	}
 }

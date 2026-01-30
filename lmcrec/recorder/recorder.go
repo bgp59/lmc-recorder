@@ -39,6 +39,89 @@ const (
 	SCAN_FATAL_ERR
 )
 
+// Custom dialer for caching name to address resolution. This is required since
+// a new connection is made with every request, implying a call to the resolver.
+// However the address of the REST point doesn't change, hence the benefit of
+// caching.
+type AddressCacheDialer struct {
+	dialer       *net.Dialer
+	resolvedAddr string
+
+	// When last refreshed:
+	refreshTs time.Time
+
+	// Time To Live:
+	//	< 0: indefinitely
+	//	== 0: no caching
+	ttl time.Duration
+
+	mu *sync.Mutex
+}
+
+func NewAddressCacheDialer(timeout, keepAlive, ttl *time.Duration) *AddressCacheDialer {
+	dialer := &net.Dialer{}
+	if timeout != nil {
+		dialer.Timeout = *timeout
+	}
+	if keepAlive != nil {
+		dialer.KeepAlive = *keepAlive
+	}
+
+	cacheDialer := &AddressCacheDialer{
+		dialer: dialer,
+		mu:     &sync.Mutex{},
+	}
+
+	if ttl != nil {
+		cacheDialer.ttl = *ttl
+	} else {
+		cacheDialer.ttl = -1 * time.Second
+	}
+
+	return cacheDialer
+}
+
+func (c *AddressCacheDialer) DialContext(ctx context.Context, network, addr string) (conn net.Conn, err error) {
+	if ttl := c.ttl; ttl != 0 {
+		var (
+			addrs      []string
+			host, port string
+		)
+		c.mu.Lock()
+		if c.resolvedAddr == "" || ttl > 0 && time.Since(c.refreshTs) > ttl {
+			host, port, err = net.SplitHostPort(addr)
+			if err == nil {
+				addrs, err = net.LookupHost(host)
+			}
+			if err == nil {
+				c.resolvedAddr = net.JoinHostPort(addrs[0], port)
+				c.refreshTs = time.Now()
+			}
+		}
+		if err == nil {
+			addr = c.resolvedAddr
+		} else {
+			c.resolvedAddr = ""
+		}
+		c.mu.Unlock()
+	}
+	if err == nil {
+		conn, err = c.dialer.DialContext(ctx, network, addr)
+	}
+	if err == nil {
+		if tcpConn, ok := conn.(*net.TCPConn); ok {
+			tcpConn.SetLinger(0) // Set linger to 0 to force immediate RST on close
+		}
+	}
+	return
+}
+
+func (c *AddressCacheDialer) forceRefresh() {
+	c.mu.Lock()
+	c.resolvedAddr = ""
+	c.mu.Unlock()
+}
+
 // List of HTTP response OK status codes:
 var HttpRespStatusCodeOk = map[int]bool{
 	http.StatusOK: true,
@@ -97,6 +180,7 @@ type Lmcrec struct {
 	parseErrorGauge int
 
 	// Needed for REST API:
+	addressCacheDialer *AddressCacheDialer
 	url                string        // needed for config logging
 	tcpConnTimeout     time.Duration // needed for config logging
 	tcpKeepAlive       any           // needed for config logging (it may be not set)
@@ -130,8 +214,6 @@ type Lmcrec struct {
 	logger       RecorderLogger
 	configLogged bool // used to trigger config logging at 1st scan
 
-	// Needed for config logging:
-
 	// Concurrent operations lock:
 	lck *sync.Mutex
 
@@ -143,23 +225,13 @@ type Lmcrec struct {
 var recorderLogger = RootLogger.NewCompLogger("recorder")
 
 func NewLmcrec(config *LmcrecConfig, loop *TaskLoop) (*Lmcrec, error) {
-	dialer := &net.Dialer{
-		Timeout: *config.TcpConnTimeout,
-	}
-	if config.TcpKeepAlive != nil {
-		dialer.KeepAlive = *config.TcpKeepAlive
-	}
+	addressCacheDialer := NewAddressCacheDialer(
+		config.TcpConnTimeout,
+		config.TcpKeepAlive,
+		config.HostAddrCacheTTL,
+	)
 	transport := &http.Transport{
-		DialContext: func(ctx context.Context, network, addr string) (net.Conn, error) {
-			if conn, err := dialer.DialContext(ctx, network, addr); err == nil {
-				if tcpConn, ok := conn.(*net.TCPConn); ok {
-					tcpConn.SetLinger(0) // Set linger to 0 to force immediate RST on close
-				}
-				return conn, nil
-			} else {
-				return nil, err
-			}
-		},
+		DialContext:       addressCacheDialer.DialContext,
 		DisableKeepAlives: true,
 	}
 	if *config.IgnoreTlsVerify {
@@ -253,6 +325,7 @@ func NewLmcrec(config *LmcrecConfig, loop *TaskLoop) (*Lmcrec, error) {
 		// to one day under the same dir.
 		midnightRollover:    true, // *config.MidnightRollover,
 		parseErrorThreshold: *config.ParseErrorThreshold,
+		addressCacheDialer:  addressCacheDialer,
 		url:                 *config.URL,
 		tcpConnTimeout:      *config.TcpConnTimeout,
 		httpClient: &http.Client{
@@ -379,6 +452,13 @@ func (r *Lmcrec) logConfig() {
 			if r.tcpKeepAlive != nil {
 				logger.Infof("tcp_keep_alive=%s", r.tcpKeepAlive)
 			}
+			explanation := ""
+			if r.addressCacheDialer.ttl < 0 {
+				explanation = " (indefinite)"
+			} else if r.addressCacheDialer.ttl == 0 {
+				explanation = " (disabled)"
+			}
+			logger.Infof("host_addr_cache_ttl=%s%s", r.addressCacheDialer.ttl, explanation)
 		}
 		logger.Infof("scan_interval=%s", r.ScanInterval)
 		logger.Infof("flush_interval=%s", r.flushInterval)
@@ -440,6 +520,10 @@ func (r *Lmcrec) Scan() bool {
 
 	prevHttpErr := r.lastHttpErrMsg != ""
 	if err != nil {
+		if r.addressCacheDialer != nil {
+			// Force refresh in case the resolution lead to error:
+			r.addressCacheDialer.forceRefresh()
+		}
 		httpErrMsg := err.Error()
 		if httpErrMsg != r.lastHttpErrMsg {
 			r.lastHttpErrMsg = httpErrMsg
