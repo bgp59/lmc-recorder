@@ -1,4 +1,0 @@
-n: ads_mount_data_stream
-i: /.*\.mount\d+\.dataStreams$/
-c: ConsumerDataStream
-t: [NUMERIC, GAUGE, COUNTER:d]

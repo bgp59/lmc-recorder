@@ -248,8 +248,13 @@ func NewLmcrec(config *LmcrecConfig, loop *TaskLoop) (*Lmcrec, error) {
 		URL:    parsedUrl,
 	}
 
-	isRemote := !strings.HasPrefix(strings.ToLower(parsedUrl.Host), "localhost") && !strings.HasPrefix(parsedUrl.Host, "127.")
-	requestCompression := *config.CompressedRequests == COMPRESSED_REQUESTS_REMOTE_ONLY && isRemote ||
+	urlHostname := strings.ToLower(parsedUrl.Hostname())
+	isLocal := strings.HasPrefix(urlHostname, "localhost") ||
+		strings.HasPrefix(urlHostname, "127.") ||
+		strings.HasPrefix(urlHostname, "::") ||
+		strings.HasPrefix(urlHostname, "0:0:0:0:0:0:0:")
+
+	requestCompression := *config.CompressedRequests == COMPRESSED_REQUESTS_REMOTE_ONLY && !isLocal ||
 		len(*config.CompressedRequests) > 0 && strings.HasPrefix("true", strings.ToLower(*config.CompressedRequests))
 	if requestCompression {
 		if req.Header == nil {

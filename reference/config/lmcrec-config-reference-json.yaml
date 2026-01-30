@@ -81,7 +81,8 @@
 
       # Whether to request compressed response data or not. The valid values are
       # true, false and remote_only. For the last one compressed requests are
-      # enabled if the host part of the URL is not "localhost" or "127.x.x.x".
+      # enabled if the host part of the URL is not "localhost", "127.x.x.x" or
+      # "[::1]"
       compressed_requests: remote_only,
 
       # Request timeout. The value must be compatible with

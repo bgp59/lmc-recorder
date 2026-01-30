@@ -1,3 +1,0 @@
-n: ads_data_stream
-c: ConsumerDataStream
-t: [NUMERIC, GAUGE, COUNTER:d]
