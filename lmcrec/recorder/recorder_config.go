@@ -33,6 +33,8 @@ const (
 	RECORDER_CONFIG_IGNORE_TLS_VERIFY_DEFAULT      = false
 	RECORDER_CONFIG_COMPRESSED_REQUESTS_DEFAULT    = COMPRESSED_REQUESTS_REMOTE_ONLY
 	RECORDER_CONFIG_TCP_CONNECTION_TIMEOUT_DEFAULT = 1 * time.Second
+	RECORDER_CONFIG_TCP_KEEP_ALIVE_DEFAULT         = -1 * time.Second
+	RECORDER_CONFIG_HOST_ADDR_CACHE_TTL_DEFAULT    = -1 * time.Second
 	RECORDER_CONFIG_REQUEST_TIMEOUT_DEFAULT        = 2 * time.Second
 	RECORDER_CONFIG_RECORD_FILES_DIR_DEFAULT       = "$LMCREC_RUNTIME/rec/" + RECORDER_INST_PLACEHOLDER
 	RECORDER_CONFIG_RECORD_BUFSIZE_DEFAULT         = codec.USE_DEFAULT_BUFIO_SIZE
@@ -115,6 +117,14 @@ type LmcrecConfig struct {
 	TcpConnTimeout *time.Duration `yaml:"tcp_conn_timeout"`
 	TcpKeepAlive   *time.Duration `yaml:"tcp_keep_alive"`
 
+	// Whether to cache the host name to address resolution or not. A new
+	// connection is made with every request, but the address doesn't change, so
+	// in order to avoid undue load of the resolver, cache the address. Use:
+	//  < 0 to cache indefinitely (as long as the requests are successful)
+	//    0 to disable
+	//  > 0 to refresh every so often.
+	HostAddrCacheTTL *time.Duration `yaml:"host_addr_cache_ttl"`
+
 	/////////////////////////////////////////////////
 	// Encoder parameters:
 	/////////////////////////////////////////////////
@@ -166,6 +176,8 @@ func DefaultRecorderConfig() *LmcrecConfig {
 	requestTimeout := RECORDER_CONFIG_REQUEST_TIMEOUT_DEFAULT
 	ignoreTlsVerify := RECORDER_CONFIG_IGNORE_TLS_VERIFY_DEFAULT
 	tcpConnTimeout := RECORDER_CONFIG_TCP_CONNECTION_TIMEOUT_DEFAULT
+	tcpKeepAlive := RECORDER_CONFIG_TCP_KEEP_ALIVE_DEFAULT
+	hostAddrCacheTTL := RECORDER_CONFIG_HOST_ADDR_CACHE_TTL_DEFAULT
 	recordFilesDir := RECORDER_CONFIG_RECORD_FILES_DIR_DEFAULT
 	bufSize := RECORDER_CONFIG_RECORD_BUFSIZE_DEFAULT
 	compressionLevel := RECORDER_CONFIG_COMPRESSION_LEVEL_DEFAULT
@@ -183,6 +195,8 @@ func DefaultRecorderConfig() *LmcrecConfig {
 		RequestTimeout:      &requestTimeout,
 		IgnoreTlsVerify:     &ignoreTlsVerify,
 		TcpConnTimeout:      &tcpConnTimeout,
+		TcpKeepAlive:        &tcpKeepAlive,
+		HostAddrCacheTTL:    &hostAddrCacheTTL,
 		RecordFilesDir:      &recordFilesDir,
 		BufSize:             &bufSize,
 		CompressionLevel:    &compressionLevel,

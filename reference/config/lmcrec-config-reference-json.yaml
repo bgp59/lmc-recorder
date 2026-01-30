@@ -96,6 +96,16 @@
       tcp_conn_timeout: 1s,
       #tcp_keep_alive: ,
 
+      # Whether to cache the host name to address resolution or not. A new
+      # connection is made with every request, but the address doesn't change, so in
+      # order to avoid undue load of the resolver, cache the address. Use:
+      #   < 0 to cache indefinitely (as long as the requests are successful)
+      #     0 to disable
+      #   > 0 to refresh every so often.
+      # Note that if the host resolves to multiple addresses, only the first one is
+      # used. The value must be compatible with https://pkg.go.dev/time#ParseDuration:
+      host_addr_cache_ttl: -1s,
+
       # The record files directory; it may contain env vars, which will be
       # expanded and the <INST> placeholder which will be replaced with the
       # actual instance. Note: if LMCREC_RUNTIME env var is not set, it will
