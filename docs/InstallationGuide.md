@@ -38,7 +38,7 @@
 ## Software
 
 - download the recorder archive and the playback Python wheel from the [latest
-  release](https://github.com/bgp59/lmc-recorder/releases) page
+  release](https://github.com/bgp59/lmc-recorder/releases/latest) page
 - extract the archive to a convenient location, e.g. `/usr/local`. The archive
   contains both the versioned path for the release and a symlink to it.
 
