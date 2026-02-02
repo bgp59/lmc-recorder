@@ -37,16 +37,16 @@ while read os arch; do
     (
         set -ex
 
-        rm -rf $staging_dir/$os-$arch/$release
-        mkdir -p $staging_dir/$os-$arch/$release
+        rm -rf $staging_dir/$os-$arch/$release_tag
+        mkdir -p $staging_dir/$os-$arch/$release_tag
 
 
-        cp -p $relnotes_file $staging_dir/$os-$arch/$release
-        mkdir -p $staging_dir/$os-$arch/$release/bin/$os-$arch
-        cp -p bin/$os-$arch/lmcrec* $staging_dir/$os-$arch/$release/bin/$os-$arch
+        cp -p $relnotes_file $staging_dir/$os-$arch/$release_tag
+        mkdir -p $staging_dir/$os-$arch/$release_tag/bin/$os-$arch
+        cp -p bin/$os-$arch/lmcrec* $staging_dir/$os-$arch/$release_tag/bin/$os-$arch
     )
     for src_dir in $reference_dir scripts; do
-        dst_dir=$staging_dir/$os-$arch/$release/$(basename $src_dir)
+        dst_dir=$staging_dir/$os-$arch/$release_tag/$(basename $src_dir)
         (
             set -ex
             rsync -plrtHS \
@@ -54,15 +54,15 @@ while read os arch; do
                 $src_dir/ $dst_dir
         )
     done
-    archive=$release_dir/$release-$os-$arch.tgz
+    archive=$release_dir/$release_tag-$os-$arch.tgz
     (
         set -x
 
         rm -f $staging_dir/$os-$arch/$release_prefix
-        ln -fs $release $staging_dir/$os-$arch/$release_prefix
+        ln -fs $release_tag $staging_dir/$os-$arch/$release_prefix
 
         mkdir -p $release_dir
-        tar czf $release_dir/$release-$os-$arch.tgz -C $staging_dir/$os-$arch --no-xattrs $release_prefix $release
+        tar czf $release_dir/$release_tag-$os-$arch.tgz -C $staging_dir/$os-$arch --no-xattrs $release_prefix $release_tag
 
         rm -rf $staging_dir/$os-$arch/*
     )

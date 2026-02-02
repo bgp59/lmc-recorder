@@ -12,6 +12,7 @@
   - [Running Python Commands](#running-python-commands)
 - [Creating Releases](#creating-releases)
   - [Version And Release Notes](#version-and-release-notes)
+  - [Documentation](#documentation)
   - [Git State Check](#git-state-check)
   - [Creating A Release](#creating-a-release)
 
@@ -133,9 +134,20 @@ YYYY/MM/DD      MAJ.MIN.PATCH
 Description
 ```
 
+### Documentation
+
+Some documents are automatically generated. The updater script assumes that the
+proper [Python](#python) environment was acquired and that all commands are
+present under [lmcpb/commands](../lmcpb/commands) dir.
+
+  ```bash
+  cd docs
+  ./update-docs
+  ```
+
 ### Git State Check
 
-The project should be a clean state on the `main` branch, with semver tag applied.
+The project should be a clean state on the `main` branch, with the release tag applied.
 
 ### Creating A Release
 
@@ -145,7 +157,7 @@ The project should be a clean state on the `main` branch, with semver tag applie
     ./check-git-state
     ```
 
-- apply the semver tag:
+- apply the release tag:
 
     ```bash
     ./apply-release-tag

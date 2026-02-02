@@ -18,6 +18,8 @@ if [[ -z "$semver" ]]; then
 fi
 
 release_prefix="lmcrec"
-release="$release_prefix-$semver"
-release_dir="$release_root_dir/$release"
-release_tag="$release"
+release_tag="$release_prefix-$semver"
+release_dir="$release_root_dir/$release_tag"
+if ! __lmcrec_ignore_git_state="" $project_root_dir/check-git-state $release_tag; then
+    release_dir="$release_dir-dirty"
+fi

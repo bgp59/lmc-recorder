@@ -1,6 +1,9 @@
-# Playback Tools Catalog
+<!--
+This file was generated automatically by update-docs
+from templates/PlaybackToolsCatalog.md; do not edit directly
+-->
 
-<!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
+# Playback Tools Catalog
 
 - [General Information](#general-information)
   - [Common Command Line Arguments](#common-command-line-arguments)
@@ -23,8 +26,6 @@
   - [lmcrec-report](#lmcrec-report)
   - [lmcrec-stats](#lmcrec-stats)
   - [lmcrec-version](#lmcrec-version)
-
-<!-- /TOC -->
 
 ## General Information
 
@@ -192,7 +193,7 @@ options:
 ### lmcrec-check-response
 
 ```text
-usage: lmcrec-check-response [-h] [-z] [-m] rest_json_file [rest_json_file ...]
+usage: lmcrec-check-response [-h] [-m] rest_json_file [rest_json_file ...]
 
  
 Check REST response(s), like for instance those collected by snap-samples.sh,

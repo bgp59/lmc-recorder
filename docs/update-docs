@@ -1,0 +1,59 @@
+#!/bin/bash --noprofile
+
+# Infer script name and location from invocation:
+this_script=${0##*/}
+case "$0" in
+    /*|*/*) this_dir=$(dirname $(realpath $0));;
+    *) this_dir=$(dirname $(realpath $(which $0)));;
+esac
+
+set -e
+cd $this_dir
+
+# Source definitions:
+. ../release-definitions.sh
+
+# InstallationGuide.md:
+install_guide=InstallationGuide.md
+install_guide_template="templates/$install_guide"
+cat <<EEOOMM >$install_guide
+<!--
+This file was generated automatically by $this_script
+from $install_template; do not edit directly
+-->
+
+EEOOMM
+
+sed -e 's/<RELEASE_TAG>/'$release_tag'/g' $install_guide_template >>$install_guide
+
+# PlaybackToolsCatalog.md:
+pb_catalog=PlaybackToolsCatalog.md
+pb_catalog_template="templates/$pb_catalog"
+cmds=$(/bin/ls -1 ../lmcpb/commands/lmcrec-*)
+cmd_toc=$(
+    for cmd in $cmds; do
+        c=$(basename $cmd)
+        echo -n "\\n  - [$c](#$c)"
+    done
+)
+
+
+cat <<EEOOMM >$pb_catalog
+<!--
+This file was generated automatically by $this_script
+from $pb_catalog_template; do not edit directly
+-->
+
+EEOOMM
+
+(
+    sed -e "s/\(.*\[Usage\](#usage).*\)/\1$cmd_toc/" $pb_catalog_template
+    for cmd in $cmds; do
+        echo ""
+        echo "### $(basename $cmd)"
+        echo ""
+        echo '```text'
+        $cmd -h
+        echo '```'
+    done
+) >>$pb_catalog

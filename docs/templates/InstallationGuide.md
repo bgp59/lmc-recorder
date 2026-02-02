@@ -1,8 +1,3 @@
-<!--
-This file was generated automatically by update-docs
-from ; do not edit directly
--->
-
 # Installation Guide
 
 <!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
@@ -49,14 +44,14 @@ from ; do not edit directly
 
     ```bash
     cd /usr/local
-    tar xvf /tmp/lmcrec-0.2.2-linux-amd64.tgz
+    tar xvf /tmp/<RELEASE_TAG>-linux-amd64.tgz
     ```
 
     will create:
 
     ```text
-    /usr/local/lmcrec -> lmcrec-0.2.2
-    /usr/local/lmcrec-0.2.2
+    /usr/local/lmcrec -> <RELEASE_TAG>
+    /usr/local/<RELEASE_TAG>
                 +- /bin
                 +- /reference
                 +- relnotes.txt
@@ -82,7 +77,7 @@ from ; do not edit directly
     . $HOME/venv/lmcrec/bin/activate
     
 
-    pip3 install --upgrade /tmp/lmcrec-0.2.2-py3-none-any.whl
+    pip3 install --upgrade /tmp/<RELEASE_TAG>-py3-none-any.whl
     ```
 
     If the environment where the installation is performed is very restricted,
@@ -103,7 +98,7 @@ from ; do not edit directly
         --upgrade \
         --no-index \
         --find-links /tmp/lmcrec-py-dep-linux-amd64 \
-        /tmp/lmcrec-0.2.2-py3-none-any.whl
+        /tmp/<RELEASE_TAG>-py3-none-any.whl
     ```
 
 ## LSEG Configuration
