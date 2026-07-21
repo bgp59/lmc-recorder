@@ -169,4 +169,4 @@ The recorded data can be used:
 
 The preferred method is via the [issue
 tracker](https://github.com/bgp59/lmc-recorder/issues), but if the access to it is
-restricted then they can be reported via e-mail to [lmcrec.bgp59@google.com](mailto:lmcrec.bgp59@google.com).
+restricted then they can be reported via e-mail to [emypar59+lmc-recorder@google.com](mailto:emypar59+lmc-recorder@google.com).
